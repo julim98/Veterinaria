@@ -1,0 +1,137 @@
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\bin\Debug\Veterinaria.exe.config
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\bin\Debug\Veterinaria.exe
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\bin\Debug\Veterinaria.pdb
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csprojAssemblyReference.cache
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Properties.Resources.resources
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.GenerateResource.cache
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.CoreCompileInputs.cache
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.exe
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.pdb
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Frm_Escritorio.resources
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Frm_Perros.resources
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Frm_ABM_Perro.resources
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Configuracion.resources
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Consultas.resources
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Diagnosticos.resources
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Medicamentos.resources
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Consultas.resources
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Diagnosticos.resources
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Medicamentos.resources
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Empleados.resources
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Laboratorios.resources
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Razas.resources
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Sucursales.resources
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Laboratorios.resources
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Empleados.resources
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Dueños.resources
+C:\Users\Gino Ascolani\source\repos\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Dueños.resources
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\bin\Debug\Veterinaria.exe.config
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\bin\Debug\Veterinaria.exe
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\bin\Debug\Veterinaria.pdb
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csprojAssemblyReference.cache
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Consultas.resources
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Diagnosticos.resources
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Dueños.resources
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Empleados.resources
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Laboratorios.resources
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Medicamentos.resources
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Frm_ABM_Perro.resources
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Razas.resources
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Sucursales.resources
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Configuracion.resources
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Consultas.resources
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Diagnosticos.resources
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Dueños.resources
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Empleados.resources
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Frm_Escritorio.resources
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Laboratorios.resources
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Medicamentos.resources
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Frm_Perros.resources
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Properties.Resources.resources
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.GenerateResource.cache
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.CoreCompileInputs.cache
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.exe
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.pdb
+<<<<<<< HEAD
+C:\Users\Facu\Documents\3er año\PAV\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Formularios.Frm_Modificar_Perro.resources
+=======
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\bin\Debug\Veterinaria.exe.config
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\bin\Debug\Veterinaria.exe
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\bin\Debug\Veterinaria.pdb
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csprojAssemblyReference.cache
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Consultas.resources
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Diagnosticos.resources
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Dueños.resources
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Empleados.resources
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Laboratorios.resources
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Medicamentos.resources
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Frm_ABM_Perro.resources
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Razas.resources
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Sucursales.resources
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Configuracion.resources
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Consultas.resources
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Diagnosticos.resources
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Dueños.resources
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Empleados.resources
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Frm_Escritorio.resources
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Laboratorios.resources
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Medicamentos.resources
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Frm_Perros.resources
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Properties.Resources.resources
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.GenerateResource.cache
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.CoreCompileInputs.cache
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\obj\Debug\Veterinaria.exe
+C:\Users\Gino Ascolani\Desktop\Facultad\3° año\PAV 1\Veterinaria\Veterinaria\obj\Debug\Veterinaria.pdb
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csprojAssemblyReference.cache
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Consultas.resources
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Diagnosticos.resources
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Dueños.resources
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Empleados.resources
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Laboratorios.resources
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Medicamentos.resources
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Frm_ABM_Perro.resources
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Razas.resources
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Sucursales.resources
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Configuracion.resources
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Consultas.resources
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Diagnosticos.resources
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Dueños.resources
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Empleados.resources
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Frm_Escritorio.resources
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Laboratorios.resources
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Medicamentos.resources
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Frm_Perros.resources
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Properties.Resources.resources
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.GenerateResource.cache
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\obj\Debug\Veterinaria.exe
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\obj\Debug\Veterinaria.pdb
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\bin\Debug\Veterinaria.exe.config
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\bin\Debug\Veterinaria.exe
+D:\Usuarios\Ezequiel\Desktop\juli\Veterinaria\Veterinaria\bin\Debug\Veterinaria.pdb
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\bin\Debug\Veterinaria.exe.config
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\bin\Debug\Veterinaria.exe
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\bin\Debug\Veterinaria.pdb
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\obj\Debug\Veterinaria.csprojAssemblyReference.cache
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Consultas.resources
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Diagnosticos.resources
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Dueños.resources
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Empleados.resources
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Laboratorios.resources
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Medicamentos.resources
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\obj\Debug\Veterinaria.Frm_ABM_Perro.resources
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Razas.resources
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_ABM_Sucursales.resources
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Configuracion.resources
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Consultas.resources
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Diagnosticos.resources
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Dueños.resources
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Empleados.resources
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\obj\Debug\Veterinaria.Frm_Escritorio.resources
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Laboratorios.resources
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\obj\Debug\Veterinaria.Vista.Frm_Medicamentos.resources
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\obj\Debug\Veterinaria.Frm_Perros.resources
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\obj\Debug\Veterinaria.Properties.Resources.resources
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\obj\Debug\Veterinaria.csproj.GenerateResource.cache
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\obj\Debug\Veterinaria.exe
+D:\Usuarios\Ezequiel\Documents\GitHub\Trabajo\Veterinaria\obj\Debug\Veterinaria.pdb
+>>>>>>> 4ca2ef0c29baec13e826e01344d70acccb634605
