@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.OleDb;
 
-namespace Veterinaria.ConexionDB
+namespace Veterinaria
 {
     class Conexion_BD
     {

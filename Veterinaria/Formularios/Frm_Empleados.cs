@@ -82,8 +82,6 @@ namespace Veterinaria.Vista
                 Tbl_Empleados.Rows[i].Cells[7].Value = tabla.Rows[i]["fecha_ingreso"].ToString();
             }
         }
-<<<<<<< HEAD
-=======
 
         private void Btn_Eliminar_Click(object sender, EventArgs e)
         {
@@ -94,6 +92,5 @@ namespace Veterinaria.Vista
         {
 
         }
->>>>>>> 4ca2ef0c29baec13e826e01344d70acccb634605
     }
 }

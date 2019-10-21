@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Veterinaria.ConexionDB;
+using Veterinaria;
 using System.Windows.Forms;
 
 namespace Veterinaria.Negocios

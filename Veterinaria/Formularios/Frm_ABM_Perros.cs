@@ -12,7 +12,7 @@ using System.Data.OleDb;
 using Veterinaria.Vista;
 using Veterinaria.Negocios;
 using Veterinaria.Clases;
-using Veterinaria.ConexionDB;
+using Veterinaria;
 
 namespace Veterinaria
 {
@@ -62,10 +62,11 @@ namespace Veterinaria
 
         {
             txt_nroC.Text = (max_nro_hc()+1).ToString();
-            Veterinaria.Clases.Combo.CargarCombo(ref Cmb_Dueño, "dueños", "apellido", "id_dueño");
-            Veterinaria.Clases.Combo.CargarCombo(ref cmb_sucursal, "sucursales", "nombre", "id_sucursal");
-            Veterinaria.Clases.Combo.CargarCombo(ref Cmb_Raza, "razas", "denominacion", "id_raza");
+            Combo.CargarCombo(ref Cmb_Dueño, "dueños", "apellido", "id_dueño");
+            Combo.CargarCombo(ref cmb_sucursal, "sucursales", "nombre", "id_sucursal");
+            Combo.CargarCombo(ref Cmb_Raza, "razas", "denominacion", "id_raza");
         }
+
         private int max_nro_hc()
         {
             string sql = "";

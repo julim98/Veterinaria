@@ -45,7 +45,7 @@
             this.Sucursal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaIng = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_nro_documento = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.Cmb_Tipo_Documento = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.Tbl_Empleados)).BeginInit();
@@ -130,7 +130,6 @@
             this.Btn_Modificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Modificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_Modificar.UseVisualStyleBackColor = true;
-            this.Btn_Modificar.Click += new System.EventHandler(this.Btn_Modificar_Click);
             // 
             // Btn_Eliminar
             // 
@@ -232,14 +231,14 @@
             this.label1.Text = "EMPLEADOS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // txt_nro_documento
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(474, 136);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(206, 23);
-            this.textBox1.TabIndex = 53;
+            this.txt_nro_documento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_nro_documento.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nro_documento.Location = new System.Drawing.Point(474, 136);
+            this.txt_nro_documento.Name = "txt_nro_documento";
+            this.txt_nro_documento.Size = new System.Drawing.Size(206, 23);
+            this.txt_nro_documento.TabIndex = 53;
             // 
             // label3
             // 
@@ -268,7 +267,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(800, 550);
             this.Controls.Add(this.Cmb_Tipo_Documento);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_nro_documento);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Btn_Cerrar_ABM);
@@ -298,7 +297,7 @@
         private System.Windows.Forms.Button Btn_Eliminar;
         private System.Windows.Forms.DataGridView Tbl_Empleados;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_nro_documento;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox Cmb_Tipo_Documento;
         private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;

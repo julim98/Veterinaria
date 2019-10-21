@@ -39,8 +39,6 @@
             this.Btn_Modificar = new System.Windows.Forms.Button();
             this.Btn_Eliminar = new System.Windows.Forms.Button();
             this.Tbl_Perros = new System.Windows.Forms.DataGridView();
-            this.Btn_Cerrar_ABM = new System.Windows.Forms.Button();
-            this.Check_Todos = new System.Windows.Forms.CheckBox();
             this.nro_historia_clinica = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,6 +47,8 @@
             this.Peso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Altura = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sucursal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Btn_Cerrar_ABM = new System.Windows.Forms.Button();
+            this.Check_Todos = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.Tbl_Perros)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,7 +63,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "PERROS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Btn_Buscar
             // 
@@ -89,7 +88,6 @@
             this.Txt_Nombre.Name = "Txt_Nombre";
             this.Txt_Nombre.Size = new System.Drawing.Size(200, 23);
             this.Txt_Nombre.TabIndex = 22;
-            this.Txt_Nombre.TextChanged += new System.EventHandler(this.Txt_Nombr_TextChanged_1);
             // 
             // Txt_Dueño
             // 
@@ -99,7 +97,6 @@
             this.Txt_Dueño.Name = "Txt_Dueño";
             this.Txt_Dueño.Size = new System.Drawing.Size(200, 23);
             this.Txt_Dueño.TabIndex = 21;
-            this.Txt_Dueño.TextChanged += new System.EventHandler(this.Txt_Dueño_TextChanged_1);
             // 
             // label3
             // 
@@ -111,7 +108,6 @@
             this.label3.Size = new System.Drawing.Size(64, 15);
             this.label3.TabIndex = 20;
             this.label3.Text = "Nombre:";
-            this.label3.Click += new System.EventHandler(this.label3_Click_1);
             // 
             // label2
             // 
@@ -123,7 +119,6 @@
             this.label2.Size = new System.Drawing.Size(55, 15);
             this.label2.TabIndex = 19;
             this.label2.Text = "Dueño:";
-            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // Btn_Nuevo
             // 
@@ -205,31 +200,6 @@
             this.Tbl_Perros.ReadOnly = true;
             this.Tbl_Perros.Size = new System.Drawing.Size(760, 309);
             this.Tbl_Perros.TabIndex = 15;
-            this.Tbl_Perros.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
-            // 
-            // Btn_Cerrar_ABM
-            // 
-            this.Btn_Cerrar_ABM.FlatAppearance.BorderSize = 0;
-            this.Btn_Cerrar_ABM.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
-            this.Btn_Cerrar_ABM.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.Btn_Cerrar_ABM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Cerrar_ABM.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar_ABM.Image")));
-            this.Btn_Cerrar_ABM.Location = new System.Drawing.Point(10, 10);
-            this.Btn_Cerrar_ABM.Name = "Btn_Cerrar_ABM";
-            this.Btn_Cerrar_ABM.Size = new System.Drawing.Size(20, 20);
-            this.Btn_Cerrar_ABM.TabIndex = 24;
-            this.Btn_Cerrar_ABM.UseVisualStyleBackColor = true;
-            this.Btn_Cerrar_ABM.Click += new System.EventHandler(this.Btn_Cerrar_ABM_Click);
-            // 
-            // Check_Todos
-            // 
-            this.Check_Todos.AutoSize = true;
-            this.Check_Todos.Location = new System.Drawing.Point(612, 120);
-            this.Check_Todos.Name = "Check_Todos";
-            this.Check_Todos.Size = new System.Drawing.Size(56, 17);
-            this.Check_Todos.TabIndex = 26;
-            this.Check_Todos.Text = "Todos";
-            this.Check_Todos.UseVisualStyleBackColor = true;
             // 
             // nro_historia_clinica
             // 
@@ -287,6 +257,30 @@
             this.Sucursal.ReadOnly = true;
             this.Sucursal.Width = 90;
             // 
+            // Btn_Cerrar_ABM
+            // 
+            this.Btn_Cerrar_ABM.FlatAppearance.BorderSize = 0;
+            this.Btn_Cerrar_ABM.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
+            this.Btn_Cerrar_ABM.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.Btn_Cerrar_ABM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Cerrar_ABM.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar_ABM.Image")));
+            this.Btn_Cerrar_ABM.Location = new System.Drawing.Point(10, 10);
+            this.Btn_Cerrar_ABM.Name = "Btn_Cerrar_ABM";
+            this.Btn_Cerrar_ABM.Size = new System.Drawing.Size(20, 20);
+            this.Btn_Cerrar_ABM.TabIndex = 24;
+            this.Btn_Cerrar_ABM.UseVisualStyleBackColor = true;
+            this.Btn_Cerrar_ABM.Click += new System.EventHandler(this.Btn_Cerrar_ABM_Click);
+            // 
+            // Check_Todos
+            // 
+            this.Check_Todos.AutoSize = true;
+            this.Check_Todos.Location = new System.Drawing.Point(612, 106);
+            this.Check_Todos.Name = "Check_Todos";
+            this.Check_Todos.Size = new System.Drawing.Size(56, 17);
+            this.Check_Todos.TabIndex = 26;
+            this.Check_Todos.Text = "Todos";
+            this.Check_Todos.UseVisualStyleBackColor = true;
+            // 
             // Frm_Perros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -309,7 +303,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Frm_Perros";
             this.Text = "Frm_Perros";
-            this.Load += new System.EventHandler(this.Frm_Perros_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Tbl_Perros)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

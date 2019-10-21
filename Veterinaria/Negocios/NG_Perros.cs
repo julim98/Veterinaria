@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Windows.Forms;
-using Veterinaria.ConexionDB;
+using Veterinaria;
 using Veterinaria.Clases;
 
 namespace Veterinaria.Negocios

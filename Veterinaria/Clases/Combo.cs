@@ -16,24 +16,9 @@ namespace Veterinaria.Clases
         {
             try
             {
-                OleDbCommand cmd = new OleDbCommand();
-                OleDbConnection cn = new OleDbConnection("Provider=SQLNCLI11;Data Source=DESKTOP-K8CJ3KA;Integrated Security=SSPI;Initial Catalog=_BD_VETERINARIA2");
-
+                Conexion_BD conexion = new Conexion_BD();
                 string consulta = "SELECT * FROM " + nombreTabla;
-                cmd.Parameters.Clear();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = consulta;
-
-                DataTable tabla = new DataTable();
-                cmd.Connection = cn;
-
-                OleDbDataAdapter da = new OleDbDataAdapter(cmd);
-                da.Fill(tabla);
-                cn.Close();
-
-                
-                combo.DataSource = tabla;
-
+                combo.DataSource = conexion.ejecutar_consulta(consulta);
                 combo.DisplayMember = descripcion;
                 combo.ValueMember = pk;
             }

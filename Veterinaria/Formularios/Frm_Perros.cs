@@ -19,44 +19,6 @@ namespace Veterinaria
         {
             InitializeComponent();
         }
-
-
-
-        private void Frm_Perros_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void Btn_Buscar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Txt_Dueño_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Txt_Nombr_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         
 
         private void Btn_Modificar_Click(object sender, EventArgs e)
@@ -146,36 +108,6 @@ namespace Veterinaria
                 Tbl_Perros.Rows[i].Cells[5].Value = tabla.Rows[i]["peso"].ToString();
                 Tbl_Perros.Rows[i].Cells[6].Value = tabla.Rows[i]["altura"].ToString();
             }
-            }
-
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Txt_Nombr_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Txt_Dueño_TextChanged_1(object sender, EventArgs e)
-        {
-
         }
 
         private void Btn_Modificar_Click_1(object sender, EventArgs e)
