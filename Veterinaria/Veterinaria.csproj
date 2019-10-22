@@ -55,20 +55,6 @@
     <Compile Include="Formularios\Frm_Modificar_Perro.Designer.cs">
       <DependentUpon>Frm_Modificar_Perro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modelo\Calendario_Vacunas.cs" />
-    <Compile Include="Modelo\Consulta.cs" />
-    <Compile Include="Modelo\Diagnostico.cs" />
-    <Compile Include="Modelo\Diagnostico_Consulta.cs" />
-    <Compile Include="Modelo\Dueño.cs" />
-    <Compile Include="Modelo\Laboratorio.cs" />
-    <Compile Include="Modelo\Medicamento.cs" />
-    <Compile Include="Modelo\Medicamento_Consulta.cs" />
-    <Compile Include="Modelo\Medicamento_Sucursal.cs" />
-    <Compile Include="Modelo\Perro.cs" />
-    <Compile Include="Modelo\Raza.cs" />
-    <Compile Include="Modelo\Sintoma.cs" />
-    <Compile Include="Modelo\Sintoma_Consulta.cs" />
-    <Compile Include="Modelo\Vacuna.cs" />
     <Compile Include="Negocios\NG_Razas.cs" />
     <Compile Include="Negocios\NG_Dueños.cs" />
     <Compile Include="Negocios\NG_Empleados.cs" />
@@ -182,8 +168,6 @@
     <Compile Include="Formularios\Frm_Perros.Designer.cs">
       <DependentUpon>Frm_Perros.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modelo\Empleado.cs" />
-    <Compile Include="Modelo\Sucursal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\Frm_ABM_Consultas.resx">

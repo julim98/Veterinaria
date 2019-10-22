@@ -22,10 +22,7 @@ namespace Veterinaria.Vista
 
         private void cargar_combo()
         {
-            NG_Empleados negocio = new NG_Empleados();
-            Cmb_Tipo_Documento.DataSource = negocio.datos_combo();
-            Cmb_Tipo_Documento.DisplayMember = "nombre";
-            Cmb_Tipo_Documento.ValueMember = "id_tipo_documento";
+            Combo.CargarCombo(ref Cmb_Tipo_Documento, "tipo_documento", "nombre", "id_tipo_documento" );
         }
 
         private void Btn_Cerrar_ABM_Click(object sender, EventArgs e)

@@ -9,7 +9,7 @@ namespace Veterinaria.Clases
 {
     class tratamientos_especiales
     {
-        /*public enum resultado_validacion { correcta, incorrecta }
+        public enum resultado_validacion { correcta, incorrecta }
 
         public resultado_validacion validar(Control.ControlCollection controles)
         {
@@ -17,12 +17,12 @@ namespace Veterinaria.Clases
             {
                 if (item.GetType().Name == "TextBox01")
                 {
-                    if (((Veterinaria.Clases.TextBox01)item).validar == true)
+                    if (((TextBox)item).CausesValidation == true)
                     {
-                        if (((Veterinaria.Clases.TextBox01)item).Text == "")
+                        if (((TextBox)item).Text == "")
                         {
-                            MessageBox.Show("El " + ((Veterinaria.Clases.TextBox01)item).Name + " está vacío");
-                            ((Veterinaria.Clases.TextBox01)item).Focus();
+                            MessageBox.Show("El " + ((TextBox)item).Name + " está vacío");
+                            ((TextBox)item).Focus();
                             return resultado_validacion.incorrecta;
                         }
 
@@ -30,22 +30,18 @@ namespace Veterinaria.Clases
                 }
                 if (item.GetType().Name == "ComboBox01")
                 {
-                    if (((ComboBox01)item).validar == true)
+                    if (((ComboBox)item).CausesValidation == true)
                     {
-                        if ((((ComboBox01)item).SelectedIndex == -1))
+                        if ((((ComboBox)item).SelectedIndex == -1))
                         {
-                            MessageBox.Show("El " + ((ComboBox01)item).Name + " no tiene selección");
-                            ((ComboBox01)item).Focus();
+                            MessageBox.Show("El " + ((ComboBox)item).Name + " no tiene selección");
+                            ((ComboBox)item).Focus();
                             return resultado_validacion.incorrecta;
                         }
                     }
                 }
             }
             return resultado_validacion.correcta;
-        }*/
+        }
     }
 }
-
-
-    
-

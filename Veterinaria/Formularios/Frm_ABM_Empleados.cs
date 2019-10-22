@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Veterinaria.Clases;
+using Veterinaria.Negocios;
 
 namespace Veterinaria.Vista
 {
@@ -18,26 +19,31 @@ namespace Veterinaria.Vista
             InitializeComponent();
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker4_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Btn_Guardar_Click(object sender, EventArgs e)
         {
-            tratamientos_especiales tratamientos = new tratamientos_especiales();
+            tratamientos_especiales tratamiento = new tratamientos_especiales();
 
-                
+            if (tratamiento.validar(this.Controls) == tratamientos_especiales.resultado_validacion.incorrecta)
+            {
+                return;
+            }
+
+            NG_Empleados negocio = new NG_Empleados();
+            negocio.insertar(
+                Txt_Nombre.Text.Trim(),
+                Txt_Apellido.Text.Trim(),
+                Cmb_Tipo_Documento.SelectedIndex.ToString(),
+                Txt_Nro_Documento.Text.Trim(),
+                Txt_Fecha_Nacimiento.Value.Date.ToString(),
+                Txt_Fecha_Ingreso.Value.Date.ToString(),
+                Txt_Matricula.Text.Trim(),
+                Cmb_Sucursal.SelectedIndex.ToString());
+            this.Dispose();
         }
 
         private void Btn_Cancelar_Click(object sender, EventArgs e)
         {
-
+            this.Dispose();
         }
 
         private void Btn_Cerrar_Click(object sender, EventArgs e)
