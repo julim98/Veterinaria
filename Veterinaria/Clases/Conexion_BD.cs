@@ -13,7 +13,7 @@ namespace Veterinaria
         public enum estado_BE { correcto, error }
         OleDbConnection conexion = new OleDbConnection();
         OleDbCommand cmd = new OleDbCommand();
-        static string cadena_conexion = "Provider=SQLNCLI11;Data Source=DESKTOP-K8CJ3KA;Integrated Security=SSPI;Initial Catalog=_BD_VETERINARIA2";
+        static string cadena_conexion = @"Provider=SQLNCLI11;Data Source=DESKTOP-88TJQTD\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=_BD_VETERINARIA";
 
         private void conectar()
         {

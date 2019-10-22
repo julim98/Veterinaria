@@ -8,37 +8,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Veterinaria.Clases;
 using Veterinaria.Negocios;
 
 namespace Veterinaria.Vista
 {
     public partial class Frm_Empleados : Form
     {
-        string cadena_conexion = "Provider=SQLNCLI11;Data Source=DESKTOP-K8CJ3KA;Integrated Security=SSPI;Initial Catalog=_BD_VETERINARIA";
         public Frm_Empleados()
         {
             InitializeComponent();
-            cargar_combo();
         }
 
         private void cargar_combo()
         {
-            OleDbConnection conexion = new OleDbConnection();
-            OleDbCommand cmd = new OleDbCommand();
-            string sql = "";
-            DataTable tabla = new DataTable();
-
-            sql = "SELECT nombre FROM empleados";
-            conexion.ConnectionString = cadena_conexion;
-            conexion.Open();
-            cmd.Connection = conexion;
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = sql;
-            tabla.Load(cmd.ExecuteReader());
-            conexion.Close();
-            Cmb_Tipo_Documento.DataSource = tabla;
+            NG_Empleados negocio = new NG_Empleados();
+            Cmb_Tipo_Documento.DataSource = negocio.datos_combo();
             Cmb_Tipo_Documento.DisplayMember = "nombre";
-            Cmb_Tipo_Documento.ValueMember = "nombre";
+            Cmb_Tipo_Documento.ValueMember = "id_tipo_documento";
         }
 
         private void Btn_Cerrar_ABM_Click(object sender, EventArgs e)
@@ -54,7 +41,7 @@ namespace Veterinaria.Vista
 
         private void Frm_Empleados_Load(object sender, EventArgs e)
         {
-
+            cargar_combo();
         }
 
         private void Btn_Buscar_Click(object sender, EventArgs e)
@@ -65,6 +52,7 @@ namespace Veterinaria.Vista
                 txt_nro_documento.Text.Trim()
                 );
             cargar_grilla(tabla);
+
         }
         private void cargar_grilla(DataTable tabla)
         {

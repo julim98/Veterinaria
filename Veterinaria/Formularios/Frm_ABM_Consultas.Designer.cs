@@ -66,8 +66,6 @@
             this.Pnl_Barra_Superior.Name = "Pnl_Barra_Superior";
             this.Pnl_Barra_Superior.Size = new System.Drawing.Size(658, 30);
             this.Pnl_Barra_Superior.TabIndex = 1;
-            this.Pnl_Barra_Superior.Paint += new System.Windows.Forms.PaintEventHandler(this.Pnl_Barra_Superior_Paint);
-            this.Pnl_Barra_Superior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Pnl_Barra_Superior_MouseDown);
             // 
             // pictureBox1
             // 
@@ -81,7 +79,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(25, 27);
             this.pictureBox1.TabIndex = 29;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Btn_Cerrar
             // 
@@ -145,7 +142,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(658, 186);
             this.panel2.TabIndex = 44;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // dateTimePicker4
             // 
@@ -288,7 +284,6 @@
             this.label20.Size = new System.Drawing.Size(132, 15);
             this.label20.TabIndex = 33;
             this.label20.Text = "N° Historia Clinica:";
-            this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // label16
             // 

@@ -14,22 +14,6 @@ namespace Veterinaria
 {
     public partial class Frm_Escritorio : Form
     {
-        
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-
-
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-
-        Rectangle sizeGripRectangle;
-        bool inSizeDrag = false;
-        const int GRIP_SIZE = 15;
-
-        int w = 0;
-        int h = 0;
-        
-
         public Frm_Escritorio()
         {
             InitializeComponent();
@@ -109,14 +93,6 @@ namespace Veterinaria
         private void Btn_Perros_Click_1(object sender, EventArgs e)
         {
             AbrirFormsHijos(new Frm_Perros());
-        }
-
-        private void Pnl_Barra_Superior_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-            w = this.Width;
-            h = this.Height;
         }
 
         private void Btn_Configuracion_Click_1(object sender, EventArgs e)

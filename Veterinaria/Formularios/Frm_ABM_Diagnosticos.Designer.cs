@@ -60,7 +60,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(658, 186);
             this.panel2.TabIndex = 45;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label3
             // 
@@ -71,7 +70,6 @@
             this.label3.Size = new System.Drawing.Size(94, 15);
             this.label3.TabIndex = 47;
             this.label3.Text = "Descripción:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Btn_Cancelar
             // 
@@ -135,7 +133,6 @@
             this.Pnl_Barra_Superior.Name = "Pnl_Barra_Superior";
             this.Pnl_Barra_Superior.Size = new System.Drawing.Size(658, 30);
             this.Pnl_Barra_Superior.TabIndex = 44;
-            this.Pnl_Barra_Superior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Pnl_Barra_Superior_MouseDown);
             // 
             // pictureBox1
             // 

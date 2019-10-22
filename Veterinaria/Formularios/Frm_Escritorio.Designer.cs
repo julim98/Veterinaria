@@ -75,7 +75,6 @@ namespace Veterinaria
             this.Pnl_Barra_Superior.Name = "Pnl_Barra_Superior";
             this.Pnl_Barra_Superior.Size = new System.Drawing.Size(1000, 30);
             this.Pnl_Barra_Superior.TabIndex = 11;
-            this.Pnl_Barra_Superior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Pnl_Barra_Superior_MouseDown);
             // 
             // Btn_Cerrar
             // 

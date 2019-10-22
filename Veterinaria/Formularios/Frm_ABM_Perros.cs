@@ -75,7 +75,9 @@ namespace Veterinaria
             sql = "SELECT MAX(nro_historia_clinica)  FROM perros";
             Conexion_BD _BD = new Conexion_BD();
             max =_BD.ejecutar_consulta(sql);
-            return int.Parse (max.Rows[0][0].ToString());
+            if (max.IsInitialized)
+                return 0;
+            return int.Parse(max.Rows[0][0].ToString());
           
         }
 

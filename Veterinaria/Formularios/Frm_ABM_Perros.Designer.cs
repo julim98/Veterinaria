@@ -31,10 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_ABM_Perro));
             this.dueñosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet1 = new Veterinaria.DataSet1();
             this.razasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dueñosTableAdapter = new Veterinaria.DataSet1TableAdapters.dueñosTableAdapter();
-            this.razasTableAdapter = new Veterinaria.DataSet1TableAdapters.razasTableAdapter();
             this.label2 = new System.Windows.Forms.Label();
             this.Btn_Minimizar = new System.Windows.Forms.Button();
             this.Btn_Cerrar = new System.Windows.Forms.Button();
@@ -62,7 +59,6 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dueñosBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.razasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Pnl_Barra_Superior.SuspendLayout();
@@ -72,25 +68,6 @@
             // dueñosBindingSource
             // 
             this.dueñosBindingSource.DataMember = "dueños";
-            this.dueñosBindingSource.DataSource = this.dataSet1;
-            // 
-            // dataSet1
-            // 
-            this.dataSet1.DataSetName = "DataSet1";
-            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // razasBindingSource
-            // 
-            this.razasBindingSource.DataMember = "razas";
-            this.razasBindingSource.DataSource = this.dataSet1;
-            // 
-            // dueñosTableAdapter
-            // 
-            this.dueñosTableAdapter.ClearBeforeFill = true;
-            // 
-            // razasTableAdapter
-            // 
-            this.razasTableAdapter.ClearBeforeFill = true;
             // 
             // label2
             // 
@@ -427,7 +404,6 @@
             this.Text = "Frm_ABM_Perro";
             this.Load += new System.EventHandler(this.Frm_ABM_Perro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dueñosBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.razasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Pnl_Barra_Superior.ResumeLayout(false);
@@ -439,11 +415,8 @@
         }
 
         #endregion
-        private DataSet1 dataSet1;
         private System.Windows.Forms.BindingSource dueñosBindingSource;
-        private DataSet1TableAdapters.dueñosTableAdapter dueñosTableAdapter;
         private System.Windows.Forms.BindingSource razasBindingSource;
-        private DataSet1TableAdapters.razasTableAdapter razasTableAdapter;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Btn_Minimizar;
         private System.Windows.Forms.Button Btn_Cerrar;
