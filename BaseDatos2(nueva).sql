@@ -1,4 +1,3 @@
-
 --CREATE DATABASE _BD_VETERINARIA;
 USE _BD_VETERINARIA;
 CREATE TABLE laboratorios (
@@ -169,4 +168,4 @@ CREATE TABLE tipos_documentos (
 INSERT INTO tipos_documentos (nombre)
 	VALUES ('DNI'), ('Otro');
 
-ALTER TABLE empleados ADD FOREIGN KEY (tipo_doc) REFERENCES tipo_documento(id_tipo_documento);
+ALTER TABLE empleados ADD FOREIGN KEY (tipo_doc) REFERENCES tipos_documentos(id_tipo_documento);

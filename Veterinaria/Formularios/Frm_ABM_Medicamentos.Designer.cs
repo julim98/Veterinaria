@@ -73,7 +73,6 @@
             this.Txt_Descripcion.Size = new System.Drawing.Size(206, 96);
             this.Txt_Descripcion.TabIndex = 53;
             this.Txt_Descripcion.Text = "";
-            this.Txt_Descripcion.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // Cmb_Laboratorio
             // 
@@ -123,6 +122,7 @@
             this.Btn_Guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Guardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_Guardar.UseVisualStyleBackColor = true;
+            this.Btn_Guardar.Click += new System.EventHandler(this.Btn_Guardar_Click);
             // 
             // label19
             // 
@@ -173,7 +173,6 @@
             this.pictureBox1.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.ImageLocation = "center";
             this.pictureBox1.Location = new System.Drawing.Point(3, 4);
             this.pictureBox1.Name = "pictureBox1";
@@ -232,6 +231,7 @@
             this.Name = "Frm_ABM_Medicamentos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_ABM_Medicamentos";
+            this.Load += new System.EventHandler(this.Frm_ABM_Medicamentos_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.Pnl_Barra_Superior.ResumeLayout(false);

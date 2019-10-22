@@ -20,7 +20,7 @@ namespace Veterinaria.Negocios
                                 tipo_doc.ToString() + ", " +
                                 nro_doc.ToString() + ", " +
                                 sucursal.ToString() + ", '" +
-                                nombre.ToString() + "', " +
+                                nombre.ToString() + "', '" +
                                 apellido.ToString() + "', '" +
                                 nacimiento.ToString() + "', '" +
                                 ingreso.ToString() + "', " +
@@ -50,7 +50,7 @@ namespace Veterinaria.Negocios
                     E.nro_doc, E.matricula, E.fecha_nacimiento,S.nombre as sucursal,
                     E.fecha_ingreso
                     from empleados E 
-                    join tipo_documento D on E.tipo_doc = D.id_tipo_documento
+                    join tipos_documentos D on E.tipo_doc = D.id_tipo_documento
                     join sucursales S on S.id_sucursal = E.id_sucursal";
                 return _BD.ejecutar_consulta(comando);
             }
@@ -59,15 +59,16 @@ namespace Veterinaria.Negocios
                 E.nro_doc, E.matricula, E.fecha_nacimiento,S.nombre as sucursal,
                 E.fecha_ingreso
                 from empleados E 
-                join tipo_documento D on E.tipo_doc = D.id_tipo_documento
+                join tipos_documentos D on E.tipo_doc = D.id_tipo_documento
                 join sucursales S on S.id_sucursal = E.id_sucursal
                 where E.nro_doc = " + nro_doc.Trim() + " and E.tipo_doc = " + tipo_doc;
             return _BD.ejecutar_consulta(comando);
         }
-        public DataTable datos_combo()
+
+        public void modificar_empleado()
         {
-            Conexion_BD _BD = new Conexion_BD();
-            return _BD.ejecutar_consulta("select * from tipo_documento");
+
         }
+
     }
 }

@@ -44,6 +44,8 @@
             this.StockActual = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaUltimaCompra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
+            this.cmb_sucursal = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Tbl_Medicamentos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,6 +77,7 @@
             this.Btn_Buscar.TabIndex = 32;
             this.Btn_Buscar.Text = "Buscar";
             this.Btn_Buscar.UseVisualStyleBackColor = true;
+            this.Btn_Buscar.Click += new System.EventHandler(this.Btn_Buscar_Click);
             // 
             // Txt_Nombre
             // 
@@ -134,6 +137,7 @@
             this.Btn_Modificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Modificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_Modificar.UseVisualStyleBackColor = true;
+            this.Btn_Modificar.Click += new System.EventHandler(this.Btn_Modificar_Click);
             // 
             // Btn_Eliminar
             // 
@@ -152,6 +156,7 @@
             this.Btn_Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Eliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_Eliminar.UseVisualStyleBackColor = true;
+            this.Btn_Eliminar.Click += new System.EventHandler(this.Btn_Eliminar_Click);
             // 
             // Tbl_Medicamentos
             // 
@@ -224,12 +229,33 @@
             this.label1.Text = "MEDICAMENTOS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // cmb_sucursal
+            // 
+            this.cmb_sucursal.FormattingEnabled = true;
+            this.cmb_sucursal.Location = new System.Drawing.Point(359, 106);
+            this.cmb_sucursal.Name = "cmb_sucursal";
+            this.cmb_sucursal.Size = new System.Drawing.Size(121, 21);
+            this.cmb_sucursal.TabIndex = 34;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(289, 108);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 15);
+            this.label3.TabIndex = 35;
+            this.label3.Text = "Sucursal";
+            // 
             // Frm_Medicamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(784, 511);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.cmb_sucursal);
             this.Controls.Add(this.Btn_Cerrar_ABM);
             this.Controls.Add(this.Btn_Buscar);
             this.Controls.Add(this.Txt_Nombre);
@@ -241,6 +267,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Frm_Medicamentos";
             this.Text = "Frm_Medicamentos";
+            this.Load += new System.EventHandler(this.Frm_Medicamentos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Tbl_Medicamentos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -264,5 +291,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn StockMinimo;
         private System.Windows.Forms.DataGridViewTextBoxColumn StockActual;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaUltimaCompra;
+        private System.Windows.Forms.ComboBox cmb_sucursal;
+        private System.Windows.Forms.Label label3;
     }
 }

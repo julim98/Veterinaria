@@ -8,11 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Veterinaria.Negocios;
+using Veterinaria.Clases;
 
 namespace Veterinaria.Vista
 {
     public partial class Frm_ABM_Medicamentos : Form
     {
+        public string id_m { get; set; }
+
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
 
@@ -42,11 +46,6 @@ namespace Veterinaria.Vista
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void label18_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Pnl_Barra_Superior_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
@@ -55,9 +54,32 @@ namespace Veterinaria.Vista
             h = this.Height;
         }
 
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        private void Btn_Guardar_Click(object sender, EventArgs e)
         {
+            NG_Medicamentos medicamentos = new NG_Medicamentos();
+            if (id_m != null)
+            {
+                medicamentos.modificar_medicamento(id_m, Txt_Nombre.Text, Cmb_Laboratorio.SelectedIndex.ToString(), Txt_Descripcion.Text);
+                this.Dispose();
+            }
+            medicamentos.cargar_medicamento(Txt_Nombre.Text.Trim(), Cmb_Laboratorio.SelectedIndex.ToString(), Txt_Descripcion.Text.Trim());
+            this.Dispose();
+        }
 
+        private void cargar_combo()
+        {
+            Combo.CargarCombo(ref Cmb_Laboratorio, "laboratorios", "nombre_lab", "id_laboratorio");
+        }
+
+        private void Frm_ABM_Medicamentos_Load(object sender, EventArgs e)
+        {
+            cargar_combo();
+
+            if (id_m != null)
+            {
+                NG_Medicamentos medicamentos = new NG_Medicamentos();
+                medicamentos.recuperar_medicamento(ref Txt_Nombre, ref Txt_Descripcion);
+            }
         }
     }
 }

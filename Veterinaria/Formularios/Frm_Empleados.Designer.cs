@@ -130,6 +130,7 @@
             this.Btn_Modificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Modificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_Modificar.UseVisualStyleBackColor = true;
+            this.Btn_Modificar.Click += new System.EventHandler(this.Btn_Modificar_Click);
             // 
             // Btn_Eliminar
             // 

@@ -1,22 +1,12 @@
-use _BD_VETERINARIA2
-
 Insert into sucursales (nombre)
-VALUES ('Central');
-Insert into sucursales (nombre)
-VALUES ('Maipu');
-Insert into sucursales (nombre)
-VALUES ('Juniors');
-Insert into sucursales (nombre)
-VALUES ('Congo');
+VALUES ('Central'),('Maipu'),('Juniors'),('Congo');
 
 Insert into empleados (nombre, apellido, fecha_nacimiento, fecha_ingreso,matricula, tipo_doc, nro_doc, id_sucursal)
-VALUES ('Pepe', 'Argento', '1968/04/14', '2001/12/11', '174625', '1', '22634574', '1');
-Insert into empleados (nombre, apellido, fecha_nacimiento, fecha_ingreso,matricula, tipo_doc, nro_doc, id_sucursal)
-VALUES ('Juan', 'Peralta', '1970/08/12', '2003/07/11', '373543', '1', '25988098', '2');
-Insert into empleados (nombre, apellido, fecha_nacimiento, fecha_ingreso,matricula, tipo_doc, nro_doc, id_sucursal)
-VALUES ('Miguel', 'Sanchez', '1962/01/25', '2001/02/21', '534312', '1', '21453633', '3');
-Insert into empleados (nombre, apellido, fecha_nacimiento, fecha_ingreso,matricula, tipo_doc, nro_doc, id_sucursal)
-VALUES ('Edward', 'Jonson', '1981/08/02', '2005/05/30', '423089', '1', '30247122', '4');
+VALUES 
+('Pepe', 'Argento', '1968/04/14', '2001/12/11', '174625', '1', '22634574', '1'),
+('Juan', 'Peralta', '1970/08/12', '2003/07/11', '373543', '1', '25988098', '2'),
+('Miguel', 'Sanchez', '1962/01/25', '2001/02/21', '534312', '1', '21453633', '3'),
+('Edward', 'Jonson', '1981/08/02', '2005/05/30', '423089', '1', '30247122', '0');
 
 insert into razas(denominacion, peso_minimo_hembra, peso_minimo_macho, altura_media_hembra, altura_media_macho) 
 values ('Caniche', '1', '1.5', '0.3', '0.4');
@@ -26,3 +16,12 @@ values ('Roberto', 'Mendez', '35125303');
 
 insert into perros (id_sucursal,id_raza, id_dueño, nombre,fecha_nacimiento, peso, altura) 
 values ('1', '2', '2', 'Mora', '2019/09/30', '1', '0.1');
+
+INSERT INTO sucursales (nombre)
+VALUES ('Central'),('Maipu'),('Juniors'),('Congo');
+INSERT INTO laboratorios(nombre_lab, razon_social, direccion)
+VALUES ('Bayern', 'RazonSocial_1', 'Ituzaingo 510'),('lab2', 'rs2', 'dir2'),('lab3', 'rs3', 'dir3')
+INSERT INTO medicamentos(nombre_med,id_laboratorio, descripcion)
+VALUES ('Penicilina', 0,'Antibacteriano'), ('Anestesia', 1, 'Para operaciones'), ('Sedante', 2, 'Usar en perro agresivo');
+INSERT INTO medicamentos_sucursal(id_medicamento, id_sucursal, stock_actual, stock_minimo)
+VALUES (0,0,30,5),(0,1,20,10),(1,2,10,3)

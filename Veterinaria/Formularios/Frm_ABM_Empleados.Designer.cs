@@ -350,6 +350,7 @@
             this.Name = "Frm_ABM_Empleados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_ABM_Empleados";
+            this.Load += new System.EventHandler(this.Frm_ABM_Empleados_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.Pnl_Barra_Superior.ResumeLayout(false);

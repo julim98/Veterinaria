@@ -19,6 +19,14 @@ namespace Veterinaria.Vista
             InitializeComponent();
         }
 
+
+        private void cargarCombos()
+        {
+            Combo.CargarCombo(ref Cmb_Sucursal, "sucursales", "nombre", "id_sucursal");
+            Combo.CargarCombo(ref Cmb_Tipo_Documento, "tipo_documento", "nombre", "id_tipo_documento");
+        }
+
+
         private void Btn_Guardar_Click(object sender, EventArgs e)
         {
             tratamientos_especiales tratamiento = new tratamientos_especiales();
@@ -34,8 +42,8 @@ namespace Veterinaria.Vista
                 Txt_Apellido.Text.Trim(),
                 Cmb_Tipo_Documento.SelectedIndex.ToString(),
                 Txt_Nro_Documento.Text.Trim(),
-                Txt_Fecha_Nacimiento.Value.Date.ToString(),
-                Txt_Fecha_Ingreso.Value.Date.ToString(),
+                Txt_Fecha_Nacimiento.Text,
+                Txt_Fecha_Ingreso.Text,
                 Txt_Matricula.Text.Trim(),
                 Cmb_Sucursal.SelectedIndex.ToString());
             this.Dispose();
@@ -54,6 +62,11 @@ namespace Veterinaria.Vista
         private void Btn_Minimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void Frm_ABM_Empleados_Load(object sender, EventArgs e)
+        {
+            cargarCombos();
         }
     }
 }

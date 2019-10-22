@@ -22,7 +22,7 @@ namespace Veterinaria.Vista
 
         private void cargar_combo()
         {
-            Combo.CargarCombo(ref Cmb_Tipo_Documento, "tipo_documento", "nombre", "id_tipo_documento" );
+            Combo.CargarCombo(ref Cmb_Tipo_Documento, "tipos_documentos", "nombre", "id_tipo_documento" );
         }
 
         private void Btn_Cerrar_ABM_Click(object sender, EventArgs e)
@@ -70,7 +70,7 @@ namespace Veterinaria.Vista
 
         private void Btn_Eliminar_Click(object sender, EventArgs e)
         {
-            //Tbl_Empleados.SelectedRows;
+            ;
         }
 
         private void Btn_Modificar_Click(object sender, EventArgs e)
