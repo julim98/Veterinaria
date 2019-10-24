@@ -74,9 +74,10 @@ namespace Veterinaria.Vista
         private void Frm_ABM_Medicamentos_Load(object sender, EventArgs e)
         {
             cargar_combo();
-
             if (id_m != null)
             {
+                cargar_combo();
+
                 NG_Medicamentos medicamentos = new NG_Medicamentos();
                 medicamentos.recuperar_medicamento(ref Txt_Nombre, ref Txt_Descripcion);
             }

@@ -55,6 +55,7 @@
     <Compile Include="Formularios\Frm_Modificar_Perro.Designer.cs">
       <DependentUpon>Frm_Modificar_Perro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Negocios\NG_Laboratorios.cs" />
     <Compile Include="Negocios\NG_Medicamentos.cs" />
     <Compile Include="Negocios\NG_Razas.cs" />
     <Compile Include="Negocios\NG_Dueños.cs" />

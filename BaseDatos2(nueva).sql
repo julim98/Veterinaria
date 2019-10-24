@@ -161,11 +161,20 @@ ALTER TABLE empleados ADD FOREIGN KEY (id_sucursal) REFERENCES sucursales(id_suc
 
 CREATE TABLE tipos_documentos (
 	id_tipo_documento INT IDENTITY(0,1),
-	nombre CHAR(20),
+	nombre_tipo_doc CHAR(20),
 	CONSTRAINT id_documento PRIMARY KEY (id_tipo_documento)
 );
 
-INSERT INTO tipos_documentos (nombre)
+INSERT INTO tipos_documentos (nombre_tipo_doc)
 	VALUES ('DNI'), ('Otro');
 
 ALTER TABLE empleados ADD FOREIGN KEY (tipo_doc) REFERENCES tipos_documentos(id_tipo_documento);
+
+CREATE TABLE razones_sociales (
+	id_rs INT IDENTITY(0,1),
+	nombre_rs CHAR(20),
+	CONSTRAINT id_documento PRIMARY KEY (id_rs)
+);
+
+INSERT INTO tipos_documentos (nombre_rs)
+	VALUES ('Razon Social 1'), ('Razon Social 2');

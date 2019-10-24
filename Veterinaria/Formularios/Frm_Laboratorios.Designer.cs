@@ -36,11 +36,12 @@
             this.Btn_Modificar = new System.Windows.Forms.Button();
             this.Btn_Eliminar = new System.Windows.Forms.Button();
             this.Tbl_Laboratorios = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RazonSocial = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             this.Btn_Cerrar_ABM = new System.Windows.Forms.Button();
+            this.id_lab = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Tbl_Laboratorios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +53,6 @@
             this.Txt_Nombre.Name = "Txt_Nombre";
             this.Txt_Nombre.Size = new System.Drawing.Size(206, 23);
             this.Txt_Nombre.TabIndex = 42;
-            this.Txt_Nombre.TextChanged += new System.EventHandler(this.Txt_Nombre_TextChanged);
             // 
             // label2
             // 
@@ -64,7 +64,6 @@
             this.label2.Size = new System.Drawing.Size(64, 15);
             this.label2.TabIndex = 41;
             this.label2.Text = "Nombre:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Btn_Buscar
             // 
@@ -120,6 +119,7 @@
             this.Btn_Modificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Modificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_Modificar.UseVisualStyleBackColor = true;
+            this.Btn_Modificar.Click += new System.EventHandler(this.Btn_Modificar_Click);
             // 
             // Btn_Eliminar
             // 
@@ -138,6 +138,7 @@
             this.Btn_Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Eliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_Eliminar.UseVisualStyleBackColor = true;
+            this.Btn_Eliminar.Click += new System.EventHandler(this.Btn_Eliminar_Click);
             // 
             // Tbl_Laboratorios
             // 
@@ -149,26 +150,13 @@
             this.Tbl_Laboratorios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nombre,
             this.RazonSocial,
-            this.Direccion});
+            this.Direccion,
+            this.id_lab});
             this.Tbl_Laboratorios.Location = new System.Drawing.Point(22, 155);
             this.Tbl_Laboratorios.Name = "Tbl_Laboratorios";
             this.Tbl_Laboratorios.ReadOnly = true;
             this.Tbl_Laboratorios.Size = new System.Drawing.Size(760, 309);
             this.Tbl_Laboratorios.TabIndex = 35;
-            this.Tbl_Laboratorios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Tbl_Laboratorios_CellContentClick);
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Bright", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(267, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(282, 36);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "LABORATORIOS";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Nombre
             // 
@@ -188,6 +176,18 @@
             this.Direccion.Name = "Direccion";
             this.Direccion.ReadOnly = true;
             // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Bright", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(267, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(282, 36);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "LABORATORIOS";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Btn_Cerrar_ABM
             // 
             this.Btn_Cerrar_ABM.FlatAppearance.BorderSize = 0;
@@ -201,6 +201,13 @@
             this.Btn_Cerrar_ABM.TabIndex = 40;
             this.Btn_Cerrar_ABM.UseVisualStyleBackColor = true;
             this.Btn_Cerrar_ABM.Click += new System.EventHandler(this.Btn_Cerrar_ABM_Click);
+            // 
+            // id_lab
+            // 
+            this.id_lab.HeaderText = "id_lab";
+            this.id_lab.Name = "id_lab";
+            this.id_lab.ReadOnly = true;
+            this.id_lab.Visible = false;
             // 
             // Frm_Laboratorios
             // 
@@ -221,7 +228,6 @@
             this.Name = "Frm_Laboratorios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Laboratorios";
-            this.Load += new System.EventHandler(this.Frm_Laboratorios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Tbl_Laboratorios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -242,5 +248,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn RazonSocial;
         private System.Windows.Forms.DataGridViewTextBoxColumn Direccion;
         private System.Windows.Forms.Button Btn_Cerrar_ABM;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_lab;
     }
 }

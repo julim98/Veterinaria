@@ -75,9 +75,7 @@
             // 
             // Cmb_Razon_Social
             // 
-            this.Cmb_Razon_Social.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cmb_Razon_Social.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cmb_Razon_Social.FormattingEnabled = true;
             this.Cmb_Razon_Social.Location = new System.Drawing.Point(121, 50);
             this.Cmb_Razon_Social.Name = "Cmb_Razon_Social";
             this.Cmb_Razon_Social.Size = new System.Drawing.Size(206, 23);
@@ -106,6 +104,7 @@
             this.Btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Cancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_Cancelar.UseVisualStyleBackColor = true;
+            this.Btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
             // 
             // Btn_Guardar
             // 
@@ -122,6 +121,7 @@
             this.Btn_Guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Guardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_Guardar.UseVisualStyleBackColor = true;
+            this.Btn_Guardar.Click += new System.EventHandler(this.Btn_Guardar_Click);
             // 
             // label19
             // 

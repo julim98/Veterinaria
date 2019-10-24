@@ -19,16 +19,6 @@ namespace Veterinaria.Vista
             InitializeComponent();
         }
 
-        private void Cmb_Sucursal_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Txt_Nro_Historia_Clinica_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Btn_Cerrar_Click(object sender, EventArgs e)
         {
             this.Dispose();
@@ -41,6 +31,8 @@ namespace Veterinaria.Vista
 
         private void Btn_Guardar_Click(object sender, EventArgs e)
         {
+            if (validacion())
+                return;
             NG_Razas _Razas = new NG_Razas();
             _Razas.Insertar(
                 Txt_Denominacion.Text,
@@ -54,9 +46,15 @@ namespace Veterinaria.Vista
             this.Dispose();
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private bool validacion()
         {
-
+            return Clases.tratamientos_especiales.validacion_textos(Txt_Denominacion,
+                Txt_Peso_Minimo_Hembra,
+                Txt_Peso_Minimo_Macho,
+                Txt_Altura_Media_Macho,
+                Txt_Altura_Media_Hembra)
+                ||
+                Clases.tratamientos_especiales.validacion_combos();
         }
     }
 }

@@ -185,22 +185,17 @@
   <metadata name="FechaUltimaCompra.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="nombre.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Descripcion.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Laboratorio.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="StockMinimo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="StockActual.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="FechaUltimaCompra.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA37AAAN+wELdzWbAAAAB3RJ
+        TUUH4wgfFRkM7FVLLAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFBSURBVEhL
+        7dM/KIVRHMbxl42U6d6JzWCgLBaUARGjIjLoLix3MLCZZDGaLCZKFpPNymCyIllcXRPyN3/C96nz1u09
+        x/s652aRpz7Lr3N77v2dc6OK7OAZnz90hHE0YQCZCS3oxy7akJrQgkFcYhuN+DahBUO4wRWWUQtnqim4
+        xTtOzcyZags0e8UhOmAltKAZBcwa02iFlbQC/fwzHBjn0DoW0YthjBi69HZYSSt4wgq60YNVPOAY+wl7
+        mIeVtIJ7zECpwRxc50TFa7CSLHjDBU4Q71tRgfasuZTwAe+Ca+hdT2IMLYijS9RctLoXeBfom/UhK7rg
+        R3gXlDGKPHKoQ5x6aC4T0CPwLrjDBpag59gJRXfQBc1lC/qDeRdU+pVXlPxQEVpNAxbgOidBBZqvY8rY
+        hOucBBX4+C/I9KcKougLquF0/AAmlIEAAAAASUVORK5CYII=
+</value>
+  </data>
 </root>

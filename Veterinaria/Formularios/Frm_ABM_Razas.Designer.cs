@@ -142,7 +142,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(700, 209);
             this.panel2.TabIndex = 50;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // Txt_Peso_Minimo_Hembra
             // 

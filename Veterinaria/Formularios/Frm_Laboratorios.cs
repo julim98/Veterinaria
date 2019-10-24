@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Veterinaria.Negocios;
 
 namespace Veterinaria.Vista
 {
@@ -15,11 +16,6 @@ namespace Veterinaria.Vista
         public Frm_Laboratorios()
         {
             InitializeComponent();
-        }
-
-        private void Tbl_Laboratorios_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void Btn_Cerrar_ABM_Click(object sender, EventArgs e)
@@ -33,29 +29,61 @@ namespace Veterinaria.Vista
             pantalla.Show();
         }
 
-        private void Frm_Laboratorios_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Btn_Buscar_Click(object sender, EventArgs e)
         {
-
+            NG_Laboratorios negocio = new NG_Laboratorios();
+            DataTable tabla = new DataTable();
+            if (Txt_Nombre.Text == "")
+            {
+                tabla = negocio.obtener_datos_tabla();
+            }
+            else
+                tabla = negocio.obtener_datos_tabla(Txt_Nombre.Text.Trim());
+            cargar_grilla(tabla);
         }
 
-        private void Txt_Nombre_TextChanged(object sender, EventArgs e)
+        private void cargar_grilla(DataTable tabla)
         {
-
+            
+            Tbl_Laboratorios.Rows.Clear();
+            for (int i = 0; i < tabla.Rows.Count; i++)
+            {
+                Tbl_Laboratorios.Rows.Add();
+                Tbl_Laboratorios.Rows[i].Cells[0].Value = tabla.Rows[i]["nombre_lab"].ToString();
+                Tbl_Laboratorios.Rows[i].Cells[1].Value = tabla.Rows[i]["razon_social"].ToString();
+                Tbl_Laboratorios.Rows[i].Cells[2].Value = tabla.Rows[i]["direccion"].ToString();
+                Tbl_Laboratorios.Rows[i].Cells[3].Value = tabla.Rows[i]["id_laboratorio"].ToString();
+            }
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void Btn_Modificar_Click(object sender, EventArgs e)
         {
+            Frm_ABM_Laboratorios pantalla = new Frm_ABM_Laboratorios();
+            pantalla.id_l = Tbl_Laboratorios.CurrentRow.Cells["id_lab"].Value.ToString();
+            pantalla.Show();
+            //HAY QUE HACER RAZONES SOCIALES 
+        }
 
+        private void Btn_Eliminar_Click(object sender, EventArgs e)
+        {
+            if (Tbl_Laboratorios.CurrentRow != null)
+            {
+                if (MessageBox.Show("¿Esta seguro de borrar este laboratorio?"
+                , "Importante"
+                , MessageBoxButtons.YesNo
+                , MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    NG_Laboratorios negocio = new NG_Laboratorios();
+                    negocio.borrar_laboratorio(Tbl_Laboratorios.CurrentRow.Cells["id_lab"].ToString());
+                }
+            }
+            else
+            {
+                MessageBox.Show("Seleccione primero una fila de la grilla, para modificar"
+                    , "Importante", MessageBoxButtons.OK
+                    , MessageBoxIcon.Exclamation);
+            }
+            
         }
     }
 }

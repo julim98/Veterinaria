@@ -46,6 +46,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cmb_sucursal = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Tbl_Medicamentos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -248,12 +249,32 @@
             this.label3.TabIndex = 35;
             this.label3.Text = "Sucursal";
             // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(363, 448);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 50);
+            this.button1.TabIndex = 36;
+            this.button1.Text = "Stock";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Frm_Medicamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(784, 511);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmb_sucursal);
             this.Controls.Add(this.Btn_Cerrar_ABM);
@@ -293,5 +314,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaUltimaCompra;
         private System.Windows.Forms.ComboBox cmb_sucursal;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
     }
 }

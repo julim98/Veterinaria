@@ -43,5 +43,34 @@ namespace Veterinaria.Clases
             }
             return resultado_validacion.correcta;
         }
+
+
+        public static bool validacion_textos(params TextBox[] lista)
+        {
+            for (int i = 0; i < lista.Count(); i++)
+            {
+                if(lista[i].Text == "")
+                {
+                    MessageBox.Show("El " + lista[i].Name + " está vacío");
+                    lista[i].Focus();
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public static bool validacion_combos(params ComboBox[] lista)
+        {
+            for (int i = 0; i < lista.Count(); i++)
+            {
+                if (lista[i].SelectedIndex == -1)
+                {
+                    MessageBox.Show("El " + lista[i].Name + " no tiene selección");
+                    lista[i].Focus();
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }
