@@ -70,5 +70,10 @@ namespace Veterinaria.Vista
             medicamentos.borrar(Tbl_Medicamentos.CurrentRow.Cells["id_medicamento"].ToString());
             Tbl_Medicamentos.Refresh();
         }
+
+        private void btn_stock_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

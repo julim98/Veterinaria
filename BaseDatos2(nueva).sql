@@ -3,7 +3,7 @@ USE _BD_VETERINARIA;
 CREATE TABLE laboratorios (
    id_laboratorio int IDENTITY (0, 1) PRIMARY KEY,
    nombre_lab varchar(15) NOT NULL,
-   razon_social varchar(20) NOT NULL,
+   razon_social varchar(15) NOT NULL,
    direccion varchar(20) NOT NULL
 );
 
@@ -165,16 +165,7 @@ CREATE TABLE tipos_documentos (
 	CONSTRAINT id_documento PRIMARY KEY (id_tipo_documento)
 );
 
+ALTER TABLE empleados ADD CONSTRAINT empleados_fk_tipo_doc FOREIGN KEY (tipo_doc) REFERENCES tipos_documentos(id_tipo_documento);
+
 INSERT INTO tipos_documentos (nombre_tipo_doc)
 	VALUES ('DNI'), ('Otro');
-
-ALTER TABLE empleados ADD FOREIGN KEY (tipo_doc) REFERENCES tipos_documentos(id_tipo_documento);
-
-CREATE TABLE razones_sociales (
-	id_rs INT IDENTITY(0,1),
-	nombre_rs CHAR(20),
-	CONSTRAINT id_documento PRIMARY KEY (id_rs)
-);
-
-INSERT INTO tipos_documentos (nombre_rs)
-	VALUES ('Razon Social 1'), ('Razon Social 2');

@@ -49,6 +49,12 @@
     <Compile Include="Clases\Combo.cs" />
     <Compile Include="Clases\Conexion_BD.cs" />
     <Compile Include="Clases\tratamientos_especiales.cs" />
+    <Compile Include="Formularios\Frm_ABM_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Stock.Designer.cs">
+      <DependentUpon>Frm_ABM_Stock.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Frm_Modificar_Perro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_ABM_Razas.resx">
       <DependentUpon>Frm_ABM_Razas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_ABM_Stock.resx">
+      <DependentUpon>Frm_ABM_Stock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_ABM_Sucursales.resx">
       <DependentUpon>Frm_ABM_Sucursales.cs</DependentUpon>

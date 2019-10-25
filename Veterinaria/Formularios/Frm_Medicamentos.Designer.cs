@@ -46,7 +46,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cmb_sucursal = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_stock = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Tbl_Medicamentos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,7 +110,7 @@
             this.Btn_Nuevo.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Nuevo.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Btn_Nuevo.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Nuevo.Image")));
-            this.Btn_Nuevo.Location = new System.Drawing.Point(467, 448);
+            this.Btn_Nuevo.Location = new System.Drawing.Point(363, 448);
             this.Btn_Nuevo.Name = "Btn_Nuevo";
             this.Btn_Nuevo.Size = new System.Drawing.Size(98, 50);
             this.Btn_Nuevo.TabIndex = 29;
@@ -130,7 +130,7 @@
             this.Btn_Modificar.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Modificar.ForeColor = System.Drawing.Color.Black;
             this.Btn_Modificar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Modificar.Image")));
-            this.Btn_Modificar.Location = new System.Drawing.Point(571, 448);
+            this.Btn_Modificar.Location = new System.Drawing.Point(467, 448);
             this.Btn_Modificar.Name = "Btn_Modificar";
             this.Btn_Modificar.Size = new System.Drawing.Size(98, 50);
             this.Btn_Modificar.TabIndex = 28;
@@ -249,24 +249,25 @@
             this.label3.TabIndex = 35;
             this.label3.Text = "Sucursal";
             // 
-            // button1
+            // btn_stock
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(363, 448);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 50);
-            this.button1.TabIndex = 36;
-            this.button1.Text = "Stock";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_stock.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_stock.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.btn_stock.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btn_stock.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btn_stock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_stock.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_stock.ForeColor = System.Drawing.Color.Black;
+            this.btn_stock.Image = ((System.Drawing.Image)(resources.GetObject("btn_stock.Image")));
+            this.btn_stock.Location = new System.Drawing.Point(571, 448);
+            this.btn_stock.Name = "btn_stock";
+            this.btn_stock.Size = new System.Drawing.Size(98, 50);
+            this.btn_stock.TabIndex = 36;
+            this.btn_stock.Text = "Stock";
+            this.btn_stock.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_stock.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_stock.UseVisualStyleBackColor = true;
+            this.btn_stock.Click += new System.EventHandler(this.btn_stock_Click);
             // 
             // Frm_Medicamentos
             // 
@@ -274,7 +275,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(784, 511);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_stock);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmb_sucursal);
             this.Controls.Add(this.Btn_Cerrar_ABM);
@@ -314,6 +315,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaUltimaCompra;
         private System.Windows.Forms.ComboBox cmb_sucursal;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_stock;
     }
 }

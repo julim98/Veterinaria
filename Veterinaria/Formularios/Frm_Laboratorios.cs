@@ -33,12 +33,24 @@ namespace Veterinaria.Vista
         {
             NG_Laboratorios negocio = new NG_Laboratorios();
             DataTable tabla = new DataTable();
-            if (Txt_Nombre.Text == "")
+
+            tabla = negocio.obtener_datos_tabla();
+            if (tabla.Rows.Count == 0)
             {
-                tabla = negocio.obtener_datos_tabla();
+                MessageBox.Show("No existe ningun laboratorio");
+                return;
             }
-            else
+
+            if (Txt_Nombre.Text != "")
+            {
                 tabla = negocio.obtener_datos_tabla(Txt_Nombre.Text.Trim());
+                if (tabla.Rows.Count == 0)
+                {
+                    MessageBox.Show("No se encontró ningun laboratorio que coincida con \"" + Txt_Nombre.Text.Trim() + "\"");
+                    return;
+                }
+            }
+
             cargar_grilla(tabla);
         }
 
@@ -61,7 +73,6 @@ namespace Veterinaria.Vista
             Frm_ABM_Laboratorios pantalla = new Frm_ABM_Laboratorios();
             pantalla.id_l = Tbl_Laboratorios.CurrentRow.Cells["id_lab"].Value.ToString();
             pantalla.Show();
-            //HAY QUE HACER RAZONES SOCIALES 
         }
 
         private void Btn_Eliminar_Click(object sender, EventArgs e)
