@@ -74,14 +74,14 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(403, 229);
+            this.panel2.Size = new System.Drawing.Size(403, 215);
             this.panel2.TabIndex = 47;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(5, 128);
+            this.label4.Location = new System.Drawing.Point(5, 115);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 15);
             this.label4.TabIndex = 50;
@@ -91,7 +91,7 @@
             // 
             this.Txt_Stock_Minimo.Enabled = false;
             this.Txt_Stock_Minimo.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Stock_Minimo.Location = new System.Drawing.Point(115, 125);
+            this.Txt_Stock_Minimo.Location = new System.Drawing.Point(115, 112);
             this.Txt_Stock_Minimo.Name = "Txt_Stock_Minimo";
             this.Txt_Stock_Minimo.ReadOnly = true;
             this.Txt_Stock_Minimo.Size = new System.Drawing.Size(91, 23);
@@ -101,7 +101,7 @@
             // 
             this.Txt_Stock_Actual.Enabled = false;
             this.Txt_Stock_Actual.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Stock_Actual.Location = new System.Drawing.Point(115, 96);
+            this.Txt_Stock_Actual.Location = new System.Drawing.Point(115, 83);
             this.Txt_Stock_Actual.Name = "Txt_Stock_Actual";
             this.Txt_Stock_Actual.ReadOnly = true;
             this.Txt_Stock_Actual.Size = new System.Drawing.Size(91, 23);
@@ -111,7 +111,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 99);
+            this.label3.Location = new System.Drawing.Point(12, 86);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 15);
             this.label3.TabIndex = 47;
@@ -124,7 +124,7 @@
             this.Btn_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Cancelar.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Cancelar.Image")));
-            this.Btn_Cancelar.Location = new System.Drawing.Point(291, 167);
+            this.Btn_Cancelar.Location = new System.Drawing.Point(291, 154);
             this.Btn_Cancelar.Name = "Btn_Cancelar";
             this.Btn_Cancelar.Size = new System.Drawing.Size(100, 50);
             this.Btn_Cancelar.TabIndex = 46;
@@ -140,7 +140,7 @@
             this.Btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Guardar.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Guardar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Guardar.Image")));
-            this.Btn_Guardar.Location = new System.Drawing.Point(185, 167);
+            this.Btn_Guardar.Location = new System.Drawing.Point(185, 154);
             this.Btn_Guardar.Name = "Btn_Guardar";
             this.Btn_Guardar.Size = new System.Drawing.Size(100, 50);
             this.Btn_Guardar.TabIndex = 45;
@@ -153,7 +153,7 @@
             // 
             this.Txt_Nombre.Enabled = false;
             this.Txt_Nombre.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Nombre.Location = new System.Drawing.Point(115, 67);
+            this.Txt_Nombre.Location = new System.Drawing.Point(115, 54);
             this.Txt_Nombre.Name = "Txt_Nombre";
             this.Txt_Nombre.ReadOnly = true;
             this.Txt_Nombre.Size = new System.Drawing.Size(276, 23);
@@ -163,7 +163,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(35, 70);
+            this.label1.Location = new System.Drawing.Point(35, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 15);
             this.label1.TabIndex = 29;
@@ -225,7 +225,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(403, 229);
+            this.ClientSize = new System.Drawing.Size(403, 215);
             this.Controls.Add(this.Pnl_Barra_Superior);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

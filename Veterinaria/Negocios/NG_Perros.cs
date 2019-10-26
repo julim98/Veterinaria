@@ -134,8 +134,9 @@ namespace Veterinaria.Negocios
             Conexion_BD _BD = new Conexion_BD();
             return _BD.ejecutar_consulta("SELECT * FROM perros WHERE nro_historia_clinica=" + nro);
         }
+        
     }
-    }
+}
     
 
     

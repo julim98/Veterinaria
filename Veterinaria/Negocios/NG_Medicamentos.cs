@@ -100,5 +100,18 @@ namespace Veterinaria.Negocios
                 MessageBox.Show("No se puedo borrar");
             }
         }
+
+        public void medicamento_x_sucursal()
+        {
+            Conexion_BD _BD = new Conexion_BD();
+            string[] id_sucursales = _BD.ejecutar_consulta("select id_sucursal from sucursales").Rows.ToString().Split();
+            string id_medicamento = _BD.ejecutar_consulta("select MAX(id_medicamento) from medicamentos").ToString();
+            for (int i = 0; i < id_sucursales.Length; i++)
+            {
+                string id_sucursal = id_sucursales[i];
+                string sql = "insert into medicamentos_sucursal values (" + id_medicamento + ", " + id_sucursal + ", 0, 0)";
+                _BD.insertar(sql);
+            }
+        }
     }
 }

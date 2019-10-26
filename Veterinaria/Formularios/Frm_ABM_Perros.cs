@@ -110,7 +110,8 @@ namespace Veterinaria
 
         private void Btn_Cancelar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            NG_Perros perros = new NG_Perros();
+            this.Dispose();
         }
     }
 }

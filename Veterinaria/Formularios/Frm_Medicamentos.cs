@@ -26,6 +26,7 @@ namespace Veterinaria.Vista
         private void Btn_Nuevo_Click(object sender, EventArgs e)
         {
             Frm_ABM_Medicamentos pantalla = new Frm_ABM_Medicamentos();
+            AddOwnedForm(pantalla);
             pantalla.Show();
         }
 
@@ -69,6 +70,11 @@ namespace Veterinaria.Vista
             NG_Medicamentos medicamentos = new NG_Medicamentos();
             medicamentos.borrar(Tbl_Medicamentos.CurrentRow.Cells["id_medicamento"].ToString());
             Tbl_Medicamentos.Refresh();
+        }
+
+        public void nuevo_med()
+        {
+
         }
 
         private void btn_stock_Click(object sender, EventArgs e)

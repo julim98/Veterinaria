@@ -162,3 +162,4 @@ D:\Usuarios\Ezequiel\Documents\GitHub\VETERINARIA\Veterinaria\obj\Debug\Veterina
 D:\Usuarios\Ezequiel\Documents\GitHub\VETERINARIA\Veterinaria\bin\Debug\Veterinaria.exe.config
 D:\Usuarios\Ezequiel\Documents\GitHub\VETERINARIA\Veterinaria\bin\Debug\Veterinaria.exe
 D:\Usuarios\Ezequiel\Documents\GitHub\VETERINARIA\Veterinaria\bin\Debug\Veterinaria.pdb
+D:\Usuarios\Ezequiel\Documents\GitHub\VETERINARIA\Veterinaria\obj\Debug\Veterinaria.Formularios.Frm_ABM_Stock.resources

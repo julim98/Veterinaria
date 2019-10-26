@@ -273,8 +273,9 @@
             // 
             // Check_Todos
             // 
+            this.Check_Todos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.Check_Todos.AutoSize = true;
-            this.Check_Todos.Location = new System.Drawing.Point(612, 106);
+            this.Check_Todos.Location = new System.Drawing.Point(619, 106);
             this.Check_Todos.Name = "Check_Todos";
             this.Check_Todos.Size = new System.Drawing.Size(56, 17);
             this.Check_Todos.TabIndex = 26;
