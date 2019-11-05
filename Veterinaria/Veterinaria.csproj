@@ -176,6 +176,7 @@
     <Compile Include="Formularios\Frm_Perros.Designer.cs">
       <DependentUpon>Frm_Perros.cs</DependentUpon>
     </Compile>
+    <Compile Include="Negocios\NG_Transaccion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\Frm_ABM_Consultas.resx">

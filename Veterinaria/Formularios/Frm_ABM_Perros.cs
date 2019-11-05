@@ -32,6 +32,9 @@ namespace Veterinaria
         int w = 0;
         int h = 0;
 
+        NG_Perros ng_perros = new NG_Perros();
+
+
         public Frm_ABM_Perro()
         {
             InitializeComponent();
@@ -41,7 +44,8 @@ namespace Veterinaria
 
         private void Btn_Cerrar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            transaccion.rollback();
+            this.Dispose();
         }
 
         private void Btn_Minimizar_Click(object sender, EventArgs e)
@@ -61,24 +65,11 @@ namespace Veterinaria
         private void Frm_ABM_Perro_Load(object sender, EventArgs e)
 
         {
-            txt_nroC.Text = (max_nro_hc()+1).ToString();
+            transaccion.inicio();
+            txt_nroC.Text = (ng_perros.max_nro_hc()+1).ToString();
             Combo.CargarCombo(ref Cmb_Dueño, "dueños", "apellido", "id_dueño");
             Combo.CargarCombo(ref cmb_sucursal, "sucursales", "nombre", "id_sucursal");
             Combo.CargarCombo(ref Cmb_Raza, "razas", "denominacion", "id_raza");
-        }
-
-        private int max_nro_hc()
-        {
-            string sql = "";
-            DataTable max = new DataTable();
-          
-            sql = "SELECT MAX(nro_historia_clinica)  FROM perros";
-            Conexion_BD _BD = new Conexion_BD();
-            max =_BD.ejecutar_consulta(sql);
-            if (max.IsInitialized)
-                return 0;
-            return int.Parse(max.Rows[0][0].ToString());
-          
         }
 
         private void Btn_Nuevo_Dueño_Click_1(object sender, EventArgs e)
@@ -99,18 +90,21 @@ namespace Veterinaria
         private void Btn_Guardar_Click_1(object sender, EventArgs e)
         {
             NG_Perros perros = new NG_Perros();
+            NG_Transaccion transaccion = new NG_Transaccion();
             perros.Insertar(this.txt_nroC.Text,cmb_sucursal.SelectedValue.ToString(),
                 Cmb_Raza.SelectedValue.ToString(), Cmb_Dueño.SelectedValue.ToString(),
                 this.Txt_Nombre.Text,
                 this.Txt_Fecha_Nacimiento.Text,
                 this.Txt_Peso.Text,
                 this.Txt_Altura.Text);
+            transaccion.fin();
             this.Dispose();
         }
 
         private void Btn_Cancelar_Click(object sender, EventArgs e)
         {
-            NG_Perros perros = new NG_Perros();
+            NG_Transaccion transaccion = new NG_Transaccion();
+            transaccion.rollback();
             this.Dispose();
         }
     }

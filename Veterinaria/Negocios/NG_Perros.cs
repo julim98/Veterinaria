@@ -13,7 +13,8 @@ namespace Veterinaria.Negocios
     class NG_Perros
 
     {
-  
+        Conexion_BD _BD = new Conexion_BD();
+
         public void Insertar(
             string nro_historia_clinica,
             string id_sucursal,
@@ -35,7 +36,6 @@ namespace Veterinaria.Negocios
                 + "'" + peso + "', "
                 + "'" + altura + "')";
 
-            Conexion_BD _BD = new Conexion_BD();
             if (_BD.insertar(sql_insert) ==
                Conexion_BD.estado_BE.correcto)
             {
@@ -68,7 +68,6 @@ namespace Veterinaria.Negocios
                                + ", peso = '"+ peso + "'"
                                + ",altura = '"+ altura + "'"
                                + "WHERE nro_historia_clinica = " + nro_historia_clin;
-                Conexion_BD _BD = new Conexion_BD ();
                 if (_BD.modificar(sql_update) == Conexion_BD.estado_BE.correcto)
                 {
                     MessageBox.Show("Se grabó correctamente");
@@ -87,7 +86,6 @@ namespace Veterinaria.Negocios
                 sql_borrar = @"DELETE FROM perros
                             WHERE nro_historia_clinica = " + nro_historia_clinica;
 
-                Conexion_BD _BD = new Conexion_BD();
                 if (_BD.borrar(sql_borrar) == Conexion_BD.estado_BE.correcto)
                 {
                     MessageBox.Show("Se borró correctamente");
@@ -99,42 +97,66 @@ namespace Veterinaria.Negocios
             }
         public DataTable consultar_x_dueño(string dueño)
         {
-            Conexion_BD _bd = new Conexion_BD();
             string sql = @"SELECT perros.* 
                              FROM perros join dueños ON perros.id_dueño = dueños.id_dueño 
                              WHERE dueños.apellido like '%" + dueño + "%'";
-            return _bd.ejecutar_consulta(sql);
+            return _BD.ejecutar_consulta(sql);
         }
         public DataTable consultar_x_nombre(string nombre)
         {
-            Conexion_BD _bd = new Conexion_BD();
             string sql = @"SELECT *
                              FROM perros
                              WHERE perros.nombre like '%" + nombre + "%'";
-            return _bd.ejecutar_consulta(sql);
+            return _BD.ejecutar_consulta(sql);
         }
         public DataTable consultar_x_todos()
         {
-            Conexion_BD _bd = new Conexion_BD();
             string sql = @"SELECT *
                              FROM perros";
-            return _bd.ejecutar_consulta(sql);
+            return _BD.ejecutar_consulta(sql);
         }
 
         public DataTable consultar_x_dueño_nombre(string dueño, string nombre)
         {
-            Conexion_BD _bd = new Conexion_BD();
             string sql = @"SELECT *
                              FROM perros JOIN dueños ON perros.id_dueño = dueños.id_dueño
                              WHERE dueños.apellido like '%" + dueño + "%' AND perros.nombre like '%" + nombre + "%'";
-            return _bd.ejecutar_consulta(sql);
+            return _BD.ejecutar_consulta(sql);
         }
         public DataTable recuperar_datos_x_nro(string nro)
         {
-            Conexion_BD _BD = new Conexion_BD();
             return _BD.ejecutar_consulta("SELECT * FROM perros WHERE nro_historia_clinica=" + nro);
         }
-        
+        public int max_nro_hc()
+        {
+            string sql = "";
+            DataTable max = new DataTable();
+
+            sql = "SELECT MAX(nro_historia_clinica)  FROM perros";
+            max = _BD.ejecutar_consulta(sql);
+            if (max.IsInitialized)
+                return 0;
+            return int.Parse(max.Rows[0][0].ToString());
+        }
+        public void transaccion_inicio()
+        {
+            _BD.inicio_transaccion();
+        }
+
+        public void transaccion_fin()
+        {
+            _BD.cerrar_transaccion();
+        }
+
+        public void transaccion_commit()
+        {
+            _BD.commit();
+        }
+
+        public void transaccion_rollback()
+        {
+            _BD.rollback();
+        }
     }
 }
     
