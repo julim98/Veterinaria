@@ -10,6 +10,8 @@ namespace Veterinaria.Negocios
 {
     class NG_Medicamentos
     {
+        Conexion_BD _BD = new Conexion_BD();
+
         public void cargarTabla(ref DataGridView tabla, string nombreMedicamento, string sucursal)
         {
             tabla.Rows.Clear();
@@ -22,8 +24,7 @@ namespace Veterinaria.Negocios
             if (nombreMedicamento.Trim() != "")
                 consulta = consulta + " where M.nombre_med like '%" + nombreMedicamento + "%'";
 
-            Conexion_BD conexion = new Conexion_BD();
-            DataTable datos = conexion.ejecutar_consulta(consulta);
+            DataTable datos = _BD.ejecutar_consulta(consulta);
             for (int i = 0; i < tabla.Rows.Count; i++)
             {
                 tabla.Rows.Add();
@@ -44,7 +45,6 @@ namespace Veterinaria.Negocios
                 id_laboratorio + ", '" +
                 descripcion + "')";
 
-            Conexion_BD _BD = new Conexion_BD();
             if (_BD.insertar(sql_insert) ==
                Conexion_BD.estado_BE.correcto)
             {
@@ -58,8 +58,7 @@ namespace Veterinaria.Negocios
 
         public void recuperar_medicamento(ref TextBox nombre, ref RichTextBox desc)
         {
-            Conexion_BD conexion_BD = new Conexion_BD();
-            DataTable datos = conexion_BD.ejecutar_consulta("select * from medicamentos");
+            DataTable datos = _BD.ejecutar_consulta("select * from medicamentos");
             nombre.Text = datos.Rows[0]["nombre_med"].ToString();
             desc.Text = datos.Rows[0]["descripcion"].ToString();
         }
@@ -73,8 +72,7 @@ namespace Veterinaria.Negocios
                 ", descripcion = '" + desc +
                 "' where id_medicamento = " + id_medicamento;
 
-            Conexion_BD conexion_ = new Conexion_BD();
-            if (conexion_.modificar(sql) == Conexion_BD.estado_BE.correcto)
+            if (_BD.modificar(sql) == Conexion_BD.estado_BE.correcto)
             {
                 MessageBox.Show("Se actualizó correctamente");
             }
@@ -90,7 +88,6 @@ namespace Veterinaria.Negocios
             sql_borrar = @"DELETE FROM medicamentos
                             WHERE nro_historia_clinica = " + id_medicamento;
 
-            Conexion_BD _BD = new Conexion_BD();
             if (_BD.borrar(sql_borrar) == Conexion_BD.estado_BE.correcto)
             {
                 MessageBox.Show("Se borró correctamente");
@@ -103,7 +100,6 @@ namespace Veterinaria.Negocios
 
         public void medicamento_x_sucursal()
         {
-            Conexion_BD _BD = new Conexion_BD();
             string[] id_sucursales = _BD.ejecutar_consulta("select id_sucursal from sucursales").Rows.ToString().Split();
             string id_medicamento = _BD.ejecutar_consulta("select MAX(id_medicamento) from medicamentos").ToString();
             for (int i = 0; i < id_sucursales.Length; i++)

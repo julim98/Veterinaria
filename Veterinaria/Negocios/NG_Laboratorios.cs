@@ -10,9 +10,10 @@ namespace Veterinaria.Negocios
 {
     class NG_Laboratorios
     {
+        Conexion_BD _BD = new Conexion_BD();
+
         public void guardar_laboratorio(string nombre, string razon_social, string direccion)
         {
-            Conexion_BD _BD = new Conexion_BD();
 
             string sql = "insert into laboratorios (nombre_lab, razon_social, direccion) " +
             "values('" + nombre + "', '"+ razon_social + "', '" + direccion + "')";
@@ -29,8 +30,6 @@ namespace Veterinaria.Negocios
         }
         public void modificar_laboratorio(string nombre, string razon_social, string direccion, string id)
         {
-            Conexion_BD _BD = new Conexion_BD();
-
             string sql = "update laboratorios set nombre_lab = '" + nombre + "', razon_social = '" + razon_social + "', direccion = '" + direccion + "' where id_laboratorio " + id;
             try
             {
@@ -46,23 +45,18 @@ namespace Veterinaria.Negocios
 
         public DataTable obtener_datos_tabla()
         {
-            Conexion_BD _BD = new Conexion_BD();
-
             string sql = "select * from laboratorios";
             return _BD.ejecutar_consulta(sql);
         }
 
         public DataTable obtener_datos_tabla(string nombre)
         {
-            Conexion_BD _BD = new Conexion_BD();
-
             string sql = "select * from laboratorios where nombre_lab like '%" + nombre + "%'";
             return _BD.ejecutar_consulta(sql);
         }
 
         public void borrar_laboratorio(string id_lab)
         {
-            Conexion_BD _BD = new Conexion_BD();
             string sql = "delete from laboratorios where id_laboratorio = " + id_lab;
             try
             {
@@ -77,7 +71,6 @@ namespace Veterinaria.Negocios
 
         public DataTable obtener_laboratorio(string id_lab)
         {
-            Conexion_BD _BD = new Conexion_BD();
             string sql = "select * from laboratorios where id_laboratorio = " + id_lab;
             return _BD.ejecutar_consulta(sql);
         }

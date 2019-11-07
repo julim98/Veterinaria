@@ -23,11 +23,7 @@ namespace Veterinaria
 
 
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-
-        Rectangle sizeGripRectangle;
-        bool inSizeDrag = false;
-        const int GRIP_SIZE = 15;
+        private extern static void SendMessage(IntPtr hWnd, int wMsg, int wParam, int lParam);
 
         int w = 0;
         int h = 0;
@@ -44,7 +40,7 @@ namespace Veterinaria
 
         private void Btn_Cerrar_Click(object sender, EventArgs e)
         {
-            transaccion.rollback();
+            ng_perros.transaccion_rollback();
             this.Dispose();
         }
 
@@ -65,46 +61,51 @@ namespace Veterinaria
         private void Frm_ABM_Perro_Load(object sender, EventArgs e)
 
         {
-            transaccion.inicio();
+            ng_perros.transaccion_inicio();
             txt_nroC.Text = (ng_perros.max_nro_hc()+1).ToString();
-            Combo.CargarCombo(ref Cmb_Dueño, "dueños", "apellido", "id_dueño");
-            Combo.CargarCombo(ref cmb_sucursal, "sucursales", "nombre", "id_sucursal");
-            Combo.CargarCombo(ref Cmb_Raza, "razas", "denominacion", "id_raza");
+            cargar_combos();
+        }
+
+        public void cargar_combos()
+        {
+            ng_perros.CargarCombo(ref Cmb_Dueño, "dueños", "apellido", "id_dueño");
+            ng_perros.CargarCombo(ref cmb_sucursal, "sucursales", "nombre", "id_sucursal");
+            ng_perros.CargarCombo(ref Cmb_Raza, "razas", "denominacion", "id_raza");
         }
 
         private void Btn_Nuevo_Dueño_Click_1(object sender, EventArgs e)
         {
             Frm_ABM_Dueños pantalla = new Frm_ABM_Dueños();
+            AddOwnedForm(pantalla);
+            pantalla.negocio = ng_perros;
             pantalla.Show();
-            this.Dispose();
-
+            this.Hide();
         }
 
         private void Btn_Nueva_Raza_Click_1(object sender, EventArgs e)
         {
             Frm_ABM_Razas pantalla = new Frm_ABM_Razas();
+            AddOwnedForm(pantalla);
+            pantalla.negocio = ng_perros;
             pantalla.Show();
-            this.Dispose();
+            this.Hide();
         }
 
         private void Btn_Guardar_Click_1(object sender, EventArgs e)
         {
-            NG_Perros perros = new NG_Perros();
-            NG_Transaccion transaccion = new NG_Transaccion();
-            perros.Insertar(this.txt_nroC.Text,cmb_sucursal.SelectedValue.ToString(),
+            ng_perros.Insertar(this.txt_nroC.Text,cmb_sucursal.SelectedValue.ToString(),
                 Cmb_Raza.SelectedValue.ToString(), Cmb_Dueño.SelectedValue.ToString(),
                 this.Txt_Nombre.Text,
                 this.Txt_Fecha_Nacimiento.Text,
                 this.Txt_Peso.Text,
                 this.Txt_Altura.Text);
-            transaccion.fin();
+            ng_perros.transaccion_fin();
             this.Dispose();
         }
 
         private void Btn_Cancelar_Click(object sender, EventArgs e)
         {
-            NG_Transaccion transaccion = new NG_Transaccion();
-            transaccion.rollback();
+            ng_perros.transaccion_rollback();
             this.Dispose();
         }
     }

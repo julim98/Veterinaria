@@ -11,6 +11,8 @@ namespace Veterinaria.Negocios
 {
     class NG_Empleados
     {
+        Conexion_BD _BD = new Conexion_BD();
+
         public void insertar(string nombre, string apellido, string tipo_doc, string nro_doc, string nacimiento, string ingreso, string matricula, string sucursal)
         {
             string sql_insert = @"insert into empleados (
@@ -27,7 +29,6 @@ namespace Veterinaria.Negocios
                                 matricula.ToString() +
                                 ")";
 
-            Conexion_BD _BD = new Conexion_BD();
             if (_BD.insertar(sql_insert) ==
                Conexion_BD.estado_BE.correcto)
             {
@@ -42,7 +43,6 @@ namespace Veterinaria.Negocios
         public DataTable tabla_empleados(string tipo_doc, string nro_doc)
         {
             string comando = "";
-            Conexion_BD _BD = new Conexion_BD();
 
             if (nro_doc.Trim() == "")
             {

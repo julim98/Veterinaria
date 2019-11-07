@@ -14,6 +14,8 @@ namespace Veterinaria.Vista
 {
     public partial class Frm_ABM_Razas : Form
     {
+        public NG_Perros negocio { get; set; }
+
         public Frm_ABM_Razas()
         {
             InitializeComponent();
@@ -21,6 +23,8 @@ namespace Veterinaria.Vista
 
         private void Btn_Cerrar_Click(object sender, EventArgs e)
         {
+            Frm_ABM_Perro dueño = (Frm_ABM_Perro)Owner;
+            dueño.Show();
             this.Dispose();
         }
 
@@ -33,16 +37,16 @@ namespace Veterinaria.Vista
         {
             if (validacion())
                 return;
-            NG_Razas _Razas = new NG_Razas();
-            _Razas.Insertar(
+            negocio.Insertar_Raza(
                 Txt_Denominacion.Text,
                 Txt_Peso_Minimo_Hembra.Text,
                 Txt_Peso_Minimo_Macho.Text,
                 Txt_Altura_Media_Hembra.Text,
                 Txt_Altura_Media_Macho.Text,
                 Txt_Cuidados.Text);
-            Frm_ABM_Perro pantalla = new Frm_ABM_Perro();
-            pantalla.Show();
+            Frm_ABM_Perro dueño = (Frm_ABM_Perro)Owner;
+            dueño.cargar_combos();
+            dueño.Show();
             this.Dispose();
         }
 
@@ -55,6 +59,13 @@ namespace Veterinaria.Vista
                 Txt_Altura_Media_Hembra)
                 ||
                 Clases.tratamientos_especiales.validacion_combos();
+        }
+
+        private void Btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            Frm_ABM_Perro dueño = (Frm_ABM_Perro)Owner;
+            dueño.Show();
+            this.Dispose();
         }
     }
 }

@@ -14,6 +14,7 @@ namespace Veterinaria.Vista
 {
     public partial class Frm_ABM_Dueños : Form
     {
+        public NG_Perros negocio { get; set; }
         public Frm_ABM_Dueños()
         {
             InitializeComponent();
@@ -33,6 +34,8 @@ namespace Veterinaria.Vista
 
         private void Btn_Cerrar_Click(object sender, EventArgs e)
         {
+            Frm_ABM_Perro dueño = (Frm_ABM_Perro)Owner;
+            dueño.Show();
             this.Dispose();
         }
 
@@ -43,11 +46,17 @@ namespace Veterinaria.Vista
 
         private void Btn_Guardar_Click(object sender, EventArgs e)
         {
-            NG_Dueños _Dueños = new NG_Dueños();
-            _Dueños.Insertar(Txt_Nombre.Text , Txt_Apellido.Text, Txt_Telefono.Text);
+            negocio.Insertar_Dueño(Txt_Nombre.Text , Txt_Apellido.Text, Txt_Telefono.Text);
+            Frm_ABM_Perro dueño = (Frm_ABM_Perro)Owner;
+            dueño.cargar_combos();
+            dueño.Show();
+            this.Dispose();
+        }
 
-            Frm_ABM_Perro pantalla = new Frm_ABM_Perro();
-            pantalla.Show();
+        private void Btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            Frm_ABM_Perro dueño = (Frm_ABM_Perro)Owner;
+            dueño.Show();
             this.Dispose();
         }
     }

@@ -63,8 +63,6 @@
     </Compile>
     <Compile Include="Negocios\NG_Laboratorios.cs" />
     <Compile Include="Negocios\NG_Medicamentos.cs" />
-    <Compile Include="Negocios\NG_Razas.cs" />
-    <Compile Include="Negocios\NG_Dueños.cs" />
     <Compile Include="Negocios\NG_Empleados.cs" />
     <Compile Include="Negocios\NG_Perros.cs" />
     <Compile Include="Negocios\NG_Sucursales.cs" />

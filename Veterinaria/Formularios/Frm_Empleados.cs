@@ -70,7 +70,7 @@ namespace Veterinaria.Vista
 
         private void Btn_Eliminar_Click(object sender, EventArgs e)
         {
-            ;
+            
         }
 
         private void Btn_Modificar_Click(object sender, EventArgs e)

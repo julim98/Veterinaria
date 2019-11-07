@@ -10,7 +10,7 @@ using Veterinaria.Clases;
 
 namespace Veterinaria.Negocios
 {
-    class NG_Perros
+    public class NG_Perros
 
     {
         Conexion_BD _BD = new Conexion_BD();
@@ -156,6 +156,102 @@ namespace Veterinaria.Negocios
         public void transaccion_rollback()
         {
             _BD.rollback();
+        }
+
+        public void Insertar_Dueño(string nombre, string apellido, string telefono)
+        {
+            string sql = "";
+            sql = "INSERT INTO dueños(nombre, apellido, telefono) "
+                + "VALUES ('" + nombre + "', '" + apellido + "', '"
+                + telefono + "')";
+
+            if (_BD.insertar(sql) ==
+               Conexion_BD.estado_BE.correcto)
+            {
+                MessageBox.Show("Se cargó correctamente los datos");
+            }
+            else
+            {
+                MessageBox.Show("No se cargó correctamente los datos");
+            }
+
+        }
+
+        public void Insertar_Raza(string denominacion,
+                            string peso_minimo_hembra,
+                            string peso_minimo_macho,
+                            string altura_media_hembra,
+                            string altura_media_macho,
+                            string nota_cuidados)
+        {
+            string sql = "";
+
+            sql = @"INSERT INTO razas(denominacion, peso_minimo_hembra,
+                 peso_minimo_macho, altura_media_hembra, altura_media_macho, nota_cuidados)"
+                    + "VALUES ('" + denominacion + "', '"
+                    + peso_minimo_hembra + "','"
+                    + peso_minimo_macho + "', '"
+                    + altura_media_hembra + "', '"
+                    + altura_media_macho + "', '"
+                    + nota_cuidados + "')";
+
+            if (_BD.insertar(sql) ==
+               Conexion_BD.estado_BE.correcto)
+            {
+                MessageBox.Show("Se cargó correctamente los datos");
+            }
+            else
+            {
+                MessageBox.Show("No se cargó correctamente los datos");
+            }
+        }
+
+        public void CargarCombo(ref ComboBox combo, string nombreTabla, string descripcion, string pk)
+        {
+            if (no_hay_datos(nombreTabla))
+                return;
+
+            try
+            {
+                string consulta = "SELECT * FROM " + nombreTabla;
+                combo.DataSource = _BD.ejecutar_consulta(consulta);
+                combo.DisplayMember = descripcion;
+                combo.ValueMember = pk;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("No se pudo cargar " + combo.Name + ", CargarCombo");
+            }
+        }
+
+        public void CargarCombo(ref ComboBox combo, string nombreTabla, string descripcion, string pk, string datos_obligatorios)
+        {
+            if (no_hay_datos(nombreTabla))
+            {
+                MessageBox.Show("No existen " + datos_obligatorios);
+                return;
+            }
+
+            try
+            {
+                string consulta = "SELECT * FROM " + nombreTabla;
+                combo.DataSource = _BD.ejecutar_consulta(consulta);
+                combo.DisplayMember = descripcion;
+                combo.ValueMember = pk;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("No se pudo cargar " + combo.Name + ", CargarCombo");
+            }
+        }
+        bool no_hay_datos(string tabla)
+        {
+            string sql = "select * from " + tabla;
+            if (_BD.ejecutar_consulta(sql).Rows.Count == 0)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

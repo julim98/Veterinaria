@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_ABM_Dueños));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Txt_Apellido = new System.Windows.Forms.TextBox();
             this.Txt_Telefono = new System.Windows.Forms.TextBox();
             this.Txt_Nombre = new System.Windows.Forms.TextBox();
             this.Btn_Cancelar = new System.Windows.Forms.Button();
@@ -42,7 +43,6 @@
             this.Btn_Cerrar = new System.Windows.Forms.Button();
             this.Btn_Minimizar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.Txt_Apellido = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.Pnl_Barra_Superior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,6 +64,14 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(350, 186);
             this.panel2.TabIndex = 48;
+            // 
+            // Txt_Apellido
+            // 
+            this.Txt_Apellido.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Apellido.Location = new System.Drawing.Point(121, 50);
+            this.Txt_Apellido.Name = "Txt_Apellido";
+            this.Txt_Apellido.Size = new System.Drawing.Size(206, 23);
+            this.Txt_Apellido.TabIndex = 59;
             // 
             // Txt_Telefono
             // 
@@ -96,6 +104,7 @@
             this.Btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Cancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_Cancelar.UseVisualStyleBackColor = true;
+            this.Btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
             // 
             // Btn_Guardar
             // 
@@ -209,14 +218,6 @@
             this.label2.Size = new System.Drawing.Size(163, 20);
             this.label2.TabIndex = 30;
             this.label2.Text = "Administrar Dueños";
-            // 
-            // Txt_Apellido
-            // 
-            this.Txt_Apellido.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Apellido.Location = new System.Drawing.Point(121, 50);
-            this.Txt_Apellido.Name = "Txt_Apellido";
-            this.Txt_Apellido.Size = new System.Drawing.Size(206, 23);
-            this.Txt_Apellido.TabIndex = 59;
             // 
             // Frm_ABM_Dueños
             // 
