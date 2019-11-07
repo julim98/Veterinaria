@@ -67,5 +67,10 @@ namespace Veterinaria.Vista
             dueño.Show();
             this.Dispose();
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
