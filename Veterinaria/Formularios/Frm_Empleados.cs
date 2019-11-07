@@ -22,7 +22,7 @@ namespace Veterinaria.Vista
 
         private void cargar_combo()
         {
-            Combo.CargarCombo(ref Cmb_Tipo_Documento, "tipos_documentos", "nombre", "id_tipo_documento" );
+            Combo.CargarCombo(ref Cmb_Tipo_Documento, "tipo_documento", "nombre", "id_tipo_documento" );
         }
 
         private void Btn_Cerrar_ABM_Click(object sender, EventArgs e)
@@ -45,7 +45,7 @@ namespace Veterinaria.Vista
         {
             NG_Empleados negocio = new NG_Empleados();
             DataTable tabla = negocio.tabla_empleados(
-                Cmb_Tipo_Documento.SelectedIndex.ToString(),
+                Cmb_Tipo_Documento.SelectedValue.ToString(),
                 txt_nro_documento.Text.Trim()
                 );
             cargar_grilla(tabla);

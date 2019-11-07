@@ -39,10 +39,6 @@ namespace Veterinaria.Vista
                 return;
             negocio.Insertar_Raza(
                 Txt_Denominacion.Text,
-                Txt_Peso_Minimo_Hembra.Text,
-                Txt_Peso_Minimo_Macho.Text,
-                Txt_Altura_Media_Hembra.Text,
-                Txt_Altura_Media_Macho.Text,
                 Txt_Cuidados.Text);
             Frm_ABM_Perro dueño = (Frm_ABM_Perro)Owner;
             dueño.cargar_combos();
@@ -52,11 +48,7 @@ namespace Veterinaria.Vista
 
         private bool validacion()
         {
-            return Clases.tratamientos_especiales.validacion_textos(Txt_Denominacion,
-                Txt_Peso_Minimo_Hembra,
-                Txt_Peso_Minimo_Macho,
-                Txt_Altura_Media_Macho,
-                Txt_Altura_Media_Hembra)
+            return Clases.tratamientos_especiales.validacion_textos(Txt_Denominacion)
                 ||
                 Clases.tratamientos_especiales.validacion_combos();
         }

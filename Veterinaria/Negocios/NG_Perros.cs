@@ -178,21 +178,13 @@ namespace Veterinaria.Negocios
         }
 
         public void Insertar_Raza(string denominacion,
-                            string peso_minimo_hembra,
-                            string peso_minimo_macho,
-                            string altura_media_hembra,
-                            string altura_media_macho,
+                            
                             string nota_cuidados)
         {
             string sql = "";
 
-            sql = @"INSERT INTO razas(denominacion, peso_minimo_hembra,
-                 peso_minimo_macho, altura_media_hembra, altura_media_macho, nota_cuidados)"
+            sql = @"INSERT INTO razas(denominacion, nota_cuidados)"
                     + "VALUES ('" + denominacion + "', '"
-                    + peso_minimo_hembra + "','"
-                    + peso_minimo_macho + "', '"
-                    + altura_media_hembra + "', '"
-                    + altura_media_macho + "', '"
                     + nota_cuidados + "')";
 
             if (_BD.insertar(sql) ==

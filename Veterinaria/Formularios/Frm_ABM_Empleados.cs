@@ -40,12 +40,12 @@ namespace Veterinaria.Vista
             negocio.insertar(
                 Txt_Nombre.Text.Trim(),
                 Txt_Apellido.Text.Trim(),
-                Cmb_Tipo_Documento.SelectedIndex.ToString(),
+                Cmb_Tipo_Documento.SelectedValue.ToString(),
                 Txt_Nro_Documento.Text.Trim(),
                 Txt_Fecha_Nacimiento.Text,
                 Txt_Fecha_Ingreso.Text,
                 Txt_Matricula.Text.Trim(),
-                Cmb_Sucursal.SelectedIndex.ToString());
+                Cmb_Sucursal.SelectedValue.ToString());
             this.Dispose();
         }
 

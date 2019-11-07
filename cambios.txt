@@ -1,0 +1,21 @@
+- Modificar administrar consultas:
+	* sacar entrada/salida (fechas)
+	* agregar diagnostico y sintomas
+	* hacer abms diagnosticos y sintomas para el perros (idea usar tabla local)
+
+- Modificar base de datos:
+	* crear tabla consulta_x_diagnostico
+	* crear tabla consulta_x_sintoma
+
+-Terminar ABMs:
+	* Medicamentos (Julian) + stock
+	* Laboratorio: sacar nombre de todos lados (queda razon social)
+	* Empleados: Falta editar y eliminar
+
+- Terminar Inicio: Poner una imagen de la veterinaria
+
+- Hacer graficos
+	*
+
+- Hacer reportes
+	* 

@@ -2,7 +2,6 @@
 USE _BD_VETERINARIA;
 CREATE TABLE laboratorios (
    id_laboratorio int IDENTITY (0, 1) PRIMARY KEY,
-   nombre_lab varchar(15) NOT NULL,
    razon_social varchar(15) NOT NULL,
    direccion varchar(20) NOT NULL
 );
@@ -72,7 +71,7 @@ CREATE TABLE sucursales (
 );
 
 CREATE TABLE perros (
-   nro_historia_clinica int IDENTITY (0, 1),
+   nro_historia_clinica int IDENTITY (1, 1),
    id_sucursal int NOT NULL,    
    id_raza int NOT NULL,		
    id_dueño int NOT NULL,
