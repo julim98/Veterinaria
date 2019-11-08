@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Veterinaria.Clases;
 using Veterinaria.Negocios;
+using Veterinaria.Formularios;
 
 namespace Veterinaria.Vista
 {
@@ -22,7 +23,7 @@ namespace Veterinaria.Vista
 
         private void cargar_combo()
         {
-            Combo.CargarCombo(ref Cmb_Tipo_Documento, "tipo_documento", "nombre", "id_tipo_documento" );
+            Combo.CargarCombo(ref Cmb_Tipo_Documento, "tipos_documentos", "nombre_tipo_doc", "id_tipo_documento" );
         }
 
         private void Btn_Cerrar_ABM_Click(object sender, EventArgs e)
@@ -65,6 +66,7 @@ namespace Veterinaria.Vista
                 Tbl_Empleados.Rows[i].Cells[5].Value = tabla.Rows[i]["fecha_nacimiento"].ToString();
                 Tbl_Empleados.Rows[i].Cells[6].Value = tabla.Rows[i]["sucursal"].ToString();
                 Tbl_Empleados.Rows[i].Cells[7].Value = tabla.Rows[i]["fecha_ingreso"].ToString();
+                Tbl_Empleados.Rows[i].Cells[8].Value = tabla.Rows[i]["id_tipo_documento"].ToString();
             }
         }
 
@@ -75,7 +77,40 @@ namespace Veterinaria.Vista
 
         private void Btn_Modificar_Click(object sender, EventArgs e)
         {
+            if (Tbl_Empleados.CurrentRow != null)
+            {
+                Frm_Modificar_Empleado empleado = new Frm_Modificar_Empleado();
+                empleado.tipo_doc = Tbl_Empleados.CurrentRow.Cells["id_tipo_doc"].Value.ToString();
+                empleado.nro_doc = Tbl_Empleados.CurrentRow.Cells["NroDocumento"].Value.ToString();
+                empleado.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione primero una fila de la grilla, para modificar"
+                    , "Importante", MessageBoxButtons.OK
+                    , MessageBoxIcon.Exclamation);
+            }
+        }
 
+        private void Btn_Eliminar_Click_1(object sender, EventArgs e)
+        {
+            if (Tbl_Empleados.CurrentRow != null)
+            {
+                if (MessageBox.Show("¿Esta seguro de borrar este empleado?"
+                , "Importante"
+                , MessageBoxButtons.YesNo
+                , MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    NG_Empleados empleados = new NG_Empleados();
+                    empleados.borrar_empleado(Tbl_Empleados.CurrentRow.Cells["id_tipo_doc"].Value.ToString(),Tbl_Empleados.CurrentRow.Cells["NroDocumento"].Value.ToString());
+                }
+            }
+            else
+            {
+                MessageBox.Show("Seleccione primero una fila de la grilla, para modificar"
+                    , "Importante", MessageBoxButtons.OK
+                    , MessageBoxIcon.Exclamation);
+            }
         }
     }
 }

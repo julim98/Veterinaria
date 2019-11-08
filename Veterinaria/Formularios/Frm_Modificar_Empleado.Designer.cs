@@ -41,7 +41,7 @@
             this.Txt_Fecha_Nacimiento = new System.Windows.Forms.DateTimePicker();
             this.Txt_Nombre = new System.Windows.Forms.TextBox();
             this.Btn_Cancelar = new System.Windows.Forms.Button();
-            this.Btn_Guardar = new System.Windows.Forms.Button();
+            this.Btn_Actualizar = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.Cmb_Tipo_Documento = new System.Windows.Forms.ComboBox();
@@ -72,7 +72,7 @@
             this.panel2.Controls.Add(this.Txt_Fecha_Nacimiento);
             this.panel2.Controls.Add(this.Txt_Nombre);
             this.panel2.Controls.Add(this.Btn_Cancelar);
-            this.panel2.Controls.Add(this.Btn_Guardar);
+            this.panel2.Controls.Add(this.Btn_Actualizar);
             this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.label18);
             this.panel2.Controls.Add(this.Cmb_Tipo_Documento);
@@ -193,22 +193,24 @@
             this.Btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Cancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_Cancelar.UseVisualStyleBackColor = true;
+            this.Btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
             // 
-            // Btn_Guardar
+            // Btn_Actualizar
             // 
-            this.Btn_Guardar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame;
-            this.Btn_Guardar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Guardar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Guardar.Image")));
-            this.Btn_Guardar.Location = new System.Drawing.Point(484, 147);
-            this.Btn_Guardar.Name = "Btn_Guardar";
-            this.Btn_Guardar.Size = new System.Drawing.Size(111, 50);
-            this.Btn_Guardar.TabIndex = 45;
-            this.Btn_Guardar.Text = "Actualizar";
-            this.Btn_Guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Btn_Guardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Btn_Guardar.UseVisualStyleBackColor = true;
+            this.Btn_Actualizar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame;
+            this.Btn_Actualizar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Btn_Actualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Actualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Actualizar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Actualizar.Image")));
+            this.Btn_Actualizar.Location = new System.Drawing.Point(484, 147);
+            this.Btn_Actualizar.Name = "Btn_Actualizar";
+            this.Btn_Actualizar.Size = new System.Drawing.Size(111, 50);
+            this.Btn_Actualizar.TabIndex = 45;
+            this.Btn_Actualizar.Text = "Actualizar";
+            this.Btn_Actualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Btn_Actualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Btn_Actualizar.UseVisualStyleBackColor = true;
+            this.Btn_Actualizar.Click += new System.EventHandler(this.Btn_Actualizar_Click);
             // 
             // label17
             // 
@@ -308,6 +310,7 @@
             this.Btn_Cerrar.Size = new System.Drawing.Size(30, 30);
             this.Btn_Cerrar.TabIndex = 27;
             this.Btn_Cerrar.UseVisualStyleBackColor = true;
+            this.Btn_Cerrar.Click += new System.EventHandler(this.Btn_Cerrar_Click);
             // 
             // Btn_Minimizar
             // 
@@ -344,6 +347,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_Modificar_Empleado";
             this.Text = "Frm_Modificar_Empleado";
+            this.Load += new System.EventHandler(this.Frm_Modificar_Empleado_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.Pnl_Barra_Superior.ResumeLayout(false);
@@ -367,7 +371,7 @@
         private System.Windows.Forms.DateTimePicker Txt_Fecha_Nacimiento;
         private System.Windows.Forms.TextBox Txt_Nombre;
         private System.Windows.Forms.Button Btn_Cancelar;
-        private System.Windows.Forms.Button Btn_Guardar;
+        private System.Windows.Forms.Button Btn_Actualizar;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.ComboBox Cmb_Tipo_Documento;
