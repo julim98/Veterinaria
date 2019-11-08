@@ -55,6 +55,12 @@
     <Compile Include="Formularios\Frm_ABM_Stock.Designer.cs">
       <DependentUpon>Frm_ABM_Stock.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Frm_Modificar_Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Modificar_Empleado.Designer.cs">
+      <DependentUpon>Frm_Modificar_Empleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Frm_Modificar_Perro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,6 +236,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_Medicamentos.resx">
       <DependentUpon>Frm_Medicamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Modificar_Empleado.resx">
+      <DependentUpon>Frm_Modificar_Empleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_Modificar_Perro.resx">
       <DependentUpon>Frm_Modificar_Perro.cs</DependentUpon>

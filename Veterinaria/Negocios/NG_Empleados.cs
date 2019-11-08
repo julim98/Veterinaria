@@ -66,10 +66,60 @@ namespace Veterinaria.Negocios
             return _BD.ejecutar_consulta(comando);
         }
 
-        public void modificar_empleado()
+        public void modificar_empleado(string tipo_doc
+                                    , string nro_doc
+                                    , string id_sucursal
+                                    , string nombre
+                                    , string apellido
+                                    , string fecha_nacimiento
+                                    , string fecha_ingreso
+                                    , string matricula)
         {
+            string sql_update = "";
 
+            sql_update = @"UPDATE empleados
+                           SET "
+                           + "tipo_doc = '" + tipo_doc + "'"
+                           + ", nro_doc = '" + nro_doc + "'"
+                           + ", id_sucursal = '" + id_sucursal + "'"
+                           + ", nombre = '" + nombre + "'"
+                           + ", apellido = '" + apellido + "'"
+                           + ", fecha_nacimiento = '" + fecha_nacimiento + "'"
+                           + ",fecha_ingreso = '" + fecha_ingreso + "'"
+                           + ",matricula = '" + matricula + "'"
+                           + "WHERE tipo_doc=" + tipo_doc + "and nro_doc=" + nro_doc;
+            if (_BD.modificar(sql_update) == Conexion_BD.estado_BE.correcto)
+            {
+                MessageBox.Show("Se grabó correctamente");
+            }
+            else
+            {
+                MessageBox.Show("No se grabó");
+            }
         }
+       public void borrar_empleado(string tipo_doc, string nro_doc)
+            {
+
+
+                string sql_borrar = "";
+
+                sql_borrar = @"DELETE FROM empleados
+                            WHERE tipo_doc=" + tipo_doc + "and nro_doc=" + nro_doc;
+
+                if (_BD.borrar(sql_borrar) == Conexion_BD.estado_BE.correcto)
+                {
+                    MessageBox.Show("Se borró correctamente");
+                }
+                else
+                {
+                    MessageBox.Show("No se puedo borrar");
+                }
+            }
+        public DataTable recuperar_datos_empleados(string tipo_doc, string nro_doc)
+        {
+            return _BD.ejecutar_consulta("SELECT * FROM empleados WHERE tipo_doc ="+ tipo_doc +"and nro_doc="+nro_doc);
+        }
+    }
 
     }
-}
+
