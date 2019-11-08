@@ -38,7 +38,7 @@ namespace Veterinaria.Vista
 
         private void Frm_Medicamentos_Load(object sender, EventArgs e)
         {
-            Clases.Combo.CargarCombo(ref cmb_sucursal, "sucursales", "nombre", "id_sucursal");
+            Clases.Combo.CargarCombo(ref cmb_sucursal, "sucursales", "nombre", "id_sucursal", "sucursales");
         }
 
         private void Btn_Modificar_Click(object sender, EventArgs e)

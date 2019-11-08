@@ -59,8 +59,12 @@ namespace Veterinaria.Vista
             NG_Medicamentos medicamentos = new NG_Medicamentos();
             if (id_m != null)
                 medicamentos.modificar_medicamento(id_m, Txt_Nombre.Text, Cmb_Laboratorio.SelectedIndex.ToString(), Txt_Descripcion.Text);
-            else 
+            else
+            {
                 medicamentos.cargar_medicamento(Txt_Nombre.Text.Trim(), Cmb_Laboratorio.SelectedIndex.ToString(), Txt_Descripcion.Text.Trim());
+                medicamentos.medicamento_x_sucursal();
+            }
+
             Frm_Medicamentos padre = (Frm_Medicamentos)Owner;
             padre.nuevo_med();
             this.Dispose();
@@ -68,7 +72,7 @@ namespace Veterinaria.Vista
 
         private void cargar_combo()
         {
-            Combo.CargarCombo(ref Cmb_Laboratorio, "laboratorios", "nombre_lab", "id_laboratorio");
+            Combo.CargarCombo(ref Cmb_Laboratorio, "laboratorios", "razon_social", "id_laboratorio");
         }
 
         private void Frm_ABM_Medicamentos_Load(object sender, EventArgs e)

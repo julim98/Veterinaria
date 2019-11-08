@@ -25,14 +25,14 @@ namespace Veterinaria.Negocios
                 consulta = consulta + " where M.nombre_med like '%" + nombreMedicamento + "%'";
 
             DataTable datos = _BD.ejecutar_consulta(consulta);
-            for (int i = 0; i < tabla.Rows.Count; i++)
+            for (int i = 0; i < datos.Rows.Count; i++)
             {
                 tabla.Rows.Add();
                 tabla.Rows[i].Cells[0].Value = datos.Rows[i]["nombre_med"];
                 tabla.Rows[i].Cells[1].Value = datos.Rows[i]["descripcion"];
-                tabla.Rows[i].Cells[2].Value = datos.Rows[i]["nombre_lab"];
-                tabla.Rows[i].Cells[3].Value = datos.Rows[i]["stock_min"];
-                tabla.Rows[i].Cells[4].Value = datos.Rows[i]["stock"];
+                tabla.Rows[i].Cells[2].Value = datos.Rows[i]["razon_social"];
+                tabla.Rows[i].Cells[3].Value = datos.Rows[i]["stock_minimo"];
+                tabla.Rows[i].Cells[4].Value = datos.Rows[i]["stock_actual"];
                 tabla.Rows[i].Cells[5].Value = "-";
             }
         }
@@ -100,14 +100,23 @@ namespace Veterinaria.Negocios
 
         public void medicamento_x_sucursal()
         {
-            string[] id_sucursales = _BD.ejecutar_consulta("select id_sucursal from sucursales").Rows.ToString().Split();
-            string id_medicamento = _BD.ejecutar_consulta("select MAX(id_medicamento) from medicamentos").ToString();
-            for (int i = 0; i < id_sucursales.Length; i++)
+            DataTable id_sucursales = _BD.ejecutar_consulta("select id_sucursal from sucursales");
+            string id_medicamento = _BD.ejecutar_consulta("select MAX(id_medicamento) from medicamentos").Rows[0][0].ToString();
+            for (int i = 0; i < id_sucursales.Rows.Count; i++)
             {
-                string id_sucursal = id_sucursales[i];
+                string id_sucursal = id_sucursales.Rows[i][0].ToString();
                 string sql = "insert into medicamentos_sucursal values (" + id_medicamento + ", " + id_sucursal + ", 0, 0)";
                 _BD.insertar(sql);
             }
+        }
+
+        private void cargar_med_sucursales(string id_medicamento, string id_sucursal)
+        {
+            string sql = "insert ino medicamentos_sucursal values (" + 
+                id_medicamento + ", " +
+                id_sucursal + ", " +
+                "0, 0";
+            _BD.insertar(sql);
         }
     }
 }
