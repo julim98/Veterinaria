@@ -23,7 +23,7 @@ namespace Veterinaria.Vista
         private void cargarCombos()
         {
             Combo.CargarCombo(ref Cmb_Sucursal, "sucursales", "nombre", "id_sucursal", "sucursales");
-            Combo.CargarCombo(ref Cmb_Tipo_Documento, "tipo_documento", "nombre", "id_tipo_documento", "tipos de documento");
+            Combo.CargarCombo(ref Cmb_Tipo_Documento, "tipos_documentos", "nombre_tipo_doc", "id_tipo_documento", "tipos de documento");
         }
 
 

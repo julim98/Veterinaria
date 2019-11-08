@@ -48,6 +48,7 @@
             this.txt_nro_documento = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.Cmb_Tipo_Documento = new System.Windows.Forms.ComboBox();
+            this.id_tipo_doc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Tbl_Empleados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -149,6 +150,7 @@
             this.Btn_Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Eliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_Eliminar.UseVisualStyleBackColor = true;
+            this.Btn_Eliminar.Click += new System.EventHandler(this.Btn_Eliminar_Click_1);
             // 
             // Tbl_Empleados
             // 
@@ -165,7 +167,8 @@
             this.Matricula,
             this.FechaNac,
             this.Sucursal,
-            this.FechaIng});
+            this.FechaIng,
+            this.id_tipo_doc});
             this.Tbl_Empleados.Location = new System.Drawing.Point(17, 164);
             this.Tbl_Empleados.Name = "Tbl_Empleados";
             this.Tbl_Empleados.ReadOnly = true;
@@ -261,6 +264,13 @@
             this.Cmb_Tipo_Documento.Size = new System.Drawing.Size(206, 21);
             this.Cmb_Tipo_Documento.TabIndex = 54;
             // 
+            // id_tipo_doc
+            // 
+            this.id_tipo_doc.HeaderText = "tipo documento afa";
+            this.id_tipo_doc.Name = "id_tipo_doc";
+            this.id_tipo_doc.ReadOnly = true;
+            this.id_tipo_doc.Visible = false;
+            // 
             // Frm_Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -309,5 +319,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaNac;
         private System.Windows.Forms.DataGridViewTextBoxColumn Sucursal;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaIng;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_tipo_doc;
     }
 }

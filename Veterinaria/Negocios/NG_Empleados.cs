@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 using Veterinaria;
 using System.Windows.Forms;
 using System.Data;
+using Veterinaria.Formularios;
 
 namespace Veterinaria.Negocios
 {
     class NG_Empleados
     {
         Conexion_BD _BD = new Conexion_BD();
-
+        
         public void insertar(string nombre, string apellido, string tipo_doc, string nro_doc, string nacimiento, string ingreso, string matricula, string sucursal)
         {
             string sql_insert = @"insert into empleados (
@@ -46,21 +47,21 @@ namespace Veterinaria.Negocios
 
             if (nro_doc.Trim() == "")
             {
-                comando = @"select E.apellido, E.nombre, D.nombre as tipo_documento, 
+                comando = @"select E.apellido, E.nombre, D.nombre_tipo_doc as tipo_documento, D.id_tipo_documento,
                     E.nro_doc, E.matricula, E.fecha_nacimiento,S.nombre as sucursal,
                     E.fecha_ingreso
                     from empleados E 
-                    join tipo_documento D on E.tipo_doc = D.id_tipo_documento
+                    join tipos_documentos D on E.tipo_doc = D.id_tipo_documento
                     join sucursales S on S.id_sucursal = E.id_sucursal
                     where E.tipo_doc = " + tipo_doc;
                 return _BD.ejecutar_consulta(comando);
             }
 
-            comando = @"select E.apellido, E.nombre, D.nombre as tipo_documento, 
+            comando = @"select E.apellido, E.nombre, D.nombre_tipo_doc as tipo_documento, D.id_tipo_documento,
                 E.nro_doc, E.matricula, E.fecha_nacimiento,S.nombre as sucursal,
-                E.fecha_ingreso
+                E.fecha_ingreso, D.id_tipo_documento
                 from empleados E 
-                join tipo_documento D on E.tipo_doc = D.id_tipo_documento
+                join tipos_documentos D on E.tipo_doc = D.id_tipo_documento
                 join sucursales S on S.id_sucursal = E.id_sucursal
                 where E.nro_doc = " + nro_doc.Trim() + " and E.tipo_doc = " + tipo_doc;
             return _BD.ejecutar_consulta(comando);
@@ -73,7 +74,9 @@ namespace Veterinaria.Negocios
                                     , string apellido
                                     , string fecha_nacimiento
                                     , string fecha_ingreso
-                                    , string matricula)
+                                    , string matricula
+                                    , string tipo_doc_viejo
+                                    , string nro_doc_viejo)
         {
             string sql_update = "";
 
@@ -87,7 +90,7 @@ namespace Veterinaria.Negocios
                            + ", fecha_nacimiento = '" + fecha_nacimiento + "'"
                            + ",fecha_ingreso = '" + fecha_ingreso + "'"
                            + ",matricula = '" + matricula + "'"
-                           + "WHERE tipo_doc=" + tipo_doc + "and nro_doc=" + nro_doc;
+                           + "WHERE tipo_doc=" + tipo_doc_viejo + "and nro_doc=" + nro_doc_viejo;
             if (_BD.modificar(sql_update) == Conexion_BD.estado_BE.correcto)
             {
                 MessageBox.Show("Se grabó correctamente");
