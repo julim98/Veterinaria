@@ -3,7 +3,7 @@
 
 -Terminar ABMs:
 	* Medicamentos (Julian) + stock
-	* Empleados: Falta editar y eliminar // FACU
+	* Empleados: Falta editar y eliminar // FACU (listo)
 
 - Terminar Inicio: Poner una imagen de la veterinaria
 
