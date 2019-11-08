@@ -31,6 +31,10 @@ CREATE TABLE diagnosticos (
 CREATE TABLE razas (
    id_raza int IDENTITY (0, 1) PRIMARY KEY,
    denominacion varchar(20) NOT NULL,   
+   peso_minimo_hembra decimal NOT NULL,
+   peso_minimo_macho decimal NOT NULL,
+   altura_media_hembra decimal NOT NULL,
+   altura_media_macho decimal NOT NULL,
    nota_cuidados text   
 );
 
