@@ -61,10 +61,9 @@ namespace Veterinaria.Vista
             for (int i = 0; i < tabla.Rows.Count; i++)
             {
                 Tbl_Laboratorios.Rows.Add();
-                Tbl_Laboratorios.Rows[i].Cells[0].Value = tabla.Rows[i]["nombre_lab"].ToString();
-                Tbl_Laboratorios.Rows[i].Cells[1].Value = tabla.Rows[i]["razon_social"].ToString();
-                Tbl_Laboratorios.Rows[i].Cells[2].Value = tabla.Rows[i]["direccion"].ToString();
-                Tbl_Laboratorios.Rows[i].Cells[3].Value = tabla.Rows[i]["id_laboratorio"].ToString();
+                Tbl_Laboratorios.Rows[i].Cells[0].Value = tabla.Rows[i]["razon_social"].ToString();
+                Tbl_Laboratorios.Rows[i].Cells[1].Value = tabla.Rows[i]["direccion"].ToString();
+                Tbl_Laboratorios.Rows[i].Cells[2].Value = tabla.Rows[i]["id_laboratorio"].ToString();
             }
         }
 

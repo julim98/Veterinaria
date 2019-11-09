@@ -30,19 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_ABM_Laboratorios));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Txt_Razon_social = new System.Windows.Forms.TextBox();
             this.Txt_Direccion = new System.Windows.Forms.TextBox();
-            this.Txt_Nombre = new System.Windows.Forms.TextBox();
             this.Btn_Cancelar = new System.Windows.Forms.Button();
             this.Btn_Guardar = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.Pnl_Barra_Superior = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Btn_Cerrar = new System.Windows.Forms.Button();
             this.Btn_Minimizar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.Txt_Razon_social = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.Pnl_Barra_Superior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -53,33 +51,31 @@
             this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel2.Controls.Add(this.Txt_Razon_social);
             this.panel2.Controls.Add(this.Txt_Direccion);
-            this.panel2.Controls.Add(this.Txt_Nombre);
             this.panel2.Controls.Add(this.Btn_Cancelar);
             this.panel2.Controls.Add(this.Btn_Guardar);
             this.panel2.Controls.Add(this.label19);
-            this.panel2.Controls.Add(this.label20);
             this.panel2.Controls.Add(this.label16);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 30);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(350, 186);
+            this.panel2.Size = new System.Drawing.Size(350, 170);
             this.panel2.TabIndex = 46;
+            // 
+            // Txt_Razon_social
+            // 
+            this.Txt_Razon_social.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Razon_social.Location = new System.Drawing.Point(121, 37);
+            this.Txt_Razon_social.Name = "Txt_Razon_social";
+            this.Txt_Razon_social.Size = new System.Drawing.Size(206, 23);
+            this.Txt_Razon_social.TabIndex = 59;
             // 
             // Txt_Direccion
             // 
             this.Txt_Direccion.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Direccion.Location = new System.Drawing.Point(121, 79);
+            this.Txt_Direccion.Location = new System.Drawing.Point(121, 66);
             this.Txt_Direccion.Name = "Txt_Direccion";
             this.Txt_Direccion.Size = new System.Drawing.Size(206, 23);
             this.Txt_Direccion.TabIndex = 58;
-            // 
-            // Txt_Nombre
-            // 
-            this.Txt_Nombre.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Nombre.Location = new System.Drawing.Point(121, 21);
-            this.Txt_Nombre.Name = "Txt_Nombre";
-            this.Txt_Nombre.Size = new System.Drawing.Size(206, 23);
-            this.Txt_Nombre.TabIndex = 56;
             // 
             // Btn_Cancelar
             // 
@@ -119,27 +115,17 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(38, 82);
+            this.label19.Location = new System.Drawing.Point(38, 69);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(77, 15);
             this.label19.TabIndex = 53;
             this.label19.Text = "Dirección:";
             // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(51, 24);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(64, 15);
-            this.label20.TabIndex = 52;
-            this.label20.Text = "Nombre:";
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(19, 53);
+            this.label16.Location = new System.Drawing.Point(19, 40);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(96, 15);
             this.label16.TabIndex = 51;
@@ -211,19 +197,11 @@
             this.label2.TabIndex = 30;
             this.label2.Text = "Administrar Laboratorios";
             // 
-            // Txt_Razon_social
-            // 
-            this.Txt_Razon_social.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Razon_social.Location = new System.Drawing.Point(121, 50);
-            this.Txt_Razon_social.Name = "Txt_Razon_social";
-            this.Txt_Razon_social.Size = new System.Drawing.Size(206, 23);
-            this.Txt_Razon_social.TabIndex = 59;
-            // 
             // Frm_ABM_Laboratorios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(350, 216);
+            this.ClientSize = new System.Drawing.Size(350, 200);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.Pnl_Barra_Superior);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -249,11 +227,9 @@
         private System.Windows.Forms.Button Btn_Minimizar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox Txt_Direccion;
-        private System.Windows.Forms.TextBox Txt_Nombre;
         private System.Windows.Forms.Button Btn_Cancelar;
         private System.Windows.Forms.Button Btn_Guardar;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox Txt_Razon_social;
     }

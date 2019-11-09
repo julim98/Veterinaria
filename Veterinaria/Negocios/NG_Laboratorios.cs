@@ -12,11 +12,11 @@ namespace Veterinaria.Negocios
     {
         Conexion_BD _BD = new Conexion_BD();
 
-        public void guardar_laboratorio(string nombre, string razon_social, string direccion)
+        public void guardar_laboratorio(string razon_social, string direccion)
         {
 
-            string sql = "insert into laboratorios (nombre_lab, razon_social, direccion) " +
-            "values('" + nombre + "', '"+ razon_social + "', '" + direccion + "')";
+            string sql = "insert into laboratorios (razon_social, direccion) " +
+            "values('" + razon_social + "', '" + direccion + "')";
             try
             {
                 _BD.insertar(sql);
@@ -28,9 +28,9 @@ namespace Veterinaria.Negocios
             }
 
         }
-        public void modificar_laboratorio(string nombre, string razon_social, string direccion, string id)
+        public void modificar_laboratorio(string razon_social, string direccion, string id)
         {
-            string sql = "update laboratorios set nombre_lab = '" + nombre + "', razon_social = '" + razon_social + "', direccion = '" + direccion + "' where id_laboratorio " + id;
+            string sql = "update laboratorios set razon_social = '" + razon_social + "', direccion = '" + direccion + "' where id_laboratorio " + id;
             try
             {
                 _BD.insertar(sql);

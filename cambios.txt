@@ -2,8 +2,9 @@
 	* hacer abms diagnosticos y sintomas para el perros (idea usar tabla local)
 
 -Terminar ABMs:
-	* Medicamentos (Julian) + stock
+	* Medicamentos (Julian) + stock (listo)
 	* Empleados: Falta editar y eliminar // FACU (listo)
+	* Laboratorio: no funciona bien, al cargar falla cuando se usa espacios (no se, es raro)
 
 - Terminar Inicio: Poner una imagen de la veterinaria
 

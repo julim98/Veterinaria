@@ -13,6 +13,9 @@ namespace Veterinaria.Vista
 {
     public partial class Frm_Medicamentos : Form
     {
+
+        string id_sucursal { get; set; }
+
         public Frm_Medicamentos()
         {
             InitializeComponent();
@@ -33,7 +36,8 @@ namespace Veterinaria.Vista
         private void Btn_Buscar_Click(object sender, EventArgs e)
         {
             NG_Medicamentos medicamentos = new NG_Medicamentos();
-            medicamentos.cargarTabla(ref Tbl_Medicamentos, Txt_Nombre.Text, cmb_sucursal.SelectedIndex.ToString());
+            medicamentos.cargarTabla(ref Tbl_Medicamentos, Txt_Nombre.Text, cmb_sucursal.SelectedValue.ToString());
+            id_sucursal = cmb_sucursal.SelectedValue.ToString();
         }
 
         private void Frm_Medicamentos_Load(object sender, EventArgs e)
@@ -51,7 +55,7 @@ namespace Veterinaria.Vista
             }
             else
             {
-                MessageBox.Show("Seleccione primero una fila de la grilla, para modificar"
+                MessageBox.Show("Seleccione primero un medicamento para modificar"
                     , "Importante", MessageBoxButtons.OK
                     , MessageBoxIcon.Exclamation);
             }
@@ -61,25 +65,23 @@ namespace Veterinaria.Vista
         {
             if (Tbl_Medicamentos.CurrentRow == null)
             {
-                MessageBox.Show("Seleccione primero una fila de la grilla, para modificar"
+                MessageBox.Show("Seleccione primero un medicamento para eliminar"
                     , "Importante", MessageBoxButtons.OK
                     , MessageBoxIcon.Exclamation);
                 return;
             }
 
             NG_Medicamentos medicamentos = new NG_Medicamentos();
-            medicamentos.borrar(Tbl_Medicamentos.CurrentRow.Cells["id_medicamento"].ToString());
+            medicamentos.borrar(Tbl_Medicamentos.CurrentRow.Cells["id_medicamento"].Value.ToString());
             Tbl_Medicamentos.Refresh();
-        }
-
-        public void nuevo_med()
-        {
-
         }
 
         private void btn_stock_Click(object sender, EventArgs e)
         {
-
+            Formularios.Frm_ABM_Stock stock = new Formularios.Frm_ABM_Stock();
+            stock.id_medicamento = Tbl_Medicamentos.CurrentRow.Cells["id_medicamento"].Value.ToString();
+            stock.id_sucursal = id_sucursal;
+            stock.Show();
         }
     }
 }

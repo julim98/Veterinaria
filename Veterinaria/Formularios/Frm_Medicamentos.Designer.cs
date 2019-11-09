@@ -37,16 +37,17 @@
             this.Btn_Modificar = new System.Windows.Forms.Button();
             this.Btn_Eliminar = new System.Windows.Forms.Button();
             this.Tbl_Medicamentos = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cmb_sucursal = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btn_stock = new System.Windows.Forms.Button();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Laboratorio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.StockMinimo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.StockActual = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaUltimaCompra = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmb_sucursal = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btn_stock = new System.Windows.Forms.Button();
+            this.id_medicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Tbl_Medicamentos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -172,51 +173,13 @@
             this.Laboratorio,
             this.StockMinimo,
             this.StockActual,
-            this.FechaUltimaCompra});
+            this.FechaUltimaCompra,
+            this.id_medicamento});
             this.Tbl_Medicamentos.Location = new System.Drawing.Point(13, 133);
             this.Tbl_Medicamentos.Name = "Tbl_Medicamentos";
             this.Tbl_Medicamentos.ReadOnly = true;
             this.Tbl_Medicamentos.Size = new System.Drawing.Size(760, 309);
             this.Tbl_Medicamentos.TabIndex = 26;
-            // 
-            // nombre
-            // 
-            this.nombre.HeaderText = "Nombre";
-            this.nombre.Name = "nombre";
-            this.nombre.ReadOnly = true;
-            this.nombre.Width = 89;
-            // 
-            // Descripcion
-            // 
-            this.Descripcion.HeaderText = "Descripción";
-            this.Descripcion.Name = "Descripcion";
-            this.Descripcion.ReadOnly = true;
-            // 
-            // Laboratorio
-            // 
-            this.Laboratorio.HeaderText = "Laboratorio";
-            this.Laboratorio.Name = "Laboratorio";
-            this.Laboratorio.ReadOnly = true;
-            this.Laboratorio.Width = 90;
-            // 
-            // StockMinimo
-            // 
-            this.StockMinimo.HeaderText = "Stock Minimo";
-            this.StockMinimo.Name = "StockMinimo";
-            this.StockMinimo.ReadOnly = true;
-            // 
-            // StockActual
-            // 
-            this.StockActual.HeaderText = "Stock Actual";
-            this.StockActual.Name = "StockActual";
-            this.StockActual.ReadOnly = true;
-            // 
-            // FechaUltimaCompra
-            // 
-            this.FechaUltimaCompra.HeaderText = "Fecha Ultima Compra";
-            this.FechaUltimaCompra.Name = "FechaUltimaCompra";
-            this.FechaUltimaCompra.ReadOnly = true;
-            this.FechaUltimaCompra.Width = 90;
             // 
             // label1
             // 
@@ -271,6 +234,52 @@
             this.btn_stock.UseVisualStyleBackColor = true;
             this.btn_stock.Click += new System.EventHandler(this.btn_stock_Click);
             // 
+            // nombre
+            // 
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
+            this.nombre.Width = 89;
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.HeaderText = "Descripción";
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.ReadOnly = true;
+            // 
+            // Laboratorio
+            // 
+            this.Laboratorio.HeaderText = "Laboratorio";
+            this.Laboratorio.Name = "Laboratorio";
+            this.Laboratorio.ReadOnly = true;
+            this.Laboratorio.Width = 90;
+            // 
+            // StockMinimo
+            // 
+            this.StockMinimo.HeaderText = "Stock Minimo";
+            this.StockMinimo.Name = "StockMinimo";
+            this.StockMinimo.ReadOnly = true;
+            // 
+            // StockActual
+            // 
+            this.StockActual.HeaderText = "Stock Actual";
+            this.StockActual.Name = "StockActual";
+            this.StockActual.ReadOnly = true;
+            // 
+            // FechaUltimaCompra
+            // 
+            this.FechaUltimaCompra.HeaderText = "Fecha Ultima Compra";
+            this.FechaUltimaCompra.Name = "FechaUltimaCompra";
+            this.FechaUltimaCompra.ReadOnly = true;
+            this.FechaUltimaCompra.Width = 90;
+            // 
+            // id_medicamento
+            // 
+            this.id_medicamento.HeaderText = "ID Medicamento";
+            this.id_medicamento.Name = "id_medicamento";
+            this.id_medicamento.ReadOnly = true;
+            this.id_medicamento.Visible = false;
+            // 
             // Frm_Medicamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -309,14 +318,15 @@
         private System.Windows.Forms.Button Btn_Eliminar;
         private System.Windows.Forms.DataGridView Tbl_Medicamentos;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btn_stock;
+        private System.Windows.Forms.ComboBox cmb_sucursal;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Laboratorio;
         private System.Windows.Forms.DataGridViewTextBoxColumn StockMinimo;
         private System.Windows.Forms.DataGridViewTextBoxColumn StockActual;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaUltimaCompra;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btn_stock;
-        private System.Windows.Forms.ComboBox cmb_sucursal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_medicamento;
     }
 }

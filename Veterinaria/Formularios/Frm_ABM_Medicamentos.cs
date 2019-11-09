@@ -58,15 +58,12 @@ namespace Veterinaria.Vista
         {
             NG_Medicamentos medicamentos = new NG_Medicamentos();
             if (id_m != null)
-                medicamentos.modificar_medicamento(id_m, Txt_Nombre.Text, Cmb_Laboratorio.SelectedIndex.ToString(), Txt_Descripcion.Text);
+                medicamentos.modificar_medicamento(id_m, Txt_Nombre.Text, Cmb_Laboratorio.SelectedValue.ToString(), Txt_Descripcion.Text);
             else
             {
-                medicamentos.cargar_medicamento(Txt_Nombre.Text.Trim(), Cmb_Laboratorio.SelectedIndex.ToString(), Txt_Descripcion.Text.Trim());
+                medicamentos.cargar_medicamento(Txt_Nombre.Text.Trim(), Cmb_Laboratorio.SelectedValue.ToString(), Txt_Descripcion.Text.Trim());
                 medicamentos.medicamento_x_sucursal();
             }
-
-            Frm_Medicamentos padre = (Frm_Medicamentos)Owner;
-            padre.nuevo_med();
             this.Dispose();
         }
 

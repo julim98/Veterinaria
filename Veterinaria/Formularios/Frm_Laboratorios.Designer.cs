@@ -36,11 +36,10 @@
             this.Btn_Modificar = new System.Windows.Forms.Button();
             this.Btn_Eliminar = new System.Windows.Forms.Button();
             this.Tbl_Laboratorios = new System.Windows.Forms.DataGridView();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RazonSocial = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.Btn_Cerrar_ABM = new System.Windows.Forms.Button();
+            this.RazonSocial = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_lab = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Tbl_Laboratorios)).BeginInit();
             this.SuspendLayout();
@@ -148,7 +147,6 @@
             this.Tbl_Laboratorios.BackgroundColor = System.Drawing.SystemColors.WindowFrame;
             this.Tbl_Laboratorios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Tbl_Laboratorios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Nombre,
             this.RazonSocial,
             this.Direccion,
             this.id_lab});
@@ -157,24 +155,6 @@
             this.Tbl_Laboratorios.ReadOnly = true;
             this.Tbl_Laboratorios.Size = new System.Drawing.Size(760, 309);
             this.Tbl_Laboratorios.TabIndex = 35;
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            // 
-            // RazonSocial
-            // 
-            this.RazonSocial.HeaderText = "Razón Social";
-            this.RazonSocial.Name = "RazonSocial";
-            this.RazonSocial.ReadOnly = true;
-            // 
-            // Direccion
-            // 
-            this.Direccion.HeaderText = "Dirección";
-            this.Direccion.Name = "Direccion";
-            this.Direccion.ReadOnly = true;
             // 
             // label1
             // 
@@ -201,6 +181,20 @@
             this.Btn_Cerrar_ABM.TabIndex = 40;
             this.Btn_Cerrar_ABM.UseVisualStyleBackColor = true;
             this.Btn_Cerrar_ABM.Click += new System.EventHandler(this.Btn_Cerrar_ABM_Click);
+            // 
+            // RazonSocial
+            // 
+            this.RazonSocial.HeaderText = "Razón Social";
+            this.RazonSocial.Name = "RazonSocial";
+            this.RazonSocial.ReadOnly = true;
+            this.RazonSocial.Width = 300;
+            // 
+            // Direccion
+            // 
+            this.Direccion.HeaderText = "Dirección";
+            this.Direccion.Name = "Direccion";
+            this.Direccion.ReadOnly = true;
+            this.Direccion.Width = 300;
             // 
             // id_lab
             // 
@@ -244,10 +238,9 @@
         private System.Windows.Forms.Button Btn_Eliminar;
         private System.Windows.Forms.DataGridView Tbl_Laboratorios;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.Button Btn_Cerrar_ABM;
         private System.Windows.Forms.DataGridViewTextBoxColumn RazonSocial;
         private System.Windows.Forms.DataGridViewTextBoxColumn Direccion;
-        private System.Windows.Forms.Button Btn_Cerrar_ABM;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_lab;
     }
 }

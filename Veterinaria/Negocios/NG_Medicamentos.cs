@@ -34,6 +34,7 @@ namespace Veterinaria.Negocios
                 tabla.Rows[i].Cells[3].Value = datos.Rows[i]["stock_minimo"];
                 tabla.Rows[i].Cells[4].Value = datos.Rows[i]["stock_actual"];
                 tabla.Rows[i].Cells[5].Value = "-";
+                tabla.Rows[i].Cells[6].Value = datos.Rows[i]["id_medicamento"];
             }
         }
 
@@ -85,8 +86,10 @@ namespace Veterinaria.Negocios
         public void borrar(string id_medicamento)
         {
             string sql_borrar = "";
-            sql_borrar = @"DELETE FROM medicamentos
-                            WHERE nro_historia_clinica = " + id_medicamento;
+            sql_borrar = "DELETE FROM medicamentos_sucursal " +
+                "WHERE id_medicamento = " + id_medicamento + " ; \n" + 
+                "DELETE FROM medicamentos " +
+                "WHERE id_medicamento = " + id_medicamento;
 
             if (_BD.borrar(sql_borrar) == Conexion_BD.estado_BE.correcto)
             {
