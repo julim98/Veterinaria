@@ -26,11 +26,6 @@ namespace Veterinaria
             this.WindowState = FormWindowState.Maximized;
         }
 
-        private void panel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void AbrirFormsHijos(object Form_Hijo)
         {
             if (Pnl_Contenedor.Controls.Count > 0)            
@@ -44,6 +39,11 @@ namespace Veterinaria
                 formHijo.Show();            
         }
 
+        private void Btn_Inicio_Click(object sender, EventArgs e)
+        {
+
+        }        
+
         private void Btn_Cerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -52,34 +52,6 @@ namespace Veterinaria
         private void Btn_Minimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void Pnl_Contenedor_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Btn_Inicio_Click(object sender, EventArgs e)
-        {
-
-        }        
-
-        private void Btn_Cerrar_Click_1(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void Btn_Minimizar_Click_1(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void Btn_Maximizar_Click_1(object sender, EventArgs e)
-        {
-            /*Btn_Cerrar.Visible = false;
-            Btn_Restaurar.Visible = true;
-            this.WindowState = FormWindowState.Maximized;*/
-            
         }
 
         private void Btn_Restaurar_Click_1(object sender, EventArgs e)
@@ -98,11 +70,6 @@ namespace Veterinaria
         private void Btn_Configuracion_Click_1(object sender, EventArgs e)
         {
             AbrirFormsHijos(new Frm_Configuracion());
-        }
-
-        private void Btn_Cerrar_Sesion_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void Btn_Consultas_Click_1(object sender, EventArgs e)
@@ -125,14 +92,14 @@ namespace Veterinaria
             //AbrirFormsHijos(new Frm_Informes());
         }
 
-        private void Pnl_Contenedor_Paint_2(object sender, PaintEventArgs e)
+        private void Btn_Salir_Click(object sender, EventArgs e)
         {
-
+            this.Dispose();
         }
 
-        private void Btn_Inicio_Click_1(object sender, EventArgs e)
+        private void Btn_Sintomas_Click(object sender, EventArgs e)
         {
-
+            AbrirFormsHijos(new Formularios.Frm_sintomas());
         }
     }
 }

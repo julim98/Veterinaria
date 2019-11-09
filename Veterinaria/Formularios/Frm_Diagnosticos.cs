@@ -27,5 +27,10 @@ namespace Veterinaria.Vista
         {
             this.Dispose();
         }
+
+        private void Btn_Modificar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

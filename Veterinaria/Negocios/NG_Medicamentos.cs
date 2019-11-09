@@ -112,14 +112,5 @@ namespace Veterinaria.Negocios
                 _BD.insertar(sql);
             }
         }
-
-        private void cargar_med_sucursales(string id_medicamento, string id_sucursal)
-        {
-            string sql = "insert ino medicamentos_sucursal values (" + 
-                id_medicamento + ", " +
-                id_sucursal + ", " +
-                "0, 0";
-            _BD.insertar(sql);
-        }
     }
 }

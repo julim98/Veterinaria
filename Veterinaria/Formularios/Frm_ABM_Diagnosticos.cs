@@ -27,5 +27,10 @@ namespace Veterinaria.Vista
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void Btn_Guardar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,6 +1,6 @@
-﻿namespace Veterinaria.Vista
+﻿namespace Veterinaria.Formularios
 {
-    partial class Frm_Diagnosticos
+    partial class Frm_sintomas
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Diagnosticos));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_sintomas));
+            this.Btn_Cerrar_ABM = new System.Windows.Forms.Button();
             this.Btn_Buscar = new System.Windows.Forms.Button();
             this.Txt_Nombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.Btn_Nuevo = new System.Windows.Forms.Button();
+            this.Btn_Modificar = new System.Windows.Forms.Button();
+            this.Btn_Eliminar = new System.Windows.Forms.Button();
             this.Tbl_Diagnosticos = new System.Windows.Forms.DataGridView();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descripción = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.Btn_Cerrar_ABM = new System.Windows.Forms.Button();
-            this.Btn_Nuevo = new System.Windows.Forms.Button();
-            this.Btn_Modificar = new System.Windows.Forms.Button();
-            this.Btn_Eliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Tbl_Diagnosticos)).BeginInit();
             this.SuspendLayout();
+            // 
+            // Btn_Cerrar_ABM
+            // 
+            this.Btn_Cerrar_ABM.FlatAppearance.BorderSize = 0;
+            this.Btn_Cerrar_ABM.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
+            this.Btn_Cerrar_ABM.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.Btn_Cerrar_ABM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Cerrar_ABM.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar_ABM.Image")));
+            this.Btn_Cerrar_ABM.Location = new System.Drawing.Point(12, 12);
+            this.Btn_Cerrar_ABM.Name = "Btn_Cerrar_ABM";
+            this.Btn_Cerrar_ABM.Size = new System.Drawing.Size(20, 20);
+            this.Btn_Cerrar_ABM.TabIndex = 34;
+            this.Btn_Cerrar_ABM.UseVisualStyleBackColor = true;
             // 
             // Btn_Buscar
             // 
@@ -54,7 +67,7 @@
             this.Btn_Buscar.Location = new System.Drawing.Point(681, 105);
             this.Btn_Buscar.Name = "Btn_Buscar";
             this.Btn_Buscar.Size = new System.Drawing.Size(91, 23);
-            this.Btn_Buscar.TabIndex = 32;
+            this.Btn_Buscar.TabIndex = 41;
             this.Btn_Buscar.Text = "Buscar";
             this.Btn_Buscar.UseVisualStyleBackColor = true;
             // 
@@ -65,7 +78,7 @@
             this.Txt_Nombre.Location = new System.Drawing.Point(82, 105);
             this.Txt_Nombre.Name = "Txt_Nombre";
             this.Txt_Nombre.Size = new System.Drawing.Size(200, 23);
-            this.Txt_Nombre.TabIndex = 31;
+            this.Txt_Nombre.TabIndex = 40;
             // 
             // label2
             // 
@@ -75,8 +88,64 @@
             this.label2.Location = new System.Drawing.Point(12, 109);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 15);
-            this.label2.TabIndex = 30;
+            this.label2.TabIndex = 39;
             this.label2.Text = "Nombre:";
+            // 
+            // Btn_Nuevo
+            // 
+            this.Btn_Nuevo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Btn_Nuevo.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.Btn_Nuevo.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame;
+            this.Btn_Nuevo.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Btn_Nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Nuevo.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Nuevo.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Btn_Nuevo.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Nuevo.Image")));
+            this.Btn_Nuevo.Location = new System.Drawing.Point(466, 449);
+            this.Btn_Nuevo.Name = "Btn_Nuevo";
+            this.Btn_Nuevo.Size = new System.Drawing.Size(98, 50);
+            this.Btn_Nuevo.TabIndex = 38;
+            this.Btn_Nuevo.Text = "Nuevo";
+            this.Btn_Nuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Btn_Nuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Btn_Nuevo.UseVisualStyleBackColor = true;
+            // 
+            // Btn_Modificar
+            // 
+            this.Btn_Modificar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Btn_Modificar.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.Btn_Modificar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame;
+            this.Btn_Modificar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Btn_Modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Modificar.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Modificar.ForeColor = System.Drawing.Color.Black;
+            this.Btn_Modificar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Modificar.Image")));
+            this.Btn_Modificar.Location = new System.Drawing.Point(570, 449);
+            this.Btn_Modificar.Name = "Btn_Modificar";
+            this.Btn_Modificar.Size = new System.Drawing.Size(98, 50);
+            this.Btn_Modificar.TabIndex = 37;
+            this.Btn_Modificar.Text = " Editar";
+            this.Btn_Modificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Btn_Modificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Btn_Modificar.UseVisualStyleBackColor = true;
+            // 
+            // Btn_Eliminar
+            // 
+            this.Btn_Eliminar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Btn_Eliminar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame;
+            this.Btn_Eliminar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Btn_Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Eliminar.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Eliminar.ForeColor = System.Drawing.Color.Black;
+            this.Btn_Eliminar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Eliminar.Image")));
+            this.Btn_Eliminar.Location = new System.Drawing.Point(674, 449);
+            this.Btn_Eliminar.Name = "Btn_Eliminar";
+            this.Btn_Eliminar.Size = new System.Drawing.Size(98, 50);
+            this.Btn_Eliminar.TabIndex = 36;
+            this.Btn_Eliminar.Text = "Eliminar";
+            this.Btn_Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Btn_Eliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Btn_Eliminar.UseVisualStyleBackColor = true;
             // 
             // Tbl_Diagnosticos
             // 
@@ -92,7 +161,7 @@
             this.Tbl_Diagnosticos.Name = "Tbl_Diagnosticos";
             this.Tbl_Diagnosticos.ReadOnly = true;
             this.Tbl_Diagnosticos.Size = new System.Drawing.Size(760, 309);
-            this.Tbl_Diagnosticos.TabIndex = 26;
+            this.Tbl_Diagnosticos.TabIndex = 35;
             // 
             // nombre
             // 
@@ -112,92 +181,20 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Bright", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(271, 9);
+            this.label1.Location = new System.Drawing.Point(298, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(274, 36);
-            this.label1.TabIndex = 25;
-            this.label1.Text = "DIAGNÓSTICOS";
+            this.label1.Size = new System.Drawing.Size(193, 36);
+            this.label1.TabIndex = 42;
+            this.label1.Text = "SÍNTOMAS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Btn_Cerrar_ABM
-            // 
-            this.Btn_Cerrar_ABM.FlatAppearance.BorderSize = 0;
-            this.Btn_Cerrar_ABM.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
-            this.Btn_Cerrar_ABM.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.Btn_Cerrar_ABM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Cerrar_ABM.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar_ABM.Image")));
-            this.Btn_Cerrar_ABM.Location = new System.Drawing.Point(12, 12);
-            this.Btn_Cerrar_ABM.Name = "Btn_Cerrar_ABM";
-            this.Btn_Cerrar_ABM.Size = new System.Drawing.Size(20, 20);
-            this.Btn_Cerrar_ABM.TabIndex = 33;
-            this.Btn_Cerrar_ABM.UseVisualStyleBackColor = true;
-            this.Btn_Cerrar_ABM.Click += new System.EventHandler(this.Btn_Cerrar_ABM_Click);
-            // 
-            // Btn_Nuevo
-            // 
-            this.Btn_Nuevo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Btn_Nuevo.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.Btn_Nuevo.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame;
-            this.Btn_Nuevo.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Btn_Nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Nuevo.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Nuevo.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Btn_Nuevo.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Nuevo.Image")));
-            this.Btn_Nuevo.Location = new System.Drawing.Point(466, 449);
-            this.Btn_Nuevo.Name = "Btn_Nuevo";
-            this.Btn_Nuevo.Size = new System.Drawing.Size(98, 50);
-            this.Btn_Nuevo.TabIndex = 29;
-            this.Btn_Nuevo.Text = "Nuevo";
-            this.Btn_Nuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Btn_Nuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Btn_Nuevo.UseVisualStyleBackColor = true;
-            this.Btn_Nuevo.Click += new System.EventHandler(this.Btn_Nuevo_Click);
-            // 
-            // Btn_Modificar
-            // 
-            this.Btn_Modificar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Btn_Modificar.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.Btn_Modificar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame;
-            this.Btn_Modificar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Btn_Modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Modificar.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Modificar.ForeColor = System.Drawing.Color.Black;
-            this.Btn_Modificar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Modificar.Image")));
-            this.Btn_Modificar.Location = new System.Drawing.Point(570, 449);
-            this.Btn_Modificar.Name = "Btn_Modificar";
-            this.Btn_Modificar.Size = new System.Drawing.Size(98, 50);
-            this.Btn_Modificar.TabIndex = 28;
-            this.Btn_Modificar.Text = " Editar";
-            this.Btn_Modificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Btn_Modificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Btn_Modificar.UseVisualStyleBackColor = true;
-            this.Btn_Modificar.Click += new System.EventHandler(this.Btn_Modificar_Click);
-            // 
-            // Btn_Eliminar
-            // 
-            this.Btn_Eliminar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Btn_Eliminar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame;
-            this.Btn_Eliminar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Btn_Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Eliminar.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Eliminar.ForeColor = System.Drawing.Color.Black;
-            this.Btn_Eliminar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Eliminar.Image")));
-            this.Btn_Eliminar.Location = new System.Drawing.Point(674, 449);
-            this.Btn_Eliminar.Name = "Btn_Eliminar";
-            this.Btn_Eliminar.Size = new System.Drawing.Size(98, 50);
-            this.Btn_Eliminar.TabIndex = 27;
-            this.Btn_Eliminar.Text = "Eliminar";
-            this.Btn_Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Btn_Eliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Btn_Eliminar.UseVisualStyleBackColor = true;
-            // 
-            // Frm_Diagnosticos
+            // Frm_sintomas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(784, 511);
-            this.Controls.Add(this.Btn_Cerrar_ABM);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Btn_Buscar);
             this.Controls.Add(this.Txt_Nombre);
             this.Controls.Add(this.label2);
@@ -205,9 +202,9 @@
             this.Controls.Add(this.Btn_Modificar);
             this.Controls.Add(this.Btn_Eliminar);
             this.Controls.Add(this.Tbl_Diagnosticos);
-            this.Controls.Add(this.label1);
-            this.Name = "Frm_Diagnosticos";
-            this.Text = "Frm_Diagnosticos";
+            this.Controls.Add(this.Btn_Cerrar_ABM);
+            this.Name = "Frm_sintomas";
+            this.Text = "Frm_sintomas";
             ((System.ComponentModel.ISupportInitialize)(this.Tbl_Diagnosticos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -224,8 +221,8 @@
         private System.Windows.Forms.Button Btn_Modificar;
         private System.Windows.Forms.Button Btn_Eliminar;
         private System.Windows.Forms.DataGridView Tbl_Diagnosticos;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripción;
+        private System.Windows.Forms.Label label1;
     }
 }

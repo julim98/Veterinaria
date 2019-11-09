@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_ABM_Diagnosticos));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Txt_Descripcion = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.Btn_Cancelar = new System.Windows.Forms.Button();
             this.Btn_Guardar = new System.Windows.Forms.Button();
@@ -40,7 +41,6 @@
             this.Btn_Cerrar = new System.Windows.Forms.Button();
             this.Btn_Minimizar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.Txt_Descripcion = new System.Windows.Forms.RichTextBox();
             this.panel2.SuspendLayout();
             this.Pnl_Barra_Superior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,6 +60,15 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(658, 186);
             this.panel2.TabIndex = 45;
+            // 
+            // Txt_Descripcion
+            // 
+            this.Txt_Descripcion.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Descripcion.Location = new System.Drawing.Point(428, 27);
+            this.Txt_Descripcion.Name = "Txt_Descripcion";
+            this.Txt_Descripcion.Size = new System.Drawing.Size(206, 96);
+            this.Txt_Descripcion.TabIndex = 54;
+            this.Txt_Descripcion.Text = "";
             // 
             // label3
             // 
@@ -102,6 +111,7 @@
             this.Btn_Guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Guardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_Guardar.UseVisualStyleBackColor = true;
+            this.Btn_Guardar.Click += new System.EventHandler(this.Btn_Guardar_Click);
             // 
             // Txt_Nombre
             // 
@@ -139,7 +149,6 @@
             this.pictureBox1.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.ImageLocation = "center";
             this.pictureBox1.Location = new System.Drawing.Point(3, 4);
             this.pictureBox1.Name = "pictureBox1";
@@ -186,15 +195,6 @@
             this.label2.Size = new System.Drawing.Size(205, 20);
             this.label2.TabIndex = 30;
             this.label2.Text = "Administrar Diagnósticos";
-            // 
-            // Txt_Descripcion
-            // 
-            this.Txt_Descripcion.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Descripcion.Location = new System.Drawing.Point(428, 27);
-            this.Txt_Descripcion.Name = "Txt_Descripcion";
-            this.Txt_Descripcion.Size = new System.Drawing.Size(206, 96);
-            this.Txt_Descripcion.TabIndex = 54;
-            this.Txt_Descripcion.Text = "";
             // 
             // Frm_ABM_Diagnosticos
             // 

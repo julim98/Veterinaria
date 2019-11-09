@@ -4,7 +4,11 @@
 -Terminar ABMs:
 	* Medicamentos (Julian) + stock (listo)
 	* Empleados: Falta editar y eliminar // FACU (listo)
-	* Laboratorio: no funciona bien, al cargar falla cuando se usa espacios (no se, es raro)
+	* Laboratorio: no funciona bien, al cargar falla cuando se usa espacios (no se, es raro)(pienso que puede ser la bd)
+	* Vacunas
+	* Sintomas
+	* Consultas
+	* Diagnosticos: todo
 
 - Terminar Inicio: Poner una imagen de la veterinaria
 

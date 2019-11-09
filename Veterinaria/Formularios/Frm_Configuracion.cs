@@ -17,7 +17,7 @@ namespace Veterinaria.Vista
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Btn_Laboratorios_Click(object sender, EventArgs e)
         {
             Frm_Laboratorios pantalla = new Frm_Laboratorios();
             pantalla.Show();
