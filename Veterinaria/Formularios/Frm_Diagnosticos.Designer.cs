@@ -33,13 +33,13 @@
             this.Txt_Nombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Tbl_Diagnosticos = new System.Windows.Forms.DataGridView();
-            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripción = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.Btn_Cerrar_ABM = new System.Windows.Forms.Button();
             this.Btn_Nuevo = new System.Windows.Forms.Button();
             this.Btn_Modificar = new System.Windows.Forms.Button();
             this.Btn_Eliminar = new System.Windows.Forms.Button();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_diagnostico = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Tbl_Diagnosticos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,6 +57,7 @@
             this.Btn_Buscar.TabIndex = 32;
             this.Btn_Buscar.Text = "Buscar";
             this.Btn_Buscar.UseVisualStyleBackColor = true;
+            this.Btn_Buscar.Click += new System.EventHandler(this.Btn_Buscar_Click);
             // 
             // Txt_Nombre
             // 
@@ -87,25 +88,12 @@
             this.Tbl_Diagnosticos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Tbl_Diagnosticos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nombre,
-            this.Descripción});
+            this.id_diagnostico});
             this.Tbl_Diagnosticos.Location = new System.Drawing.Point(12, 134);
             this.Tbl_Diagnosticos.Name = "Tbl_Diagnosticos";
             this.Tbl_Diagnosticos.ReadOnly = true;
             this.Tbl_Diagnosticos.Size = new System.Drawing.Size(760, 309);
             this.Tbl_Diagnosticos.TabIndex = 26;
-            // 
-            // nombre
-            // 
-            this.nombre.HeaderText = "Nombre";
-            this.nombre.Name = "nombre";
-            this.nombre.ReadOnly = true;
-            this.nombre.Width = 89;
-            // 
-            // Descripción
-            // 
-            this.Descripción.HeaderText = "Descripción";
-            this.Descripción.Name = "Descripción";
-            this.Descripción.ReadOnly = true;
             // 
             // label1
             // 
@@ -190,6 +178,21 @@
             this.Btn_Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Eliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_Eliminar.UseVisualStyleBackColor = true;
+            this.Btn_Eliminar.Click += new System.EventHandler(this.Btn_Eliminar_Click);
+            // 
+            // nombre
+            // 
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
+            this.nombre.Width = 89;
+            // 
+            // id_diagnostico
+            // 
+            this.id_diagnostico.HeaderText = "ID_Diagnostico";
+            this.id_diagnostico.Name = "id_diagnostico";
+            this.id_diagnostico.ReadOnly = true;
+            this.id_diagnostico.Visible = false;
             // 
             // Frm_Diagnosticos
             // 
@@ -226,6 +229,6 @@
         private System.Windows.Forms.DataGridView Tbl_Diagnosticos;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descripción;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_diagnostico;
     }
 }

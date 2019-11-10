@@ -123,6 +123,5 @@ namespace Veterinaria.Negocios
             return _BD.ejecutar_consulta("SELECT * FROM empleados WHERE tipo_doc ="+ tipo_doc +"and nro_doc="+nro_doc);
         }
     }
-
-    }
+}
 

@@ -36,21 +36,23 @@ namespace Veterinaria.Vista
         private void Btn_Guardar_Click(object sender, EventArgs e)
         {
             if (validacion())
-                return;
-            negocio.Insertar_Raza(
+            {
+                negocio.Insertar_Raza(
                 Txt_Denominacion.Text,
                 Txt_Cuidados.Text);
-            Frm_ABM_Perro dueño = (Frm_ABM_Perro)Owner;
-            dueño.cargar_combos();
-            dueño.Show();
-            this.Dispose();
+                Frm_ABM_Perro dueño = (Frm_ABM_Perro)Owner;
+                dueño.cargar_combos();
+                dueño.Show();
+                this.Dispose();
+            }
+            
         }
 
         private bool validacion()
         {
-            return Clases.tratamientos_especiales.validacion_textos(Txt_Denominacion)
+            return !(Clases.tratamientos_especiales.validacion_textos(Txt_Denominacion)
                 ||
-                Clases.tratamientos_especiales.validacion_combos();
+                Clases.tratamientos_especiales.validacion_combos());
         }
 
         private void Btn_Cancelar_Click(object sender, EventArgs e)

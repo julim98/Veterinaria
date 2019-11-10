@@ -99,7 +99,7 @@ namespace Veterinaria
 
         private void Btn_Sintomas_Click(object sender, EventArgs e)
         {
-            AbrirFormsHijos(new Formularios.Frm_sintomas());
+            AbrirFormsHijos(new Formularios.Frm_Sintomas());
         }
     }
 }

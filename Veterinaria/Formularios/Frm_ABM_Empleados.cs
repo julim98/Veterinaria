@@ -14,6 +14,9 @@ namespace Veterinaria.Vista
 {
     public partial class Frm_ABM_Empleados : Form
     {
+
+        NG_Empleados negocio = new NG_Empleados();
+
         public Frm_ABM_Empleados()
         {
             InitializeComponent();
@@ -29,15 +32,9 @@ namespace Veterinaria.Vista
 
         private void Btn_Guardar_Click(object sender, EventArgs e)
         {
-            tratamientos_especiales tratamiento = new tratamientos_especiales();
-
-            if (tratamiento.validar(this.Controls) == tratamientos_especiales.resultado_validacion.incorrecta)
+            if (validar())
             {
-                return;
-            }
-
-            NG_Empleados negocio = new NG_Empleados();
-            negocio.insertar(
+                negocio.insertar(
                 Txt_Nombre.Text.Trim(),
                 Txt_Apellido.Text.Trim(),
                 Cmb_Tipo_Documento.SelectedValue.ToString(),
@@ -46,7 +43,13 @@ namespace Veterinaria.Vista
                 Txt_Fecha_Ingreso.Text,
                 Txt_Matricula.Text.Trim(),
                 Cmb_Sucursal.SelectedValue.ToString());
-            this.Dispose();
+                this.Dispose();
+            }
+        }
+
+        private bool validar()
+        {
+            return !(tratamientos_especiales.validacion_textos(Txt_Nombre, Txt_Apellido, Txt_Matricula, Txt_Nro_Documento) || tratamientos_especiales.validacion_combos());
         }
 
         private void Btn_Cancelar_Click(object sender, EventArgs e)

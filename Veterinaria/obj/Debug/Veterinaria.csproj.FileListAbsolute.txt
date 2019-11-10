@@ -87,3 +87,4 @@ C:\Users\facum\Documents\GitHub\Veterinaria\Veterinaria\obj\Debug\Veterinaria.ex
 C:\Users\facum\Documents\GitHub\Veterinaria\Veterinaria\obj\Debug\Veterinaria.pdb
 D:\Usuarios\Ezequiel\Documents\GitHub\Veterinaria1\Veterinaria\obj\Debug\Veterinaria.Formularios.Frm_Modificar_Empleado.resources
 D:\Usuarios\Ezequiel\Documents\GitHub\Veterinaria1\Veterinaria\obj\Debug\Veterinaria.Formularios.Frm_sintomas.resources
+D:\Usuarios\Ezequiel\Documents\GitHub\Veterinaria1\Veterinaria\obj\Debug\Veterinaria.Formularios.Frm_ABM_Sintomas.resources

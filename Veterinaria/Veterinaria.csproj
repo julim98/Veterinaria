@@ -49,6 +49,12 @@
     <Compile Include="Clases\Combo.cs" />
     <Compile Include="Clases\Conexion_BD.cs" />
     <Compile Include="Clases\tratamientos_especiales.cs" />
+    <Compile Include="Formularios\Frm_ABM_Sintomas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Sintomas.Designer.cs">
+      <DependentUpon>Frm_ABM_Sintomas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Frm_ABM_Stock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,17 +73,18 @@
     <Compile Include="Formularios\Frm_Modificar_Perro.Designer.cs">
       <DependentUpon>Frm_Modificar_Perro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Frm_sintomas.cs">
+    <Compile Include="Formularios\Frm_Sintomas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Frm_sintomas.Designer.cs">
-      <DependentUpon>Frm_sintomas.cs</DependentUpon>
+    <Compile Include="Formularios\Frm_Sintomas.Designer.cs">
+      <DependentUpon>Frm_Sintomas.cs</DependentUpon>
     </Compile>
     <Compile Include="Negocios\NG_Diagnosticos.cs" />
     <Compile Include="Negocios\NG_Laboratorios.cs" />
     <Compile Include="Negocios\NG_Medicamentos.cs" />
     <Compile Include="Negocios\NG_Empleados.cs" />
     <Compile Include="Negocios\NG_Perros.cs" />
+    <Compile Include="Negocios\NG_Sintomas.cs" />
     <Compile Include="Negocios\NG_Stock.cs" />
     <Compile Include="Negocios\NG_Sucursales.cs" />
     <Compile Include="Formularios\Frm_ABM_Consultas.cs">
@@ -215,6 +222,9 @@
     <EmbeddedResource Include="Formularios\Frm_ABM_Razas.resx">
       <DependentUpon>Frm_ABM_Razas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_ABM_Sintomas.resx">
+      <DependentUpon>Frm_ABM_Sintomas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_ABM_Stock.resx">
       <DependentUpon>Frm_ABM_Stock.cs</DependentUpon>
     </EmbeddedResource>
@@ -254,8 +264,8 @@
     <EmbeddedResource Include="Formularios\Frm_Perros.resx">
       <DependentUpon>Frm_Perros.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Frm_sintomas.resx">
-      <DependentUpon>Frm_sintomas.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Frm_Sintomas.resx">
+      <DependentUpon>Frm_Sintomas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

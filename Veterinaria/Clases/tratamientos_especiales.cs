@@ -11,45 +11,12 @@ namespace Veterinaria.Clases
     {
         public enum resultado_validacion { correcta, incorrecta }
 
-        public resultado_validacion validar(Control.ControlCollection controles)
-        {
-            foreach (var item in controles)
-            {
-                if (item.GetType().Name == "TextBox01")
-                {
-                    if (((TextBox)item).CausesValidation == true)
-                    {
-                        if (((TextBox)item).Text == "")
-                        {
-                            MessageBox.Show("El " + ((TextBox)item).Name + " está vacío");
-                            ((TextBox)item).Focus();
-                            return resultado_validacion.incorrecta;
-                        }
-
-                    }
-                }
-                if (item.GetType().Name == "ComboBox01")
-                {
-                    if (((ComboBox)item).CausesValidation == true)
-                    {
-                        if ((((ComboBox)item).SelectedIndex == -1))
-                        {
-                            MessageBox.Show("El " + ((ComboBox)item).Name + " no tiene selección");
-                            ((ComboBox)item).Focus();
-                            return resultado_validacion.incorrecta;
-                        }
-                    }
-                }
-            }
-            return resultado_validacion.correcta;
-        }
-
 
         public static bool validacion_textos(params TextBox[] lista)
         {
             for (int i = 0; i < lista.Count(); i++)
             {
-                if(lista[i].Text == "")
+                if(lista[i].Text.Trim() == "")
                 {
                     MessageBox.Show("El " + lista[i].Name + " está vacío");
                     lista[i].Focus();

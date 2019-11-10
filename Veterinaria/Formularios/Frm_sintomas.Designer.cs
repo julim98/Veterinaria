@@ -1,6 +1,6 @@
 ﻿namespace Veterinaria.Formularios
 {
-    partial class Frm_sintomas
+    partial class Frm_Sintomas
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_sintomas));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Sintomas));
             this.Btn_Cerrar_ABM = new System.Windows.Forms.Button();
             this.Btn_Buscar = new System.Windows.Forms.Button();
             this.Txt_Nombre = new System.Windows.Forms.TextBox();
@@ -36,11 +36,11 @@
             this.Btn_Nuevo = new System.Windows.Forms.Button();
             this.Btn_Modificar = new System.Windows.Forms.Button();
             this.Btn_Eliminar = new System.Windows.Forms.Button();
-            this.Tbl_Diagnosticos = new System.Windows.Forms.DataGridView();
+            this.Tbl_Sintomas = new System.Windows.Forms.DataGridView();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripción = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_sintomas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.Tbl_Diagnosticos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Tbl_Sintomas)).BeginInit();
             this.SuspendLayout();
             // 
             // Btn_Cerrar_ABM
@@ -55,6 +55,7 @@
             this.Btn_Cerrar_ABM.Size = new System.Drawing.Size(20, 20);
             this.Btn_Cerrar_ABM.TabIndex = 34;
             this.Btn_Cerrar_ABM.UseVisualStyleBackColor = true;
+            this.Btn_Cerrar_ABM.Click += new System.EventHandler(this.Btn_Cerrar_ABM_Click);
             // 
             // Btn_Buscar
             // 
@@ -70,6 +71,7 @@
             this.Btn_Buscar.TabIndex = 41;
             this.Btn_Buscar.Text = "Buscar";
             this.Btn_Buscar.UseVisualStyleBackColor = true;
+            this.Btn_Buscar.Click += new System.EventHandler(this.Btn_Buscar_Click);
             // 
             // Txt_Nombre
             // 
@@ -109,6 +111,7 @@
             this.Btn_Nuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Nuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_Nuevo.UseVisualStyleBackColor = true;
+            this.Btn_Nuevo.Click += new System.EventHandler(this.Btn_Nuevo_Click);
             // 
             // Btn_Modificar
             // 
@@ -128,6 +131,7 @@
             this.Btn_Modificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Modificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_Modificar.UseVisualStyleBackColor = true;
+            this.Btn_Modificar.Click += new System.EventHandler(this.Btn_Modificar_Click);
             // 
             // Btn_Eliminar
             // 
@@ -146,22 +150,23 @@
             this.Btn_Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Eliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_Eliminar.UseVisualStyleBackColor = true;
+            this.Btn_Eliminar.Click += new System.EventHandler(this.Btn_Eliminar_Click);
             // 
             // Tbl_Diagnosticos
             // 
-            this.Tbl_Diagnosticos.AllowUserToAddRows = false;
-            this.Tbl_Diagnosticos.AllowUserToDeleteRows = false;
-            this.Tbl_Diagnosticos.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Tbl_Diagnosticos.BackgroundColor = System.Drawing.SystemColors.WindowFrame;
-            this.Tbl_Diagnosticos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Tbl_Diagnosticos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Tbl_Sintomas.AllowUserToAddRows = false;
+            this.Tbl_Sintomas.AllowUserToDeleteRows = false;
+            this.Tbl_Sintomas.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Tbl_Sintomas.BackgroundColor = System.Drawing.SystemColors.WindowFrame;
+            this.Tbl_Sintomas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Tbl_Sintomas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nombre,
-            this.Descripción});
-            this.Tbl_Diagnosticos.Location = new System.Drawing.Point(12, 134);
-            this.Tbl_Diagnosticos.Name = "Tbl_Diagnosticos";
-            this.Tbl_Diagnosticos.ReadOnly = true;
-            this.Tbl_Diagnosticos.Size = new System.Drawing.Size(760, 309);
-            this.Tbl_Diagnosticos.TabIndex = 35;
+            this.id_sintomas});
+            this.Tbl_Sintomas.Location = new System.Drawing.Point(12, 134);
+            this.Tbl_Sintomas.Name = "Tbl_Diagnosticos";
+            this.Tbl_Sintomas.ReadOnly = true;
+            this.Tbl_Sintomas.Size = new System.Drawing.Size(760, 309);
+            this.Tbl_Sintomas.TabIndex = 35;
             // 
             // nombre
             // 
@@ -170,11 +175,12 @@
             this.nombre.ReadOnly = true;
             this.nombre.Width = 89;
             // 
-            // Descripción
+            // id_sintomas
             // 
-            this.Descripción.HeaderText = "Descripción";
-            this.Descripción.Name = "Descripción";
-            this.Descripción.ReadOnly = true;
+            this.id_sintomas.HeaderText = "ID_Sintomas";
+            this.id_sintomas.Name = "id_sintomas";
+            this.id_sintomas.ReadOnly = true;
+            this.id_sintomas.Visible = false;
             // 
             // label1
             // 
@@ -188,7 +194,7 @@
             this.label1.Text = "SÍNTOMAS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Frm_sintomas
+            // Frm_Sintomas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -201,11 +207,11 @@
             this.Controls.Add(this.Btn_Nuevo);
             this.Controls.Add(this.Btn_Modificar);
             this.Controls.Add(this.Btn_Eliminar);
-            this.Controls.Add(this.Tbl_Diagnosticos);
+            this.Controls.Add(this.Tbl_Sintomas);
             this.Controls.Add(this.Btn_Cerrar_ABM);
-            this.Name = "Frm_sintomas";
+            this.Name = "Frm_Sintomas";
             this.Text = "Frm_sintomas";
-            ((System.ComponentModel.ISupportInitialize)(this.Tbl_Diagnosticos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Tbl_Sintomas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -220,9 +226,9 @@
         private System.Windows.Forms.Button Btn_Nuevo;
         private System.Windows.Forms.Button Btn_Modificar;
         private System.Windows.Forms.Button Btn_Eliminar;
-        private System.Windows.Forms.DataGridView Tbl_Diagnosticos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descripción;
+        private System.Windows.Forms.DataGridView Tbl_Sintomas;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_sintomas;
     }
 }
