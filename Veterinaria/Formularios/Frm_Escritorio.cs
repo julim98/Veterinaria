@@ -25,7 +25,7 @@ namespace Veterinaria
             Btn_Restaurar.Visible = true;
             this.WindowState = FormWindowState.Maximized;
         }
-
+        //hhhhh
         private void AbrirFormsHijos(object Form_Hijo)
         {
             if (Pnl_Contenedor.Controls.Count > 0)            
