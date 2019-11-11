@@ -2,14 +2,14 @@
 USE _BD_VETERINARIA;
 CREATE TABLE laboratorios (
    id_laboratorio int IDENTITY (0, 1) PRIMARY KEY,
-   razon_social varchar(15) NOT NULL,
-   direccion varchar(20) NOT NULL
+   razon_social varchar(50) NOT NULL,
+   direccion varchar(50) NOT NULL
 );
 
 CREATE TABLE dueños (
    id_dueño int IDENTITY (0, 1) PRIMARY KEY,
-   nombre varchar(15) NOT NULL,
-   apellido varchar(15) NOT NULL,
+   nombre varchar(50) NOT NULL,
+   apellido varchar(50) NOT NULL,
    telefono int
 );
 
@@ -30,13 +30,13 @@ CREATE TABLE diagnosticos (
 
 CREATE TABLE razas (
    id_raza int IDENTITY (0, 1) PRIMARY KEY,
-   denominacion varchar(20) NOT NULL,   
+   denominacion varchar(50) NOT NULL,   
    nota_cuidados text   
 );
 
 CREATE TABLE medicamentos (
    id_medicamento int IDENTITY (0, 1) PRIMARY KEY,
-   nombre_med varchar(15) NOT NULL,
+   nombre_med varchar(50) NOT NULL,
    id_laboratorio int,
    descripcion text,   
    fecha_ultima_compra date,
@@ -47,8 +47,8 @@ CREATE TABLE empleados (
    tipo_doc int NOT NULL,
    nro_doc int NOT NULL,
    id_sucursal int NOT NULL,
-   nombre varchar(15) NOT NULL,
-   apellido varchar(15) NOT NULL,
+   nombre varchar(50) NOT NULL,
+   apellido varchar(50) NOT NULL,
    fecha_nacimiento date NOT NULL,
    fecha_ingreso date NOT NULL,
    matricula integer,   
@@ -57,7 +57,7 @@ CREATE TABLE empleados (
 
 CREATE TABLE sucursales (
    id_sucursal int IDENTITY (0, 1) PRIMARY KEY,
-   nombre varchar(15) NOT NULL,
+   nombre varchar(50) NOT NULL,
    tipo_doc_supervisor int , 
    nro_doc_supervisor int,
    tipo_doc_supervisor_suplente int, 
@@ -71,7 +71,7 @@ CREATE TABLE perros (
    id_sucursal int NOT NULL,    
    id_raza int NOT NULL,		
    id_dueño int NOT NULL,
-   nombre varchar(15) NOT NULL,
+   nombre varchar(50) NOT NULL,
    fecha_nacimiento date NOT NULL,   
    peso decimal NOT NULL,
    altura decimal NOT NULL, 
@@ -112,7 +112,7 @@ CREATE TABLE consultas (
 
 CREATE TABLE sintomas_consulta (
    nro_historia_clinica int NOT NULL,
-   id_sucursal inT NOT NULL,
+   id_sucursal int NOT NULL,
    id_consulta int NOT NULL,
    id_sintoma int NOT NULL,
    PRIMARY KEY (nro_historia_clinica, id_sucursal, id_consulta, id_sintoma),
@@ -156,7 +156,7 @@ ALTER TABLE empleados ADD FOREIGN KEY (id_sucursal) REFERENCES sucursales(id_suc
 
 CREATE TABLE tipos_documentos (
 	id_tipo_documento INT IDENTITY(0,1),
-	nombre_tipo_doc CHAR(20),
+	nombre_tipo_doc CHAR(30),
 	CONSTRAINT id_documento PRIMARY KEY (id_tipo_documento)
 );
 
