@@ -28,5 +28,10 @@ namespace Veterinaria.Vista
         {
             this.Dispose();
         }
+
+        private void Frm_ABM_Consultas_Load(object sender, EventArgs e)
+        {
+            label18.Text = "Fecha: " + DateTime.Now.ToShortDateString();
+        }
     }
 }

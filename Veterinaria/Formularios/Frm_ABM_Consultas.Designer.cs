@@ -35,7 +35,6 @@
             this.Btn_Minimizar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Cmb_Sucursal = new System.Windows.Forms.ComboBox();
             this.Txt_Nro_Historia_Clinica = new System.Windows.Forms.TextBox();
             this.Btn_Cancelar = new System.Windows.Forms.Button();
@@ -45,9 +44,13 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.asdasd = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Pnl_Barra_Superior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // Pnl_Barra_Superior
@@ -60,7 +63,7 @@
             this.Pnl_Barra_Superior.Dock = System.Windows.Forms.DockStyle.Top;
             this.Pnl_Barra_Superior.Location = new System.Drawing.Point(0, 0);
             this.Pnl_Barra_Superior.Name = "Pnl_Barra_Superior";
-            this.Pnl_Barra_Superior.Size = new System.Drawing.Size(729, 30);
+            this.Pnl_Barra_Superior.Size = new System.Drawing.Size(542, 30);
             this.Pnl_Barra_Superior.TabIndex = 1;
             // 
             // pictureBox1
@@ -84,7 +87,7 @@
             this.Btn_Cerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.Btn_Cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Cerrar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar.Image")));
-            this.Btn_Cerrar.Location = new System.Drawing.Point(699, 0);
+            this.Btn_Cerrar.Location = new System.Drawing.Point(512, 0);
             this.Btn_Cerrar.Name = "Btn_Cerrar";
             this.Btn_Cerrar.Size = new System.Drawing.Size(30, 30);
             this.Btn_Cerrar.TabIndex = 27;
@@ -99,7 +102,7 @@
             this.Btn_Minimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.Btn_Minimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Minimizar.Image")));
-            this.Btn_Minimizar.Location = new System.Drawing.Point(669, 0);
+            this.Btn_Minimizar.Location = new System.Drawing.Point(482, 0);
             this.Btn_Minimizar.Name = "Btn_Minimizar";
             this.Btn_Minimizar.Size = new System.Drawing.Size(30, 30);
             this.Btn_Minimizar.TabIndex = 26;
@@ -119,7 +122,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel2.Controls.Add(this.dateTimePicker1);
+            this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Controls.Add(this.Cmb_Sucursal);
             this.panel2.Controls.Add(this.Txt_Nro_Historia_Clinica);
             this.panel2.Controls.Add(this.Btn_Cancelar);
@@ -132,20 +135,8 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 30);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(729, 380);
+            this.panel2.Size = new System.Drawing.Size(542, 475);
             this.panel2.TabIndex = 44;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(617, 6);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2019, 11, 11, 0, 0, 0, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(100, 23);
-            this.dateTimePicker1.TabIndex = 50;
-            this.dateTimePicker1.Value = new System.DateTime(2019, 11, 11, 0, 0, 0, 0);
             // 
             // Cmb_Sucursal
             // 
@@ -173,7 +164,7 @@
             this.Btn_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Cancelar.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Cancelar.Image")));
-            this.Btn_Cancelar.Location = new System.Drawing.Point(617, 318);
+            this.Btn_Cancelar.Location = new System.Drawing.Point(430, 413);
             this.Btn_Cancelar.Name = "Btn_Cancelar";
             this.Btn_Cancelar.Size = new System.Drawing.Size(100, 50);
             this.Btn_Cancelar.TabIndex = 46;
@@ -190,7 +181,7 @@
             this.Btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Guardar.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Guardar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Guardar.Image")));
-            this.Btn_Guardar.Location = new System.Drawing.Point(511, 318);
+            this.Btn_Guardar.Location = new System.Drawing.Point(324, 413);
             this.Btn_Guardar.Name = "Btn_Guardar";
             this.Btn_Guardar.Size = new System.Drawing.Size(100, 50);
             this.Btn_Guardar.TabIndex = 45;
@@ -201,15 +192,15 @@
             // 
             // label18
             // 
-            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(560, 12);
+            this.label18.Location = new System.Drawing.Point(397, 13);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(51, 15);
+            this.label18.Size = new System.Drawing.Size(133, 15);
             this.label18.TabIndex = 39;
-            this.label18.Text = "Fecha:";
+            this.label18.Text = "Fecha: DD/MM/AA";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Cmb_Empleado
             // 
@@ -251,12 +242,35 @@
             this.label16.TabIndex = 29;
             this.label16.Text = "Sucursal:";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.asdasd,
+            this.Column1});
+            this.dataGridView1.Location = new System.Drawing.Point(72, 174);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(352, 150);
+            this.dataGridView1.TabIndex = 50;
+            // 
+            // asdasd
+            // 
+            this.asdasd.HeaderText = "asdasd";
+            this.asdasd.Name = "asdasd";
+            this.asdasd.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.asdasd.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            // 
             // Frm_ABM_Consultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(729, 410);
+            this.ClientSize = new System.Drawing.Size(542, 505);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.Pnl_Barra_Superior);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -264,11 +278,13 @@
             this.Name = "Frm_ABM_Consultas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_ABM_Consultas";
+            this.Load += new System.EventHandler(this.Frm_ABM_Consultas_Load);
             this.Pnl_Barra_Superior.ResumeLayout(false);
             this.Pnl_Barra_Superior.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -288,8 +304,10 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox Cmb_Sucursal;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.ComboBox Cmb_Empleado;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn asdasd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }
