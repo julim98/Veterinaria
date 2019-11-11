@@ -41,7 +41,7 @@ namespace Veterinaria.Vista
         {
             NG_Laboratorios negocio = new NG_Laboratorios();
             if (id_l == null)
-                negocio.guardar_laboratorio(Txt_Razon_social.Text.Trim(), Txt_Direccion.Text.Trim());
+                negocio.guardar_laboratorio(Txt_Razon_social.Text, Txt_Direccion.Text);
             else
                 negocio.modificar_laboratorio(Txt_Razon_social.Text.Trim(), Txt_Direccion.Text.Trim(), id_l);
             this.Dispose();

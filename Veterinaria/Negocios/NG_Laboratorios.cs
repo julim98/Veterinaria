@@ -17,28 +17,28 @@ namespace Veterinaria.Negocios
 
             string sql = "insert into laboratorios (razon_social, direccion) " +
             "values('" + razon_social + "', '" + direccion + "')";
-            try
+            if (_BD.insertar(sql) ==
+               Conexion_BD.estado_BE.correcto)
             {
-                _BD.insertar(sql);
-                MessageBox.Show("Se guardó correctamente");
+                MessageBox.Show("Se cargó correctamente los datos");
             }
-            catch(Exception)
+            else
             {
-                MessageBox.Show("No se pudo guardar correctamente");
+                MessageBox.Show("No se cargó correctamente los datos");
             }
 
         }
         public void modificar_laboratorio(string razon_social, string direccion, string id)
         {
-            string sql = "update laboratorios set razon_social = '" + razon_social + "', direccion = '" + direccion + "' where id_laboratorio " + id;
-            try
+            string sql = "update laboratorios set razon_social = '" + razon_social + "', direccion = '" + direccion + "' where id_laboratorio = " + id;
+            if (_BD.modificar(sql) ==
+                Conexion_BD.estado_BE.correcto)
             {
-                _BD.insertar(sql);
-                MessageBox.Show("Se modificó correctamente");
+                MessageBox.Show("Se cargó correctamente los datos");
             }
-            catch (Exception)
+            else
             {
-                MessageBox.Show("No se pudo modificar correctamente");
+                MessageBox.Show("No se cargó correctamente los datos");
             }
 
         }
@@ -57,15 +57,12 @@ namespace Veterinaria.Negocios
 
         public void borrar_laboratorio(string id_lab)
         {
-            string sql = "delete from laboratorios where id_laboratorio = " + id_lab;
-            try
+            string sql = "update medicamentos set id_laboratorio = null where id_laboratorio = " + id_lab + "; \n" +
+                "delete from laboratorios where id_laboratorio = " + id_lab;
+            if (_BD.borrar(sql) ==
+               Conexion_BD.estado_BE.correcto)
             {
-                _BD.insertar(sql);
-                MessageBox.Show("Se borró correctamente");
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("No se pudo borrar correctamente");
+                MessageBox.Show("Se cargó correctamente los datos");
             }
         }
 

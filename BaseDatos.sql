@@ -37,7 +37,7 @@ CREATE TABLE razas (
 CREATE TABLE medicamentos (
    id_medicamento int IDENTITY (0, 1) PRIMARY KEY,
    nombre_med varchar(15) NOT NULL,
-   id_laboratorio int NOT NULL,
+   id_laboratorio int,
    descripcion text,   
    fecha_ultima_compra date,
    FOREIGN KEY (id_laboratorio) REFERENCES laboratorios(id_laboratorio)

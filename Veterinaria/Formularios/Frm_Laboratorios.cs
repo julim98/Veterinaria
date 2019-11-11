@@ -84,7 +84,7 @@ namespace Veterinaria.Vista
                 , MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     NG_Laboratorios negocio = new NG_Laboratorios();
-                    negocio.borrar_laboratorio(Tbl_Laboratorios.CurrentRow.Cells["id_lab"].ToString());
+                    negocio.borrar_laboratorio(Tbl_Laboratorios.CurrentRow.Cells["id_lab"].Value.ToString());
                 }
             }
             else
