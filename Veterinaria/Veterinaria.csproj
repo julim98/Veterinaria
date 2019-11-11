@@ -61,6 +61,12 @@
     <Compile Include="Formularios\Frm_ABM_Stock.Designer.cs">
       <DependentUpon>Frm_ABM_Stock.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Frm_ABM_Vacunas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Vacunas.Designer.cs">
+      <DependentUpon>Frm_ABM_Vacunas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Frm_Modificar_Empleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,12 @@
     </Compile>
     <Compile Include="Formularios\Frm_Sintomas.Designer.cs">
       <DependentUpon>Frm_Sintomas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Vacunas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Vacunas.Designer.cs">
+      <DependentUpon>Frm_Vacunas.cs</DependentUpon>
     </Compile>
     <Compile Include="Negocios\NG_Diagnosticos.cs" />
     <Compile Include="Negocios\NG_Laboratorios.cs" />
@@ -196,6 +208,7 @@
       <DependentUpon>Frm_Perros.cs</DependentUpon>
     </Compile>
     <Compile Include="Negocios\NG_Transaccion.cs" />
+    <Compile Include="Negocios\NG_Vacunas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\Frm_ABM_Consultas.resx">
@@ -230,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_ABM_Sucursales.resx">
       <DependentUpon>Frm_ABM_Sucursales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_ABM_Vacunas.resx">
+      <DependentUpon>Frm_ABM_Vacunas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_Configuracion.resx">
       <DependentUpon>Frm_Configuracion.cs</DependentUpon>
@@ -266,6 +282,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_Sintomas.resx">
       <DependentUpon>Frm_Sintomas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Vacunas.resx">
+      <DependentUpon>Frm_Vacunas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

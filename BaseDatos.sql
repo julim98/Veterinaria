@@ -1,5 +1,5 @@
---CREATE DATABASE _BD_VETERINARIA;
-USE _BD_VETERINARIA;
+
+USE _BD_VETERINARIA2;
 CREATE TABLE laboratorios (
    id_laboratorio int IDENTITY (0, 1) PRIMARY KEY,
    razon_social varchar(50) NOT NULL,
