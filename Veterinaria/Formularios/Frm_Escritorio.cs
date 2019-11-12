@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Veterinaria.Vista;
+using Veterinaria.Formularios;
 
 namespace Veterinaria
 {
@@ -89,7 +90,7 @@ namespace Veterinaria
 
         private void Btn_Informes_Click(object sender, EventArgs e)
         {
-            //AbrirFormsHijos(new Frm_Informes());
+            AbrirFormsHijos(new Frm_Informes());
         }
 
         private void Btn_Salir_Click(object sender, EventArgs e)
