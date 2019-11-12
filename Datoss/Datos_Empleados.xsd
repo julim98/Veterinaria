@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Datos_Empleados" targetNamespace="http://tempuri.org/Datos_Empleados.xsd" xmlns:mstns="http://tempuri.org/Datos_Empleados.xsd" xmlns="http://tempuri.org/Datos_Empleados.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Datos_Empleados" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Datos_Empleados" msprop:Generator_UserDSName="Datos_Empleados">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="empleados" msprop:Generator_TableClassName="empleadosDataTable" msprop:Generator_TableVarName="tableempleados" msprop:Generator_TablePropName="empleados" msprop:Generator_RowDeletingName="empleadosRowDeleting" msprop:Generator_RowChangingName="empleadosRowChanging" msprop:Generator_RowEvHandlerName="empleadosRowChangeEventHandler" msprop:Generator_RowDeletedName="empleadosRowDeleted" msprop:Generator_UserTableName="empleados" msprop:Generator_RowChangedName="empleadosRowChanged" msprop:Generator_RowEvArgName="empleadosRowChangeEvent" msprop:Generator_RowClassName="empleadosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="apellido" msprop:Generator_ColumnVarNameInTable="columnapellido" msprop:Generator_ColumnPropNameInRow="apellido" msprop:Generator_ColumnPropNameInTable="apellidoColumn" msprop:Generator_UserColumnName="apellido" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="id_sucursal" msprop:Generator_ColumnVarNameInTable="columnid_sucursal" msprop:Generator_ColumnPropNameInRow="id_sucursal" msprop:Generator_ColumnPropNameInTable="id_sucursalColumn" msprop:Generator_UserColumnName="id_sucursal" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="sucursales" msprop:Generator_TableClassName="sucursalesDataTable" msprop:Generator_TableVarName="tablesucursales" msprop:Generator_TablePropName="sucursales" msprop:Generator_RowDeletingName="sucursalesRowDeleting" msprop:Generator_RowChangingName="sucursalesRowChanging" msprop:Generator_RowEvHandlerName="sucursalesRowChangeEventHandler" msprop:Generator_RowDeletedName="sucursalesRowDeleted" msprop:Generator_UserTableName="sucursales" msprop:Generator_RowChangedName="sucursalesRowChanged" msprop:Generator_RowEvArgName="sucursalesRowChangeEvent" msprop:Generator_RowClassName="sucursalesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_sucursal" msprop:Generator_ColumnVarNameInTable="columnid_sucursal" msprop:Generator_ColumnPropNameInRow="id_sucursal" msprop:Generator_ColumnPropNameInTable="id_sucursalColumn" msprop:Generator_UserColumnName="id_sucursal" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="DataTable1_DataTable2" msdata:parent="empleados" msdata:child="sucursales" msdata:parentkey="id_sucursal" msdata:childkey="id_sucursal" msprop:Generator_UserChildTable="sucursales" msprop:Generator_ChildPropName="GetsucursalesRows" msprop:Generator_UserRelationName="DataTable1_DataTable2" msprop:Generator_ParentPropName="empleadosRow" msprop:Generator_RelationVarName="relationDataTable1_DataTable2" msprop:Generator_UserParentTable="empleados" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
