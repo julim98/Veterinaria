@@ -140,6 +140,7 @@
     <Compile Include="Formularios\Frm_Sintomas.Designer.cs">
       <DependentUpon>Frm_Sintomas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Negocios\NG_Consultas.cs" />
     <Compile Include="Negocios\NG_Diagnosticos.cs" />
     <Compile Include="Negocios\NG_Laboratorios.cs" />
     <Compile Include="Negocios\NG_Medicamentos.cs" />

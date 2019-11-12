@@ -22,7 +22,7 @@ namespace Veterinaria.Formularios
 
         private void Frm_ABM_Consulta_Diagnostico_Load(object sender, EventArgs e)
         {
-            tbl_diagnosticos.Columns[1].
+
         }
     }
 }
