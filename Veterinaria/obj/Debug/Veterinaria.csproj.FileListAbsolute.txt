@@ -233,3 +233,8 @@ C:\Users\Gino Ascolani\Documents\GitHub\Veterinaria\Veterinaria\obj\Debug\Veteri
 C:\Users\Gino Ascolani\Documents\GitHub\Veterinaria\Veterinaria\obj\Debug\Veterinaria.exe
 C:\Users\Gino Ascolani\Documents\GitHub\Veterinaria\Veterinaria\obj\Debug\Veterinaria.pdb
 C:\Users\Gino Ascolani\Documents\GitHub\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Formularios.Frm_Informe_Vacunas.resources
+C:\Users\Facu\Documents\GitHub\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Formularios.Frm_ABM_Sintomas.resources
+C:\Users\Facu\Documents\GitHub\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Formularios.Frm_Informes.resources
+C:\Users\Facu\Documents\GitHub\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Formularios.Frm_Informe_Empleados.resources
+C:\Users\Facu\Documents\GitHub\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Formularios.Frm_Modificar_Empleado.resources
+C:\Users\Facu\Documents\GitHub\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Formularios.Frm_Sintomas.resources
