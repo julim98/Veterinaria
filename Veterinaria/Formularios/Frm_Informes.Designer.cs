@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.Btn_Empleados = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_diagnosticos = new System.Windows.Forms.Button();
+            this.btn_vacunas = new System.Windows.Forms.Button();
+            this.btn_razas = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Btn_Empleados
@@ -47,19 +49,48 @@
             this.Btn_Empleados.UseVisualStyleBackColor = false;
             this.Btn_Empleados.Click += new System.EventHandler(this.Btn_Empleados_Click);
             // 
-            // button1
+            // btn_diagnosticos
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(392, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(360, 80);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Empleados";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_diagnosticos.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_diagnosticos.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_diagnosticos.FlatAppearance.BorderSize = 2;
+            this.btn_diagnosticos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_diagnosticos.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_diagnosticos.Location = new System.Drawing.Point(392, 12);
+            this.btn_diagnosticos.Name = "btn_diagnosticos";
+            this.btn_diagnosticos.Size = new System.Drawing.Size(360, 80);
+            this.btn_diagnosticos.TabIndex = 2;
+            this.btn_diagnosticos.Text = "Diagnosticos";
+            this.btn_diagnosticos.UseVisualStyleBackColor = false;
+            // 
+            // btn_vacunas
+            // 
+            this.btn_vacunas.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_vacunas.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_vacunas.FlatAppearance.BorderSize = 2;
+            this.btn_vacunas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_vacunas.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_vacunas.Location = new System.Drawing.Point(12, 114);
+            this.btn_vacunas.Name = "btn_vacunas";
+            this.btn_vacunas.Size = new System.Drawing.Size(360, 80);
+            this.btn_vacunas.TabIndex = 3;
+            this.btn_vacunas.Text = "Vacunas";
+            this.btn_vacunas.UseVisualStyleBackColor = false;
+            this.btn_vacunas.Click += new System.EventHandler(this.btn_vacunas_Click);
+            // 
+            // btn_razas
+            // 
+            this.btn_razas.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_razas.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_razas.FlatAppearance.BorderSize = 2;
+            this.btn_razas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_razas.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_razas.Location = new System.Drawing.Point(392, 114);
+            this.btn_razas.Name = "btn_razas";
+            this.btn_razas.Size = new System.Drawing.Size(360, 80);
+            this.btn_razas.TabIndex = 4;
+            this.btn_razas.Text = "Razas";
+            this.btn_razas.UseVisualStyleBackColor = false;
             // 
             // Frm_Informes
             // 
@@ -67,7 +98,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_razas);
+            this.Controls.Add(this.btn_vacunas);
+            this.Controls.Add(this.btn_diagnosticos);
             this.Controls.Add(this.Btn_Empleados);
             this.Name = "Frm_Informes";
             this.Text = "Frm_Informes";
@@ -79,6 +112,8 @@
         #endregion
 
         private System.Windows.Forms.Button Btn_Empleados;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_diagnosticos;
+        private System.Windows.Forms.Button btn_vacunas;
+        private System.Windows.Forms.Button btn_razas;
     }
 }

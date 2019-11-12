@@ -232,3 +232,4 @@ C:\Users\Gino Ascolani\Documents\GitHub\Veterinaria\Veterinaria\obj\Debug\Veteri
 C:\Users\Gino Ascolani\Documents\GitHub\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.CopyComplete
 C:\Users\Gino Ascolani\Documents\GitHub\Veterinaria\Veterinaria\obj\Debug\Veterinaria.exe
 C:\Users\Gino Ascolani\Documents\GitHub\Veterinaria\Veterinaria\obj\Debug\Veterinaria.pdb
+C:\Users\Gino Ascolani\Documents\GitHub\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Formularios.Frm_Informe_Vacunas.resources

@@ -81,6 +81,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Datos_Empleados.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Datoss\Datos_Vacunas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Datos_Vacunas.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Frm_ABM_Sintomas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -339,6 +344,17 @@
     </None>
     <None Include="Datoss\Datos_Empleados.xss">
       <DependentUpon>Datos_Empleados.xsd</DependentUpon>
+    </None>
+    <None Include="Datoss\Datos_Vacunas.xsc">
+      <DependentUpon>Datos_Vacunas.xsd</DependentUpon>
+    </None>
+    <None Include="Datoss\Datos_Vacunas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Datos_Vacunas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datoss\Datos_Vacunas.xss">
+      <DependentUpon>Datos_Vacunas.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
