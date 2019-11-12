@@ -30,8 +30,6 @@ namespace Veterinaria.Formularios
 
         private void btn_vacunas_Click(object sender, EventArgs e)
         {
-            Frm_Informe_Vacunas pantalla = new Frm_Informe_Vacunas();
-            pantalla.ShowDialog();
         }
     }
 }

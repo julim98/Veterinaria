@@ -86,6 +86,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Datos_Vacunas.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Frm_ABM_Consulta_Diagnostico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Consulta_Diagnostico.Designer.cs">
+      <DependentUpon>Frm_ABM_Consulta_Diagnostico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Consulta_Sintoma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ABM_Consulta_Sintoma.Designer.cs">
+      <DependentUpon>Frm_ABM_Consulta_Sintoma.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Frm_ABM_Sintomas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -250,6 +262,12 @@
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="Formularios\Frm_ABM_Consultas.resx">
       <DependentUpon>Frm_ABM_Consultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_ABM_Consulta_Diagnostico.resx">
+      <DependentUpon>Frm_ABM_Consulta_Diagnostico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_ABM_Consulta_Sintoma.resx">
+      <DependentUpon>Frm_ABM_Consulta_Sintoma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_ABM_Diagnosticos.resx">
       <DependentUpon>Frm_ABM_Diagnosticos.cs</DependentUpon>
