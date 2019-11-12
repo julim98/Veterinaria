@@ -33,5 +33,17 @@ namespace Veterinaria.Formularios
             Frm_Informe_Vacunas pantalla = new Frm_Informe_Vacunas();
             pantalla.ShowDialog();
         }
+
+        private void btn_medicamentos_Click(object sender, EventArgs e)
+        {
+            Frm_Informe_Medicamentos pantalla = new Frm_Informe_Medicamentos();
+            pantalla.ShowDialog();
+        }
+
+        private void btn_razas_Click(object sender, EventArgs e)
+        {
+            Frm_Informe_Razas pantalla = new Frm_Informe_Razas();
+            pantalla.ShowDialog();
+        }
     }
 }

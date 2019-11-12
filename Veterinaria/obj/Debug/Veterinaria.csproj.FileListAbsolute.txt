@@ -233,3 +233,5 @@ C:\Users\Gino Ascolani\Documents\GitHub\Veterinaria\Veterinaria\obj\Debug\Veteri
 C:\Users\Gino Ascolani\Documents\GitHub\Veterinaria\Veterinaria\obj\Debug\Veterinaria.exe
 C:\Users\Gino Ascolani\Documents\GitHub\Veterinaria\Veterinaria\obj\Debug\Veterinaria.pdb
 C:\Users\Gino Ascolani\Documents\GitHub\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Formularios.Frm_Informe_Vacunas.resources
+C:\Users\Gino Ascolani\Documents\GitHub\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Formularios.Frm_Informe_Medicamentos.resources
+C:\Users\Gino Ascolani\Documents\GitHub\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Formularios.Frm_Informe_Razas.resources
