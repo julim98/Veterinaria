@@ -104,16 +104,20 @@
     <Compile Include="Clases\Combo.cs" />
     <Compile Include="Clases\Conexion_BD.cs" />
     <Compile Include="Clases\tratamientos_especiales.cs" />
-    <Compile Include="Datoss\Datos_Empleados.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Datos_Empleados.xsd</DependentUpon>
+    <Compile Include="Datos\datos_empleados.cs">
+      <DependentUpon>datos_empleados.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Datoss\Datos_Vacunas.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Datos_Vacunas.xsd</DependentUpon>
+    <Compile Include="Datos\datos_empleados.Designer.cs">
+      <DependentUpon>datos_empleados.cs</DependentUpon>
     </Compile>
+    <Compile Include="Datos\datos_medicamentos.cs">
+      <DependentUpon>datos_medicamentos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\datos_medicamentos.Designer.cs">
+      <DependentUpon>datos_medicamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\datos_razas.Designer.cs" />
+    <Compile Include="Datos\datos_vacunas.Designer.cs" />
     <Compile Include="Formularios\Frm_ABM_Consulta_Diagnostico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -389,7 +393,6 @@
     <EmbeddedResource Include="Formularios\Frm_Vacunas.resx">
       <DependentUpon>Frm_Vacunas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Informess\informe_empleados.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -400,28 +403,38 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="Datoss\Datos_Empleados.xsc">
-      <DependentUpon>Datos_Empleados.xsd</DependentUpon>
+    <None Include="Datos\datos_empleados.xsc">
+      <DependentUpon>datos_empleados.xsd</DependentUpon>
     </None>
-    <None Include="Datoss\Datos_Empleados.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Datos_Empleados.Designer.cs</LastGenOutput>
+    <None Include="Datos\datos_empleados.xsd" />
+    <None Include="Datos\datos_empleados.xss">
+      <DependentUpon>datos_empleados.xsd</DependentUpon>
     </None>
-    <None Include="Datoss\Datos_Empleados.xss">
-      <DependentUpon>Datos_Empleados.xsd</DependentUpon>
+    <None Include="Datos\datos_medicamentos.xsc">
+      <DependentUpon>datos_medicamentos.xsd</DependentUpon>
     </None>
-    <None Include="Datoss\Datos_Vacunas.xsc">
-      <DependentUpon>Datos_Vacunas.xsd</DependentUpon>
+    <None Include="Datos\datos_medicamentos.xsd" />
+    <None Include="Datos\datos_medicamentos.xss">
+      <DependentUpon>datos_medicamentos.xsd</DependentUpon>
     </None>
-    <None Include="Datoss\Datos_Vacunas.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Datos_Vacunas.Designer.cs</LastGenOutput>
+    <None Include="Datos\datos_razas.xsc">
+      <DependentUpon>datos_razas.xsd</DependentUpon>
     </None>
-    <None Include="Datoss\Datos_Vacunas.xss">
-      <DependentUpon>Datos_Vacunas.xsd</DependentUpon>
+    <None Include="Datos\datos_razas.xsd" />
+    <None Include="Datos\datos_razas.xss">
+      <DependentUpon>datos_razas.xsd</DependentUpon>
     </None>
+    <None Include="Datos\datos_vacunas.xsc">
+      <DependentUpon>datos_vacunas.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\datos_vacunas.xsd" />
+    <None Include="Datos\datos_vacunas.xss">
+      <DependentUpon>datos_vacunas.xsd</DependentUpon>
+    </None>
+    <None Include="Informes\informe_empleados.rdlc" />
+    <None Include="Informes\informe_medicamentos.rdlc" />
+    <None Include="Informes\informe_razas.rdlc" />
+    <None Include="Informes\informe_vacunas.rdlc" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
