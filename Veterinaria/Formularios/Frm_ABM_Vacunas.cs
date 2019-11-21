@@ -19,5 +19,15 @@ namespace Veterinaria.Formularios
         {
             InitializeComponent();
         }
+
+        private void Btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
+
+        private void Btn_Guardar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

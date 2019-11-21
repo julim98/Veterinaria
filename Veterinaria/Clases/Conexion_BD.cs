@@ -16,7 +16,7 @@ namespace Veterinaria
 
         OleDbConnection conexion = new OleDbConnection();
         OleDbCommand cmd = new OleDbCommand();
-        public string cadena_conexion = "Provider=SQLNCLI11;Data Source=DESKTOP-II3H2GH;Integrated Security=SSPI;Initial Catalog=_BD_VETERINARIA4";
+        public string cadena_conexion = "Provider=SQLNCLI11;Data Source=DESKTOP-K8CJ3KA;Integrated Security=SSPI;Initial Catalog=_BD_VETERINARIA2";
         OleDbTransaction transaccion;
         forma_conexion tipo_conexion = forma_conexion.simple;
         estado_BE control_transaccion = estado_BE.correcto;
@@ -61,7 +61,7 @@ namespace Veterinaria
         {
             if (conexion.State == ConnectionState.Closed)
             {
-                conexion.ConnectionString = "Provider=SQLNCLI11;Data Source=DESKTOP-II3H2GH;Integrated Security=SSPI;Initial Catalog=_BD_VETERINARIA4"; ;
+                conexion.ConnectionString = "Provider=SQLNCLI11;Data Source=DESKTOP-K8CJ3KA;Integrated Security=SSPI;Initial Catalog=_BD_VETERINARIA2"; ;
                 conexion.Open();
                 cmd.Connection = conexion;
                 cmd.CommandType = CommandType.Text;

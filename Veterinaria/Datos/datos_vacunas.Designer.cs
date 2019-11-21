@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace Veterinaria.Datoss {
+namespace Veterinaria.Datos {
     
     
     /// <summary>
@@ -20,17 +20,17 @@ namespace Veterinaria.Datoss {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("Datos_Vacunas")]
+    [global::System.Xml.Serialization.XmlRootAttribute("datos_vacunas")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class Datos_Vacunas : global::System.Data.DataSet {
+    public partial class datos_vacunas : global::System.Data.DataSet {
         
-        private VacunasDataTable tableVacunas;
+        private vacunasDataTable tablevacunas;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public Datos_Vacunas() {
+        public datos_vacunas() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Veterinaria.Datoss {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected Datos_Vacunas(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected datos_vacunas(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace Veterinaria.Datoss {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Vacunas"] != null)) {
-                    base.Tables.Add(new VacunasDataTable(ds.Tables["Vacunas"]));
+                if ((ds.Tables["vacunas"] != null)) {
+                    base.Tables.Add(new vacunasDataTable(ds.Tables["vacunas"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Veterinaria.Datoss {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public VacunasDataTable Vacunas {
+        public vacunasDataTable vacunas {
             get {
-                return this.tableVacunas;
+                return this.tablevacunas;
             }
         }
         
@@ -127,7 +127,7 @@ namespace Veterinaria.Datoss {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            Datos_Vacunas cln = ((Datos_Vacunas)(base.Clone()));
+            datos_vacunas cln = ((datos_vacunas)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace Veterinaria.Datoss {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Vacunas"] != null)) {
-                    base.Tables.Add(new VacunasDataTable(ds.Tables["Vacunas"]));
+                if ((ds.Tables["vacunas"] != null)) {
+                    base.Tables.Add(new vacunasDataTable(ds.Tables["vacunas"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Veterinaria.Datoss {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableVacunas = ((VacunasDataTable)(base.Tables["Vacunas"]));
+            this.tablevacunas = ((vacunasDataTable)(base.Tables["vacunas"]));
             if ((initTable == true)) {
-                if ((this.tableVacunas != null)) {
-                    this.tableVacunas.InitVars();
+                if ((this.tablevacunas != null)) {
+                    this.tablevacunas.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace Veterinaria.Datoss {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "Datos_Vacunas";
+            this.DataSetName = "datos_vacunas";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/Datos_Vacunas.xsd";
+            this.Namespace = "http://tempuri.org/datos_vacunas.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableVacunas = new VacunasDataTable();
-            base.Tables.Add(this.tableVacunas);
+            this.tablevacunas = new vacunasDataTable();
+            base.Tables.Add(this.tablevacunas);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private bool ShouldSerializeVacunas() {
+        private bool ShouldSerializevacunas() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace Veterinaria.Datoss {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            Datos_Vacunas ds = new Datos_Vacunas();
+            datos_vacunas ds = new datos_vacunas();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,14 +270,14 @@ namespace Veterinaria.Datoss {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public delegate void VacunasRowChangeEventHandler(object sender, VacunasRowChangeEvent e);
+        public delegate void vacunasRowChangeEventHandler(object sender, vacunasRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class VacunasDataTable : global::System.Data.TypedTableBase<VacunasRow> {
+        public partial class vacunasDataTable : global::System.Data.TypedTableBase<vacunasRow> {
             
             private global::System.Data.DataColumn columnid_vacuna;
             
@@ -285,8 +285,8 @@ namespace Veterinaria.Datoss {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public VacunasDataTable() {
-                this.TableName = "Vacunas";
+            public vacunasDataTable() {
+                this.TableName = "vacunas";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -294,7 +294,7 @@ namespace Veterinaria.Datoss {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal VacunasDataTable(global::System.Data.DataTable table) {
+            internal vacunasDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -311,7 +311,7 @@ namespace Veterinaria.Datoss {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected VacunasDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected vacunasDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -343,46 +343,46 @@ namespace Veterinaria.Datoss {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public VacunasRow this[int index] {
+            public vacunasRow this[int index] {
                 get {
-                    return ((VacunasRow)(this.Rows[index]));
+                    return ((vacunasRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event VacunasRowChangeEventHandler VacunasRowChanging;
+            public event vacunasRowChangeEventHandler vacunasRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event VacunasRowChangeEventHandler VacunasRowChanged;
+            public event vacunasRowChangeEventHandler vacunasRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event VacunasRowChangeEventHandler VacunasRowDeleting;
+            public event vacunasRowChangeEventHandler vacunasRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event VacunasRowChangeEventHandler VacunasRowDeleted;
+            public event vacunasRowChangeEventHandler vacunasRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void AddVacunasRow(VacunasRow row) {
+            public void AddvacunasRow(vacunasRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public VacunasRow AddVacunasRow(string id_vacuna, string descripcion) {
-                VacunasRow rowVacunasRow = ((VacunasRow)(this.NewRow()));
+            public vacunasRow AddvacunasRow(string id_vacuna, string descripcion) {
+                vacunasRow rowvacunasRow = ((vacunasRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         id_vacuna,
                         descripcion};
-                rowVacunasRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowVacunasRow);
-                return rowVacunasRow;
+                rowvacunasRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowvacunasRow);
+                return rowvacunasRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                VacunasDataTable cln = ((VacunasDataTable)(base.Clone()));
+                vacunasDataTable cln = ((vacunasDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -390,7 +390,7 @@ namespace Veterinaria.Datoss {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new VacunasDataTable();
+                return new vacunasDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -411,28 +411,28 @@ namespace Veterinaria.Datoss {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public VacunasRow NewVacunasRow() {
-                return ((VacunasRow)(this.NewRow()));
+            public vacunasRow NewvacunasRow() {
+                return ((vacunasRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new VacunasRow(builder);
+                return new vacunasRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(VacunasRow);
+                return typeof(vacunasRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.VacunasRowChanged != null)) {
-                    this.VacunasRowChanged(this, new VacunasRowChangeEvent(((VacunasRow)(e.Row)), e.Action));
+                if ((this.vacunasRowChanged != null)) {
+                    this.vacunasRowChanged(this, new vacunasRowChangeEvent(((vacunasRow)(e.Row)), e.Action));
                 }
             }
             
@@ -440,8 +440,8 @@ namespace Veterinaria.Datoss {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.VacunasRowChanging != null)) {
-                    this.VacunasRowChanging(this, new VacunasRowChangeEvent(((VacunasRow)(e.Row)), e.Action));
+                if ((this.vacunasRowChanging != null)) {
+                    this.vacunasRowChanging(this, new vacunasRowChangeEvent(((vacunasRow)(e.Row)), e.Action));
                 }
             }
             
@@ -449,8 +449,8 @@ namespace Veterinaria.Datoss {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.VacunasRowDeleted != null)) {
-                    this.VacunasRowDeleted(this, new VacunasRowChangeEvent(((VacunasRow)(e.Row)), e.Action));
+                if ((this.vacunasRowDeleted != null)) {
+                    this.vacunasRowDeleted(this, new vacunasRowChangeEvent(((vacunasRow)(e.Row)), e.Action));
                 }
             }
             
@@ -458,14 +458,14 @@ namespace Veterinaria.Datoss {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.VacunasRowDeleting != null)) {
-                    this.VacunasRowDeleting(this, new VacunasRowChangeEvent(((VacunasRow)(e.Row)), e.Action));
+                if ((this.vacunasRowDeleting != null)) {
+                    this.vacunasRowDeleting(this, new vacunasRowChangeEvent(((vacunasRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void RemoveVacunasRow(VacunasRow row) {
+            public void RemovevacunasRow(vacunasRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -474,7 +474,7 @@ namespace Veterinaria.Datoss {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Datos_Vacunas ds = new Datos_Vacunas();
+                datos_vacunas ds = new datos_vacunas();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -492,7 +492,7 @@ namespace Veterinaria.Datoss {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "VacunasDataTable";
+                attribute2.FixedValue = "vacunasDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -536,15 +536,15 @@ namespace Veterinaria.Datoss {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class VacunasRow : global::System.Data.DataRow {
+        public partial class vacunasRow : global::System.Data.DataRow {
             
-            private VacunasDataTable tableVacunas;
+            private vacunasDataTable tablevacunas;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal VacunasRow(global::System.Data.DataRowBuilder rb) : 
+            internal vacunasRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableVacunas = ((VacunasDataTable)(this.Table));
+                this.tablevacunas = ((vacunasDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -552,14 +552,14 @@ namespace Veterinaria.Datoss {
             public string id_vacuna {
                 get {
                     try {
-                        return ((string)(this[this.tableVacunas.id_vacunaColumn]));
+                        return ((string)(this[this.tablevacunas.id_vacunaColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'id_vacuna\' de la tabla \'Vacunas\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'id_vacuna\' de la tabla \'vacunas\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableVacunas.id_vacunaColumn] = value;
+                    this[this.tablevacunas.id_vacunaColumn] = value;
                 }
             }
             
@@ -568,39 +568,39 @@ namespace Veterinaria.Datoss {
             public string descripcion {
                 get {
                     try {
-                        return ((string)(this[this.tableVacunas.descripcionColumn]));
+                        return ((string)(this[this.tablevacunas.descripcionColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'descripcion\' de la tabla \'Vacunas\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'descripcion\' de la tabla \'vacunas\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableVacunas.descripcionColumn] = value;
+                    this[this.tablevacunas.descripcionColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool Isid_vacunaNull() {
-                return this.IsNull(this.tableVacunas.id_vacunaColumn);
+                return this.IsNull(this.tablevacunas.id_vacunaColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void Setid_vacunaNull() {
-                this[this.tableVacunas.id_vacunaColumn] = global::System.Convert.DBNull;
+                this[this.tablevacunas.id_vacunaColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsdescripcionNull() {
-                return this.IsNull(this.tableVacunas.descripcionColumn);
+                return this.IsNull(this.tablevacunas.descripcionColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void SetdescripcionNull() {
-                this[this.tableVacunas.descripcionColumn] = global::System.Convert.DBNull;
+                this[this.tablevacunas.descripcionColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -608,22 +608,22 @@ namespace Veterinaria.Datoss {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public class VacunasRowChangeEvent : global::System.EventArgs {
+        public class vacunasRowChangeEvent : global::System.EventArgs {
             
-            private VacunasRow eventRow;
+            private vacunasRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public VacunasRowChangeEvent(VacunasRow row, global::System.Data.DataRowAction action) {
+            public vacunasRowChangeEvent(vacunasRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public VacunasRow Row {
+            public vacunasRow Row {
                 get {
                     return this.eventRow;
                 }

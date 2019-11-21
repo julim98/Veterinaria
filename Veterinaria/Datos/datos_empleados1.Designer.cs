@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace Veterinaria.Datoss {
+namespace Veterinaria.Datos {
     
     
     /// <summary>
@@ -20,21 +20,21 @@ namespace Veterinaria.Datoss {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("Datos_Empleados")]
+    [global::System.Xml.Serialization.XmlRootAttribute("datos_empleados")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class Datos_Empleados : global::System.Data.DataSet {
+    public partial class datos_empleados : global::System.Data.DataSet {
         
         private empleadosDataTable tableempleados;
         
-        private sucursalesDataTable tablesucursales;
+        private sucursalDataTable tablesucursal;
         
-        private global::System.Data.DataRelation relationDataTable1_DataTable2;
+        private global::System.Data.DataRelation relationsucursal_empleados;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public Datos_Empleados() {
+        public datos_empleados() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -45,7 +45,7 @@ namespace Veterinaria.Datoss {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected Datos_Empleados(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected datos_empleados(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -61,8 +61,8 @@ namespace Veterinaria.Datoss {
                 if ((ds.Tables["empleados"] != null)) {
                     base.Tables.Add(new empleadosDataTable(ds.Tables["empleados"]));
                 }
-                if ((ds.Tables["sucursales"] != null)) {
-                    base.Tables.Add(new sucursalesDataTable(ds.Tables["sucursales"]));
+                if ((ds.Tables["sucursal"] != null)) {
+                    base.Tables.Add(new sucursalDataTable(ds.Tables["sucursal"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -96,9 +96,9 @@ namespace Veterinaria.Datoss {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public sucursalesDataTable sucursales {
+        public sucursalDataTable sucursal {
             get {
-                return this.tablesucursales;
+                return this.tablesucursal;
             }
         }
         
@@ -144,7 +144,7 @@ namespace Veterinaria.Datoss {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            Datos_Empleados cln = ((Datos_Empleados)(base.Clone()));
+            datos_empleados cln = ((datos_empleados)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -172,8 +172,8 @@ namespace Veterinaria.Datoss {
                 if ((ds.Tables["empleados"] != null)) {
                     base.Tables.Add(new empleadosDataTable(ds.Tables["empleados"]));
                 }
-                if ((ds.Tables["sucursales"] != null)) {
-                    base.Tables.Add(new sucursalesDataTable(ds.Tables["sucursales"]));
+                if ((ds.Tables["sucursal"] != null)) {
+                    base.Tables.Add(new sucursalDataTable(ds.Tables["sucursal"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -214,31 +214,31 @@ namespace Veterinaria.Datoss {
                     this.tableempleados.InitVars();
                 }
             }
-            this.tablesucursales = ((sucursalesDataTable)(base.Tables["sucursales"]));
+            this.tablesucursal = ((sucursalDataTable)(base.Tables["sucursal"]));
             if ((initTable == true)) {
-                if ((this.tablesucursales != null)) {
-                    this.tablesucursales.InitVars();
+                if ((this.tablesucursal != null)) {
+                    this.tablesucursal.InitVars();
                 }
             }
-            this.relationDataTable1_DataTable2 = this.Relations["DataTable1_DataTable2"];
+            this.relationsucursal_empleados = this.Relations["sucursal_empleados"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "Datos_Empleados";
+            this.DataSetName = "datos_empleados";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/Datos_Empleados.xsd";
+            this.Namespace = "http://tempuri.org/datos_empleados.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableempleados = new empleadosDataTable();
             base.Tables.Add(this.tableempleados);
-            this.tablesucursales = new sucursalesDataTable();
-            base.Tables.Add(this.tablesucursales);
-            this.relationDataTable1_DataTable2 = new global::System.Data.DataRelation("DataTable1_DataTable2", new global::System.Data.DataColumn[] {
-                        this.tableempleados.id_sucursalColumn}, new global::System.Data.DataColumn[] {
-                        this.tablesucursales.id_sucursalColumn}, false);
-            this.Relations.Add(this.relationDataTable1_DataTable2);
+            this.tablesucursal = new sucursalDataTable();
+            base.Tables.Add(this.tablesucursal);
+            this.relationsucursal_empleados = new global::System.Data.DataRelation("sucursal_empleados", new global::System.Data.DataColumn[] {
+                        this.tablesucursal.id_sucursalColumn}, new global::System.Data.DataColumn[] {
+                        this.tableempleados.id_sucursalColumn}, false);
+            this.Relations.Add(this.relationsucursal_empleados);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -249,7 +249,7 @@ namespace Veterinaria.Datoss {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private bool ShouldSerializesucursales() {
+        private bool ShouldSerializesucursal() {
             return false;
         }
         
@@ -264,7 +264,7 @@ namespace Veterinaria.Datoss {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            Datos_Empleados ds = new Datos_Empleados();
+            datos_empleados ds = new datos_empleados();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -312,7 +312,7 @@ namespace Veterinaria.Datoss {
         public delegate void empleadosRowChangeEventHandler(object sender, empleadosRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public delegate void sucursalesRowChangeEventHandler(object sender, sucursalesRowChangeEvent e);
+        public delegate void sucursalRowChangeEventHandler(object sender, sucursalRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -324,6 +324,10 @@ namespace Veterinaria.Datoss {
             private global::System.Data.DataColumn columnapellido;
             
             private global::System.Data.DataColumn columnnombre;
+            
+            private global::System.Data.DataColumn columnnro_doc;
+            
+            private global::System.Data.DataColumn columnfecha_ingreso;
             
             private global::System.Data.DataColumn columnid_sucursal;
             
@@ -378,6 +382,22 @@ namespace Veterinaria.Datoss {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn nro_docColumn {
+                get {
+                    return this.columnnro_doc;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn fecha_ingresoColumn {
+                get {
+                    return this.columnfecha_ingreso;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public global::System.Data.DataColumn id_sucursalColumn {
                 get {
                     return this.columnid_sucursal;
@@ -421,12 +441,17 @@ namespace Veterinaria.Datoss {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public empleadosRow AddempleadosRow(string apellido, string nombre, string id_sucursal) {
+            public empleadosRow AddempleadosRow(string apellido, string nombre, string nro_doc, string fecha_ingreso, sucursalRow parentsucursalRowBysucursal_empleados) {
                 empleadosRow rowempleadosRow = ((empleadosRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         apellido,
                         nombre,
-                        id_sucursal};
+                        nro_doc,
+                        fecha_ingreso,
+                        null};
+                if ((parentsucursalRowBysucursal_empleados != null)) {
+                    columnValuesArray[4] = parentsucursalRowBysucursal_empleados[0];
+                }
                 rowempleadosRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowempleadosRow);
                 return rowempleadosRow;
@@ -451,6 +476,8 @@ namespace Veterinaria.Datoss {
             internal void InitVars() {
                 this.columnapellido = base.Columns["apellido"];
                 this.columnnombre = base.Columns["nombre"];
+                this.columnnro_doc = base.Columns["nro_doc"];
+                this.columnfecha_ingreso = base.Columns["fecha_ingreso"];
                 this.columnid_sucursal = base.Columns["id_sucursal"];
             }
             
@@ -461,6 +488,10 @@ namespace Veterinaria.Datoss {
                 base.Columns.Add(this.columnapellido);
                 this.columnnombre = new global::System.Data.DataColumn("nombre", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnnombre);
+                this.columnnro_doc = new global::System.Data.DataColumn("nro_doc", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnnro_doc);
+                this.columnfecha_ingreso = new global::System.Data.DataColumn("fecha_ingreso", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnfecha_ingreso);
                 this.columnid_sucursal = new global::System.Data.DataColumn("id_sucursal", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnid_sucursal);
             }
@@ -530,7 +561,7 @@ namespace Veterinaria.Datoss {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Datos_Empleados ds = new Datos_Empleados();
+                datos_empleados ds = new datos_empleados();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -594,7 +625,7 @@ namespace Veterinaria.Datoss {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class sucursalesDataTable : global::System.Data.TypedTableBase<sucursalesRow> {
+        public partial class sucursalDataTable : global::System.Data.TypedTableBase<sucursalRow> {
             
             private global::System.Data.DataColumn columnid_sucursal;
             
@@ -602,8 +633,8 @@ namespace Veterinaria.Datoss {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public sucursalesDataTable() {
-                this.TableName = "sucursales";
+            public sucursalDataTable() {
+                this.TableName = "sucursal";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -611,7 +642,7 @@ namespace Veterinaria.Datoss {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal sucursalesDataTable(global::System.Data.DataTable table) {
+            internal sucursalDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -628,7 +659,7 @@ namespace Veterinaria.Datoss {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected sucursalesDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected sucursalDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -660,49 +691,46 @@ namespace Veterinaria.Datoss {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public sucursalesRow this[int index] {
+            public sucursalRow this[int index] {
                 get {
-                    return ((sucursalesRow)(this.Rows[index]));
+                    return ((sucursalRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event sucursalesRowChangeEventHandler sucursalesRowChanging;
+            public event sucursalRowChangeEventHandler sucursalRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event sucursalesRowChangeEventHandler sucursalesRowChanged;
+            public event sucursalRowChangeEventHandler sucursalRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event sucursalesRowChangeEventHandler sucursalesRowDeleting;
+            public event sucursalRowChangeEventHandler sucursalRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event sucursalesRowChangeEventHandler sucursalesRowDeleted;
+            public event sucursalRowChangeEventHandler sucursalRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void AddsucursalesRow(sucursalesRow row) {
+            public void AddsucursalRow(sucursalRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public sucursalesRow AddsucursalesRow(empleadosRow parentempleadosRowByDataTable1_DataTable2, string nombre) {
-                sucursalesRow rowsucursalesRow = ((sucursalesRow)(this.NewRow()));
+            public sucursalRow AddsucursalRow(string id_sucursal, string nombre) {
+                sucursalRow rowsucursalRow = ((sucursalRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        null,
+                        id_sucursal,
                         nombre};
-                if ((parentempleadosRowByDataTable1_DataTable2 != null)) {
-                    columnValuesArray[0] = parentempleadosRowByDataTable1_DataTable2[2];
-                }
-                rowsucursalesRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowsucursalesRow);
-                return rowsucursalesRow;
+                rowsucursalRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowsucursalRow);
+                return rowsucursalRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                sucursalesDataTable cln = ((sucursalesDataTable)(base.Clone()));
+                sucursalDataTable cln = ((sucursalDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -710,7 +738,7 @@ namespace Veterinaria.Datoss {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new sucursalesDataTable();
+                return new sucursalDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -731,28 +759,28 @@ namespace Veterinaria.Datoss {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public sucursalesRow NewsucursalesRow() {
-                return ((sucursalesRow)(this.NewRow()));
+            public sucursalRow NewsucursalRow() {
+                return ((sucursalRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new sucursalesRow(builder);
+                return new sucursalRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(sucursalesRow);
+                return typeof(sucursalRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.sucursalesRowChanged != null)) {
-                    this.sucursalesRowChanged(this, new sucursalesRowChangeEvent(((sucursalesRow)(e.Row)), e.Action));
+                if ((this.sucursalRowChanged != null)) {
+                    this.sucursalRowChanged(this, new sucursalRowChangeEvent(((sucursalRow)(e.Row)), e.Action));
                 }
             }
             
@@ -760,8 +788,8 @@ namespace Veterinaria.Datoss {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.sucursalesRowChanging != null)) {
-                    this.sucursalesRowChanging(this, new sucursalesRowChangeEvent(((sucursalesRow)(e.Row)), e.Action));
+                if ((this.sucursalRowChanging != null)) {
+                    this.sucursalRowChanging(this, new sucursalRowChangeEvent(((sucursalRow)(e.Row)), e.Action));
                 }
             }
             
@@ -769,8 +797,8 @@ namespace Veterinaria.Datoss {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.sucursalesRowDeleted != null)) {
-                    this.sucursalesRowDeleted(this, new sucursalesRowChangeEvent(((sucursalesRow)(e.Row)), e.Action));
+                if ((this.sucursalRowDeleted != null)) {
+                    this.sucursalRowDeleted(this, new sucursalRowChangeEvent(((sucursalRow)(e.Row)), e.Action));
                 }
             }
             
@@ -778,14 +806,14 @@ namespace Veterinaria.Datoss {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.sucursalesRowDeleting != null)) {
-                    this.sucursalesRowDeleting(this, new sucursalesRowChangeEvent(((sucursalesRow)(e.Row)), e.Action));
+                if ((this.sucursalRowDeleting != null)) {
+                    this.sucursalRowDeleting(this, new sucursalRowChangeEvent(((sucursalRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void RemovesucursalesRow(sucursalesRow row) {
+            public void RemovesucursalRow(sucursalRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -794,7 +822,7 @@ namespace Veterinaria.Datoss {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Datos_Empleados ds = new Datos_Empleados();
+                datos_empleados ds = new datos_empleados();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -812,7 +840,7 @@ namespace Veterinaria.Datoss {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "sucursalesDataTable";
+                attribute2.FixedValue = "sucursalDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -901,6 +929,38 @@ namespace Veterinaria.Datoss {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string nro_doc {
+                get {
+                    try {
+                        return ((string)(this[this.tableempleados.nro_docColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nro_doc\' de la tabla \'empleados\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableempleados.nro_docColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string fecha_ingreso {
+                get {
+                    try {
+                        return ((string)(this[this.tableempleados.fecha_ingresoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'fecha_ingreso\' de la tabla \'empleados\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableempleados.fecha_ingresoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public string id_sucursal {
                 get {
                     try {
@@ -912,6 +972,17 @@ namespace Veterinaria.Datoss {
                 }
                 set {
                     this[this.tableempleados.id_sucursalColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public sucursalRow sucursalRow {
+                get {
+                    return ((sucursalRow)(this.GetParentRow(this.Table.ParentRelations["sucursal_empleados"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["sucursal_empleados"]);
                 }
             }
             
@@ -941,6 +1012,30 @@ namespace Veterinaria.Datoss {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool Isnro_docNull() {
+                return this.IsNull(this.tableempleados.nro_docColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void Setnro_docNull() {
+                this[this.tableempleados.nro_docColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool Isfecha_ingresoNull() {
+                return this.IsNull(this.tableempleados.fecha_ingresoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void Setfecha_ingresoNull() {
+                this[this.tableempleados.fecha_ingresoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool Isid_sucursalNull() {
                 return this.IsNull(this.tableempleados.id_sucursalColumn);
             }
@@ -950,31 +1045,20 @@ namespace Veterinaria.Datoss {
             public void Setid_sucursalNull() {
                 this[this.tableempleados.id_sucursalColumn] = global::System.Convert.DBNull;
             }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public sucursalesRow[] GetsucursalesRows() {
-                if ((this.Table.ChildRelations["DataTable1_DataTable2"] == null)) {
-                    return new sucursalesRow[0];
-                }
-                else {
-                    return ((sucursalesRow[])(base.GetChildRows(this.Table.ChildRelations["DataTable1_DataTable2"])));
-                }
-            }
         }
         
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class sucursalesRow : global::System.Data.DataRow {
+        public partial class sucursalRow : global::System.Data.DataRow {
             
-            private sucursalesDataTable tablesucursales;
+            private sucursalDataTable tablesucursal;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal sucursalesRow(global::System.Data.DataRowBuilder rb) : 
+            internal sucursalRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablesucursales = ((sucursalesDataTable)(this.Table));
+                this.tablesucursal = ((sucursalDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -982,14 +1066,14 @@ namespace Veterinaria.Datoss {
             public string id_sucursal {
                 get {
                     try {
-                        return ((string)(this[this.tablesucursales.id_sucursalColumn]));
+                        return ((string)(this[this.tablesucursal.id_sucursalColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'id_sucursal\' de la tabla \'sucursales\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'id_sucursal\' de la tabla \'sucursal\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablesucursales.id_sucursalColumn] = value;
+                    this[this.tablesucursal.id_sucursalColumn] = value;
                 }
             }
             
@@ -998,50 +1082,50 @@ namespace Veterinaria.Datoss {
             public string nombre {
                 get {
                     try {
-                        return ((string)(this[this.tablesucursales.nombreColumn]));
+                        return ((string)(this[this.tablesucursal.nombreColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nombre\' de la tabla \'sucursales\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nombre\' de la tabla \'sucursal\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablesucursales.nombreColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public empleadosRow empleadosRow {
-                get {
-                    return ((empleadosRow)(this.GetParentRow(this.Table.ParentRelations["DataTable1_DataTable2"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["DataTable1_DataTable2"]);
+                    this[this.tablesucursal.nombreColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool Isid_sucursalNull() {
-                return this.IsNull(this.tablesucursales.id_sucursalColumn);
+                return this.IsNull(this.tablesucursal.id_sucursalColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void Setid_sucursalNull() {
-                this[this.tablesucursales.id_sucursalColumn] = global::System.Convert.DBNull;
+                this[this.tablesucursal.id_sucursalColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsnombreNull() {
-                return this.IsNull(this.tablesucursales.nombreColumn);
+                return this.IsNull(this.tablesucursal.nombreColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void SetnombreNull() {
-                this[this.tablesucursales.nombreColumn] = global::System.Convert.DBNull;
+                this[this.tablesucursal.nombreColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public empleadosRow[] GetempleadosRows() {
+                if ((this.Table.ChildRelations["sucursal_empleados"] == null)) {
+                    return new empleadosRow[0];
+                }
+                else {
+                    return ((empleadosRow[])(base.GetChildRows(this.Table.ChildRelations["sucursal_empleados"])));
+                }
             }
         }
         
@@ -1083,22 +1167,22 @@ namespace Veterinaria.Datoss {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public class sucursalesRowChangeEvent : global::System.EventArgs {
+        public class sucursalRowChangeEvent : global::System.EventArgs {
             
-            private sucursalesRow eventRow;
+            private sucursalRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public sucursalesRowChangeEvent(sucursalesRow row, global::System.Data.DataRowAction action) {
+            public sucursalRowChangeEvent(sucursalRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public sucursalesRow Row {
+            public sucursalRow Row {
                 get {
                     return this.eventRow;
                 }

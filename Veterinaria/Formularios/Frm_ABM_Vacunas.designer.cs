@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_ABM_Vacunas));
             this.Pnl_Barra_Superior = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Btn_Cerrar = new System.Windows.Forms.Button();
             this.Btn_Minimizar = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.Btn_Cancelar = new System.Windows.Forms.Button();
             this.Btn_Guardar = new System.Windows.Forms.Button();
             this.Txt_Nombre = new System.Windows.Forms.TextBox();
@@ -54,16 +54,6 @@
             this.Pnl_Barra_Superior.Name = "Pnl_Barra_Superior";
             this.Pnl_Barra_Superior.Size = new System.Drawing.Size(382, 35);
             this.Pnl_Barra_Superior.TabIndex = 47;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(34, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 20);
-            this.label2.TabIndex = 30;
-            this.label2.Text = "Administrar Vacunas";
             // 
             // pictureBox1
             // 
@@ -105,6 +95,16 @@
             this.Btn_Minimizar.TabIndex = 26;
             this.Btn_Minimizar.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(34, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(156, 20);
+            this.label2.TabIndex = 30;
+            this.label2.Text = "Administrar Vacunas";
+            // 
             // Btn_Cancelar
             // 
             this.Btn_Cancelar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame;
@@ -120,6 +120,7 @@
             this.Btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Cancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_Cancelar.UseVisualStyleBackColor = true;
+            this.Btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
             // 
             // Btn_Guardar
             // 
@@ -136,6 +137,7 @@
             this.Btn_Guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Guardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_Guardar.UseVisualStyleBackColor = true;
+            this.Btn_Guardar.Click += new System.EventHandler(this.Btn_Guardar_Click);
             // 
             // Txt_Nombre
             // 

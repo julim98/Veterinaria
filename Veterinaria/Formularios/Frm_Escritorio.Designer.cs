@@ -33,35 +33,35 @@ namespace Veterinaria
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Escritorio));
             this.Pnl_Barra_Superior = new System.Windows.Forms.Panel();
+            this.Btn_Cerrar = new System.Windows.Forms.Button();
+            this.Btn_Restaurar = new System.Windows.Forms.Button();
+            this.Btn_Minimizar = new System.Windows.Forms.Button();
+            this.Btn_Maximizar = new System.Windows.Forms.Button();
             this.Pnl_Menu = new System.Windows.Forms.Panel();
+            this.Btn_Configuracion = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.Btn_Salir = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.Btn_Sintomas = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.Btn_Vacunas = new System.Windows.Forms.Button();
+            this.Btn_Informes = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Pnl_Contenedor = new System.Windows.Forms.Panel();
-            this.Btn_Configuracion = new System.Windows.Forms.Button();
-            this.Btn_Salir = new System.Windows.Forms.Button();
-            this.Btn_Sintomas = new System.Windows.Forms.Button();
-            this.Btn_Vacunas = new System.Windows.Forms.Button();
-            this.Btn_Informes = new System.Windows.Forms.Button();
             this.Btn_Inicio = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.Btn_Medicamentos = new System.Windows.Forms.Button();
             this.Btn_Diagnosticos = new System.Windows.Forms.Button();
             this.Btn_Perros = new System.Windows.Forms.Button();
             this.Btn_Consultas = new System.Windows.Forms.Button();
-            this.Btn_Cerrar = new System.Windows.Forms.Button();
-            this.Btn_Restaurar = new System.Windows.Forms.Button();
-            this.Btn_Minimizar = new System.Windows.Forms.Button();
-            this.Btn_Maximizar = new System.Windows.Forms.Button();
+            this.Pnl_Contenedor = new System.Windows.Forms.Panel();
             this.Pnl_Barra_Superior.SuspendLayout();
             this.Pnl_Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -79,6 +79,67 @@ namespace Veterinaria
             this.Pnl_Barra_Superior.Name = "Pnl_Barra_Superior";
             this.Pnl_Barra_Superior.Size = new System.Drawing.Size(1000, 30);
             this.Pnl_Barra_Superior.TabIndex = 11;
+            // 
+            // Btn_Cerrar
+            // 
+            this.Btn_Cerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Cerrar.FlatAppearance.BorderSize = 0;
+            this.Btn_Cerrar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
+            this.Btn_Cerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.Btn_Cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Cerrar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar.Image")));
+            this.Btn_Cerrar.Location = new System.Drawing.Point(970, 0);
+            this.Btn_Cerrar.Name = "Btn_Cerrar";
+            this.Btn_Cerrar.Size = new System.Drawing.Size(30, 30);
+            this.Btn_Cerrar.TabIndex = 25;
+            this.Btn_Cerrar.UseVisualStyleBackColor = true;
+            this.Btn_Cerrar.Click += new System.EventHandler(this.Btn_Cerrar_Click);
+            // 
+            // Btn_Restaurar
+            // 
+            this.Btn_Restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Restaurar.FlatAppearance.BorderSize = 0;
+            this.Btn_Restaurar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
+            this.Btn_Restaurar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.Btn_Restaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Restaurar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Restaurar.Image")));
+            this.Btn_Restaurar.Location = new System.Drawing.Point(940, 0);
+            this.Btn_Restaurar.Name = "Btn_Restaurar";
+            this.Btn_Restaurar.Size = new System.Drawing.Size(30, 30);
+            this.Btn_Restaurar.TabIndex = 4;
+            this.Btn_Restaurar.UseVisualStyleBackColor = true;
+            this.Btn_Restaurar.Visible = false;
+            this.Btn_Restaurar.Click += new System.EventHandler(this.Btn_Restaurar_Click_1);
+            // 
+            // Btn_Minimizar
+            // 
+            this.Btn_Minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Minimizar.FlatAppearance.BorderSize = 0;
+            this.Btn_Minimizar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
+            this.Btn_Minimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.Btn_Minimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Minimizar.Image")));
+            this.Btn_Minimizar.Location = new System.Drawing.Point(910, 0);
+            this.Btn_Minimizar.Name = "Btn_Minimizar";
+            this.Btn_Minimizar.Size = new System.Drawing.Size(30, 30);
+            this.Btn_Minimizar.TabIndex = 3;
+            this.Btn_Minimizar.UseVisualStyleBackColor = true;
+            this.Btn_Minimizar.Click += new System.EventHandler(this.Btn_Minimizar_Click);
+            // 
+            // Btn_Maximizar
+            // 
+            this.Btn_Maximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Maximizar.FlatAppearance.BorderSize = 0;
+            this.Btn_Maximizar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
+            this.Btn_Maximizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.Btn_Maximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Maximizar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Maximizar.Image")));
+            this.Btn_Maximizar.Location = new System.Drawing.Point(940, 0);
+            this.Btn_Maximizar.Name = "Btn_Maximizar";
+            this.Btn_Maximizar.Size = new System.Drawing.Size(30, 30);
+            this.Btn_Maximizar.TabIndex = 4;
+            this.Btn_Maximizar.UseVisualStyleBackColor = true;
+            this.Btn_Maximizar.Click += new System.EventHandler(this.Btn_Maximizar_Click);
             // 
             // Pnl_Menu
             // 
@@ -112,6 +173,24 @@ namespace Veterinaria
             this.Pnl_Menu.Size = new System.Drawing.Size(200, 550);
             this.Pnl_Menu.TabIndex = 12;
             // 
+            // Btn_Configuracion
+            // 
+            this.Btn_Configuracion.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Btn_Configuracion.FlatAppearance.BorderSize = 0;
+            this.Btn_Configuracion.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame;
+            this.Btn_Configuracion.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Btn_Configuracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Configuracion.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Configuracion.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Configuracion.Image")));
+            this.Btn_Configuracion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_Configuracion.Location = new System.Drawing.Point(5, 427);
+            this.Btn_Configuracion.Name = "Btn_Configuracion";
+            this.Btn_Configuracion.Size = new System.Drawing.Size(195, 40);
+            this.Btn_Configuracion.TabIndex = 10;
+            this.Btn_Configuracion.Text = "Configuración";
+            this.Btn_Configuracion.UseVisualStyleBackColor = false;
+            this.Btn_Configuracion.Click += new System.EventHandler(this.Btn_Configuracion_Click_1);
+            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.SystemColors.WindowFrame;
@@ -128,6 +207,24 @@ namespace Veterinaria
             this.panel10.Size = new System.Drawing.Size(5, 40);
             this.panel10.TabIndex = 16;
             // 
+            // Btn_Salir
+            // 
+            this.Btn_Salir.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Btn_Salir.FlatAppearance.BorderSize = 0;
+            this.Btn_Salir.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame;
+            this.Btn_Salir.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Salir.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Salir.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Salir.Image")));
+            this.Btn_Salir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_Salir.Location = new System.Drawing.Point(5, 498);
+            this.Btn_Salir.Name = "Btn_Salir";
+            this.Btn_Salir.Size = new System.Drawing.Size(195, 40);
+            this.Btn_Salir.TabIndex = 15;
+            this.Btn_Salir.Text = "Salir";
+            this.Btn_Salir.UseVisualStyleBackColor = false;
+            this.Btn_Salir.Click += new System.EventHandler(this.Btn_Salir_Click);
+            // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.SystemColors.WindowFrame;
@@ -135,6 +232,25 @@ namespace Veterinaria
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(5, 40);
             this.panel9.TabIndex = 14;
+            // 
+            // Btn_Sintomas
+            // 
+            this.Btn_Sintomas.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Btn_Sintomas.FlatAppearance.BorderSize = 0;
+            this.Btn_Sintomas.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame;
+            this.Btn_Sintomas.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Btn_Sintomas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Sintomas.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Sintomas.Image = global::Veterinaria.Properties.Resources.sintomas;
+            this.Btn_Sintomas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_Sintomas.Location = new System.Drawing.Point(5, 243);
+            this.Btn_Sintomas.Name = "Btn_Sintomas";
+            this.Btn_Sintomas.Size = new System.Drawing.Size(195, 40);
+            this.Btn_Sintomas.TabIndex = 13;
+            this.Btn_Sintomas.Text = "       Síntomas";
+            this.Btn_Sintomas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_Sintomas.UseVisualStyleBackColor = false;
+            this.Btn_Sintomas.Click += new System.EventHandler(this.Btn_Sintomas_Click);
             // 
             // panel8
             // 
@@ -151,6 +267,44 @@ namespace Veterinaria
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(5, 40);
             this.panel6.TabIndex = 5;
+            // 
+            // Btn_Vacunas
+            // 
+            this.Btn_Vacunas.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Btn_Vacunas.FlatAppearance.BorderSize = 0;
+            this.Btn_Vacunas.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame;
+            this.Btn_Vacunas.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Btn_Vacunas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Vacunas.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Vacunas.Image = global::Veterinaria.Properties.Resources.calendario1;
+            this.Btn_Vacunas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_Vacunas.Location = new System.Drawing.Point(5, 381);
+            this.Btn_Vacunas.Name = "Btn_Vacunas";
+            this.Btn_Vacunas.Size = new System.Drawing.Size(195, 40);
+            this.Btn_Vacunas.TabIndex = 7;
+            this.Btn_Vacunas.Text = "       Vacunas";
+            this.Btn_Vacunas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_Vacunas.UseVisualStyleBackColor = false;
+            this.Btn_Vacunas.Click += new System.EventHandler(this.Btn_Vacunas_Click);
+            // 
+            // Btn_Informes
+            // 
+            this.Btn_Informes.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Btn_Informes.FlatAppearance.BorderSize = 0;
+            this.Btn_Informes.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame;
+            this.Btn_Informes.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Btn_Informes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Informes.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Informes.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Informes.Image")));
+            this.Btn_Informes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_Informes.Location = new System.Drawing.Point(5, 335);
+            this.Btn_Informes.Name = "Btn_Informes";
+            this.Btn_Informes.Size = new System.Drawing.Size(195, 40);
+            this.Btn_Informes.TabIndex = 9;
+            this.Btn_Informes.Text = "       Informes";
+            this.Btn_Informes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_Informes.UseVisualStyleBackColor = false;
+            this.Btn_Informes.Click += new System.EventHandler(this.Btn_Informes_Click);
             // 
             // panel5
             // 
@@ -192,126 +346,6 @@ namespace Veterinaria
             this.panel1.Size = new System.Drawing.Size(5, 40);
             this.panel1.TabIndex = 0;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Bright", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 22);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "VETERINARIA";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 35);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 15);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "EL SABUESO FELÍZ";
-            // 
-            // Pnl_Contenedor
-            // 
-            this.Pnl_Contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Pnl_Contenedor.Location = new System.Drawing.Point(200, 30);
-            this.Pnl_Contenedor.Name = "Pnl_Contenedor";
-            this.Pnl_Contenedor.Size = new System.Drawing.Size(800, 550);
-            this.Pnl_Contenedor.TabIndex = 13;
-            // 
-            // Btn_Configuracion
-            // 
-            this.Btn_Configuracion.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.Btn_Configuracion.FlatAppearance.BorderSize = 0;
-            this.Btn_Configuracion.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame;
-            this.Btn_Configuracion.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Btn_Configuracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Configuracion.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Configuracion.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Configuracion.Image")));
-            this.Btn_Configuracion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_Configuracion.Location = new System.Drawing.Point(5, 427);
-            this.Btn_Configuracion.Name = "Btn_Configuracion";
-            this.Btn_Configuracion.Size = new System.Drawing.Size(195, 40);
-            this.Btn_Configuracion.TabIndex = 10;
-            this.Btn_Configuracion.Text = "Configuración";
-            this.Btn_Configuracion.UseVisualStyleBackColor = false;
-            this.Btn_Configuracion.Click += new System.EventHandler(this.Btn_Configuracion_Click_1);
-            // 
-            // Btn_Salir
-            // 
-            this.Btn_Salir.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.Btn_Salir.FlatAppearance.BorderSize = 0;
-            this.Btn_Salir.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame;
-            this.Btn_Salir.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Salir.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Salir.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Salir.Image")));
-            this.Btn_Salir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_Salir.Location = new System.Drawing.Point(5, 498);
-            this.Btn_Salir.Name = "Btn_Salir";
-            this.Btn_Salir.Size = new System.Drawing.Size(195, 40);
-            this.Btn_Salir.TabIndex = 15;
-            this.Btn_Salir.Text = "Salir";
-            this.Btn_Salir.UseVisualStyleBackColor = false;
-            this.Btn_Salir.Click += new System.EventHandler(this.Btn_Salir_Click);
-            // 
-            // Btn_Sintomas
-            // 
-            this.Btn_Sintomas.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.Btn_Sintomas.FlatAppearance.BorderSize = 0;
-            this.Btn_Sintomas.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame;
-            this.Btn_Sintomas.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Btn_Sintomas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Sintomas.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Sintomas.Image = global::Veterinaria.Properties.Resources.sintomas;
-            this.Btn_Sintomas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_Sintomas.Location = new System.Drawing.Point(5, 243);
-            this.Btn_Sintomas.Name = "Btn_Sintomas";
-            this.Btn_Sintomas.Size = new System.Drawing.Size(195, 40);
-            this.Btn_Sintomas.TabIndex = 13;
-            this.Btn_Sintomas.Text = "       Síntomas";
-            this.Btn_Sintomas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_Sintomas.UseVisualStyleBackColor = false;
-            this.Btn_Sintomas.Click += new System.EventHandler(this.Btn_Sintomas_Click);
-            // 
-            // Btn_Vacunas
-            // 
-            this.Btn_Vacunas.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.Btn_Vacunas.FlatAppearance.BorderSize = 0;
-            this.Btn_Vacunas.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame;
-            this.Btn_Vacunas.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Btn_Vacunas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Vacunas.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Vacunas.Image = global::Veterinaria.Properties.Resources.calendario1;
-            this.Btn_Vacunas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_Vacunas.Location = new System.Drawing.Point(5, 381);
-            this.Btn_Vacunas.Name = "Btn_Vacunas";
-            this.Btn_Vacunas.Size = new System.Drawing.Size(195, 40);
-            this.Btn_Vacunas.TabIndex = 7;
-            this.Btn_Vacunas.Text = "       Vacunas";
-            this.Btn_Vacunas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_Vacunas.UseVisualStyleBackColor = false;
-            // 
-            // Btn_Informes
-            // 
-            this.Btn_Informes.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.Btn_Informes.FlatAppearance.BorderSize = 0;
-            this.Btn_Informes.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame;
-            this.Btn_Informes.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Btn_Informes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Informes.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Informes.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Informes.Image")));
-            this.Btn_Informes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_Informes.Location = new System.Drawing.Point(5, 335);
-            this.Btn_Informes.Name = "Btn_Informes";
-            this.Btn_Informes.Size = new System.Drawing.Size(195, 40);
-            this.Btn_Informes.TabIndex = 9;
-            this.Btn_Informes.Text = "       Informes";
-            this.Btn_Informes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_Informes.UseVisualStyleBackColor = false;
-            this.Btn_Informes.Click += new System.EventHandler(this.Btn_Informes_Click);
-            // 
             // Btn_Inicio
             // 
             this.Btn_Inicio.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -330,6 +364,16 @@ namespace Veterinaria
             this.Btn_Inicio.UseVisualStyleBackColor = false;
             this.Btn_Inicio.Click += new System.EventHandler(this.Btn_Inicio_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Bright", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(148, 22);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "VETERINARIA";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -338,6 +382,16 @@ namespace Veterinaria
             this.pictureBox1.Size = new System.Drawing.Size(50, 50);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 35);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(127, 15);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "EL SABUESO FELÍZ";
             // 
             // Btn_Medicamentos
             // 
@@ -411,66 +465,13 @@ namespace Veterinaria
             this.Btn_Consultas.UseVisualStyleBackColor = false;
             this.Btn_Consultas.Click += new System.EventHandler(this.Btn_Consultas_Click_1);
             // 
-            // Btn_Cerrar
+            // Pnl_Contenedor
             // 
-            this.Btn_Cerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_Cerrar.FlatAppearance.BorderSize = 0;
-            this.Btn_Cerrar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
-            this.Btn_Cerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.Btn_Cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Cerrar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar.Image")));
-            this.Btn_Cerrar.Location = new System.Drawing.Point(970, 0);
-            this.Btn_Cerrar.Name = "Btn_Cerrar";
-            this.Btn_Cerrar.Size = new System.Drawing.Size(30, 30);
-            this.Btn_Cerrar.TabIndex = 25;
-            this.Btn_Cerrar.UseVisualStyleBackColor = true;
-            this.Btn_Cerrar.Click += new System.EventHandler(this.Btn_Cerrar_Click);
-            // 
-            // Btn_Restaurar
-            // 
-            this.Btn_Restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_Restaurar.FlatAppearance.BorderSize = 0;
-            this.Btn_Restaurar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
-            this.Btn_Restaurar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.Btn_Restaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Restaurar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Restaurar.Image")));
-            this.Btn_Restaurar.Location = new System.Drawing.Point(940, 0);
-            this.Btn_Restaurar.Name = "Btn_Restaurar";
-            this.Btn_Restaurar.Size = new System.Drawing.Size(30, 30);
-            this.Btn_Restaurar.TabIndex = 4;
-            this.Btn_Restaurar.UseVisualStyleBackColor = true;
-            this.Btn_Restaurar.Visible = false;
-            this.Btn_Restaurar.Click += new System.EventHandler(this.Btn_Restaurar_Click_1);
-            // 
-            // Btn_Minimizar
-            // 
-            this.Btn_Minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_Minimizar.FlatAppearance.BorderSize = 0;
-            this.Btn_Minimizar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
-            this.Btn_Minimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.Btn_Minimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Minimizar.Image")));
-            this.Btn_Minimizar.Location = new System.Drawing.Point(910, 0);
-            this.Btn_Minimizar.Name = "Btn_Minimizar";
-            this.Btn_Minimizar.Size = new System.Drawing.Size(30, 30);
-            this.Btn_Minimizar.TabIndex = 3;
-            this.Btn_Minimizar.UseVisualStyleBackColor = true;
-            this.Btn_Minimizar.Click += new System.EventHandler(this.Btn_Minimizar_Click);
-            // 
-            // Btn_Maximizar
-            // 
-            this.Btn_Maximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_Maximizar.FlatAppearance.BorderSize = 0;
-            this.Btn_Maximizar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
-            this.Btn_Maximizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.Btn_Maximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Maximizar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Maximizar.Image")));
-            this.Btn_Maximizar.Location = new System.Drawing.Point(940, 0);
-            this.Btn_Maximizar.Name = "Btn_Maximizar";
-            this.Btn_Maximizar.Size = new System.Drawing.Size(30, 30);
-            this.Btn_Maximizar.TabIndex = 4;
-            this.Btn_Maximizar.UseVisualStyleBackColor = true;
-            this.Btn_Maximizar.Click += new System.EventHandler(this.Btn_Maximizar_Click);
+            this.Pnl_Contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Pnl_Contenedor.Location = new System.Drawing.Point(200, 30);
+            this.Pnl_Contenedor.Name = "Pnl_Contenedor";
+            this.Pnl_Contenedor.Size = new System.Drawing.Size(800, 550);
+            this.Pnl_Contenedor.TabIndex = 13;
             // 
             // Frm_Escritorio
             // 

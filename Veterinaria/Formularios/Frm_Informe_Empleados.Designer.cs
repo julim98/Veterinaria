@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.datos_Empleados = new Veterinaria.Datoss.Datos_Empleados();
+            this.datos_Empleados = new Veterinaria.Datos.datos_empleados();
             this.datosEmpleadosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.empleadosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.datos_Empleados)).BeginInit();
@@ -89,6 +89,6 @@
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource empleadosBindingSource;
         private System.Windows.Forms.BindingSource datosEmpleadosBindingSource;
-        private Datoss.Datos_Empleados datos_Empleados;
+        private Datos.datos_empleados datos_Empleados;
     }
 }

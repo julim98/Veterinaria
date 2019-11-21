@@ -100,7 +100,12 @@ namespace Veterinaria
 
         private void Btn_Sintomas_Click(object sender, EventArgs e)
         {
-            AbrirFormsHijos(new Formularios.Frm_Sintomas());
+            AbrirFormsHijos(new Frm_Sintomas());
+        }
+
+        private void Btn_Vacunas_Click(object sender, EventArgs e)
+        {
+            AbrirFormsHijos(new Frm_Vacunas());
         }
     }
 }

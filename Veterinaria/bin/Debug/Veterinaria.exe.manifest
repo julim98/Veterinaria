@@ -966,14 +966,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Veterinaria.exe" size="347616">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Veterinaria.exe" size="402912">
       <assemblyIdentity name="Veterinaria" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>M1VbHWODq2O93pWuVnvghCajuJGtvpFTZdYZsxl9VKw=</dsig:DigestValue>
+        <dsig:DigestValue>CTXkI4/Wc347F5L6wy3Mb83mD+tQxHIrOCMeUfHu1Qc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
