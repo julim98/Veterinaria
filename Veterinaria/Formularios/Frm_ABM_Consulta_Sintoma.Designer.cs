@@ -31,15 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_ABM_Consulta_Sintoma));
             this.panel2 = new System.Windows.Forms.Panel();
             this.tbl_sintomas = new System.Windows.Forms.DataGridView();
-            this.id_sintomas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.check_sintomas = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.sintomas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Btn_Cancelar = new System.Windows.Forms.Button();
             this.Btn_Guardar = new System.Windows.Forms.Button();
             this.Pnl_Barra_Superior = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Btn_Cerrar = new System.Windows.Forms.Button();
+            this.Btn_Minimizar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.id_sintomas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sintomas = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_sintomas)).BeginInit();
             this.Pnl_Barra_Superior.SuspendLayout();
@@ -65,33 +65,12 @@
             this.tbl_sintomas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tbl_sintomas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_sintomas,
-            this.check_sintomas,
             this.sintomas});
             this.tbl_sintomas.Location = new System.Drawing.Point(12, 22);
             this.tbl_sintomas.Name = "tbl_sintomas";
+            this.tbl_sintomas.ReadOnly = true;
             this.tbl_sintomas.Size = new System.Drawing.Size(345, 235);
             this.tbl_sintomas.TabIndex = 52;
-            // 
-            // id_sintomas
-            // 
-            this.id_sintomas.HeaderText = "ID_Sintomas";
-            this.id_sintomas.Name = "id_sintomas";
-            this.id_sintomas.Visible = false;
-            // 
-            // check_sintomas
-            // 
-            this.check_sintomas.HeaderText = "";
-            this.check_sintomas.Name = "check_sintomas";
-            this.check_sintomas.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.check_sintomas.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // sintomas
-            // 
-            this.sintomas.HeaderText = "Sintomas";
-            this.sintomas.Name = "sintomas";
-            this.sintomas.ReadOnly = true;
-            this.sintomas.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.sintomas.Width = 300;
             // 
             // Btn_Cancelar
             // 
@@ -109,7 +88,6 @@
             this.Btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Cancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_Cancelar.UseVisualStyleBackColor = true;
-            this.Btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
             // 
             // Btn_Guardar
             // 
@@ -127,13 +105,13 @@
             this.Btn_Guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Guardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_Guardar.UseVisualStyleBackColor = true;
-            this.Btn_Guardar.Click += new System.EventHandler(this.Btn_Guardar_Click);
             // 
             // Pnl_Barra_Superior
             // 
             this.Pnl_Barra_Superior.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.Pnl_Barra_Superior.Controls.Add(this.pictureBox1);
             this.Pnl_Barra_Superior.Controls.Add(this.Btn_Cerrar);
+            this.Pnl_Barra_Superior.Controls.Add(this.Btn_Minimizar);
             this.Pnl_Barra_Superior.Controls.Add(this.label2);
             this.Pnl_Barra_Superior.Dock = System.Windows.Forms.DockStyle.Top;
             this.Pnl_Barra_Superior.Location = new System.Drawing.Point(0, 0);
@@ -167,7 +145,20 @@
             this.Btn_Cerrar.Size = new System.Drawing.Size(30, 30);
             this.Btn_Cerrar.TabIndex = 27;
             this.Btn_Cerrar.UseVisualStyleBackColor = true;
-            this.Btn_Cerrar.Click += new System.EventHandler(this.Btn_Cerrar_Click);
+            // 
+            // Btn_Minimizar
+            // 
+            this.Btn_Minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Minimizar.FlatAppearance.BorderSize = 0;
+            this.Btn_Minimizar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
+            this.Btn_Minimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.Btn_Minimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Minimizar.Image")));
+            this.Btn_Minimizar.Location = new System.Drawing.Point(310, 0);
+            this.Btn_Minimizar.Name = "Btn_Minimizar";
+            this.Btn_Minimizar.Size = new System.Drawing.Size(30, 30);
+            this.Btn_Minimizar.TabIndex = 26;
+            this.Btn_Minimizar.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -179,6 +170,22 @@
             this.label2.TabIndex = 30;
             this.label2.Text = "Modificar Sintomas";
             // 
+            // id_sintomas
+            // 
+            this.id_sintomas.HeaderText = "ID_Sintomas";
+            this.id_sintomas.Name = "id_sintomas";
+            this.id_sintomas.ReadOnly = true;
+            this.id_sintomas.Visible = false;
+            // 
+            // sintomas
+            // 
+            this.sintomas.HeaderText = "Sintomas";
+            this.sintomas.Name = "sintomas";
+            this.sintomas.ReadOnly = true;
+            this.sintomas.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.sintomas.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.sintomas.Width = 300;
+            // 
             // Frm_ABM_Consulta_Sintoma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -189,7 +196,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_ABM_Consulta_Sintoma";
             this.Text = "Frm_ABM_Consulta_Sintoma";
-            this.Load += new System.EventHandler(this.Frm_ABM_Consulta_Sintoma_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tbl_sintomas)).EndInit();
             this.Pnl_Barra_Superior.ResumeLayout(false);
@@ -208,9 +214,9 @@
         private System.Windows.Forms.Panel Pnl_Barra_Superior;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Btn_Cerrar;
+        private System.Windows.Forms.Button Btn_Minimizar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_sintomas;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn check_sintomas;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sintomas;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn sintomas;
     }
 }

@@ -14,7 +14,8 @@ namespace Veterinaria.Formularios
     {
 
         Negocios.NG_Consultas negocio = new Negocios.NG_Consultas();
-        public DataTable diagnosticos_consulta { get; set; }
+        public string historia_clinica { get; set; }
+        public string id_sucursal { get; set; }
 
         public Frm_ABM_Consulta_Diagnostico()
         {
@@ -29,52 +30,28 @@ namespace Veterinaria.Formularios
         private void cargar_tabla()
         {
             DataTable datos = negocio.obtener_diagnosticos();
-            if (datos.IsInitialized)
+            DataTable seleccionados = negocio.obtener_diagnosticos_consulta(historia_clinica, id_sucursal);
+            for (int i = 0; i < datos.Rows.Count; i++)
             {
-                for (int i = 0; i < datos.Rows.Count; i++)
-                {
-                    tbl_diagnosticos.Rows.Add();
-                    DataGridViewCheckBoxCell celda = (DataGridViewCheckBoxCell)tbl_diagnosticos.Rows[i].Cells[1];
-                    bool existe = diagnosticos_consulta.Select("id_diagnostico = " + datos.Rows[i]["id_diagnostico"].ToString()).Length == 1;
-                    tbl_diagnosticos.Rows[i].Cells[0].Value = datos.Rows[i]["id_diagnostico"].ToString();
-                    celda.Value = existe;
-                    tbl_diagnosticos.Rows[i].Cells[2].Value = datos.Rows[i]["descripcion"].ToString();
-                }
+                tbl_diagnosticos.Rows.Add();
+                tbl_diagnosticos.Rows[i].Cells[0].Value = datos.Rows[i]["id_diagnostico"].ToString();
+                tbl_diagnosticos.Rows[i].Cells[1].Value = (seleccionados.Select("id_diagnostico = " + datos.Rows[i]["id_diagnostico"].ToString()).Length == 1);
+                tbl_diagnosticos.Rows[i].Cells[2].Value = datos.Rows[i]["descripcion"].ToString();
             }
-            else
-                MessageBox.Show("No existen diagnosticos");
         }
 
         private void Btn_Guardar_Click(object sender, EventArgs e)
         {
-            Vista.Frm_ABM_Consultas dueño = (Vista.Frm_ABM_Consultas)Owner;
-            dueño.tabla_sintomas.Rows.Clear();
+            DataTable seleccionados = negocio.obtener_diagnosticos_consulta(historia_clinica, id_sucursal);
             bool esta_checkeado;
             for (int i = 0; i < tbl_diagnosticos.Rows.Count; i++)
             {
                 esta_checkeado = (bool)tbl_diagnosticos.Rows[i].Cells[1].Value;
                 if (esta_checkeado)
                 {
-                    DataRow fila = diagnosticos_consulta.NewRow();
-                    fila["id_diagnostico"] = tbl_diagnosticos.Rows[i].Cells[0].Value;
-                    fila["descripcion"] = tbl_diagnosticos.Rows[i].Cells[2].Value;
-                    diagnosticos_consulta.Rows.Add(fila);
+
                 }
             }
-
-            dueño.tabla_diagnosticos = diagnosticos_consulta;
-            dueño.cargar_diagnosticos();
-            Close();
-        }
-
-        private void Btn_Cerrar_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void Btn_Cancelar_Click(object sender, EventArgs e)
-        {
-            Close();
         }
     }
 }

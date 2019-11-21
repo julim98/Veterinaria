@@ -36,6 +36,7 @@
             this.Pnl_Barra_Superior = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Btn_Cerrar = new System.Windows.Forms.Button();
+            this.Btn_Minimizar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.id_diagnosticos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chk_diagnosticos = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -69,6 +70,7 @@
             this.diagnosticos});
             this.tbl_diagnosticos.Location = new System.Drawing.Point(12, 22);
             this.tbl_diagnosticos.Name = "tbl_diagnosticos";
+            this.tbl_diagnosticos.ReadOnly = true;
             this.tbl_diagnosticos.Size = new System.Drawing.Size(345, 235);
             this.tbl_diagnosticos.TabIndex = 52;
             // 
@@ -88,7 +90,6 @@
             this.Btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Btn_Cancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Btn_Cancelar.UseVisualStyleBackColor = true;
-            this.Btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
             // 
             // Btn_Guardar
             // 
@@ -113,6 +114,7 @@
             this.Pnl_Barra_Superior.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.Pnl_Barra_Superior.Controls.Add(this.pictureBox1);
             this.Pnl_Barra_Superior.Controls.Add(this.Btn_Cerrar);
+            this.Pnl_Barra_Superior.Controls.Add(this.Btn_Minimizar);
             this.Pnl_Barra_Superior.Controls.Add(this.label2);
             this.Pnl_Barra_Superior.Dock = System.Windows.Forms.DockStyle.Top;
             this.Pnl_Barra_Superior.Location = new System.Drawing.Point(0, 0);
@@ -146,7 +148,20 @@
             this.Btn_Cerrar.Size = new System.Drawing.Size(30, 30);
             this.Btn_Cerrar.TabIndex = 27;
             this.Btn_Cerrar.UseVisualStyleBackColor = true;
-            this.Btn_Cerrar.Click += new System.EventHandler(this.Btn_Cerrar_Click);
+            // 
+            // Btn_Minimizar
+            // 
+            this.Btn_Minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Minimizar.FlatAppearance.BorderSize = 0;
+            this.Btn_Minimizar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
+            this.Btn_Minimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.Btn_Minimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Minimizar.Image")));
+            this.Btn_Minimizar.Location = new System.Drawing.Point(310, 0);
+            this.Btn_Minimizar.Name = "Btn_Minimizar";
+            this.Btn_Minimizar.Size = new System.Drawing.Size(30, 30);
+            this.Btn_Minimizar.TabIndex = 26;
+            this.Btn_Minimizar.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -162,6 +177,7 @@
             // 
             this.id_diagnosticos.HeaderText = "ID_Diagnosticos";
             this.id_diagnosticos.Name = "id_diagnosticos";
+            this.id_diagnosticos.ReadOnly = true;
             this.id_diagnosticos.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.id_diagnosticos.Visible = false;
             // 
@@ -169,6 +185,7 @@
             // 
             this.chk_diagnosticos.HeaderText = "";
             this.chk_diagnosticos.Name = "chk_diagnosticos";
+            this.chk_diagnosticos.ReadOnly = true;
             this.chk_diagnosticos.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.chk_diagnosticos.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.chk_diagnosticos.Width = 50;
@@ -209,6 +226,7 @@
         private System.Windows.Forms.Panel Pnl_Barra_Superior;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Btn_Cerrar;
+        private System.Windows.Forms.Button Btn_Minimizar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView tbl_diagnosticos;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_diagnosticos;
