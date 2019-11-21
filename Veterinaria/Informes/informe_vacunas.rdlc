@@ -6,10 +6,10 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>8.16208cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>8.16208cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -25,7 +25,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>id vacuna</Value>
+                              <Value>                              ID Vacuna</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -55,7 +55,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>descripcion</Value>
+                              <Value>                               Descripción</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -163,9 +163,9 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Top>0.03528cm</Top>
-        <Left>6.63787cm</Left>
+        <Left>0.97579cm</Left>
         <Height>1.2cm</Height>
-        <Width>5cm</Width>
+        <Width>16.32417cm</Width>
         <Style>
           <Border>
             <Style>None</Style>

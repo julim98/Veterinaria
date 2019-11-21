@@ -104,6 +104,11 @@
     <Compile Include="Clases\Combo.cs" />
     <Compile Include="Clases\Conexion_BD.cs" />
     <Compile Include="Clases\tratamientos_especiales.cs" />
+    <Compile Include="Datos\datos_dueños.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>datos_dueños.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Datos\datos_empleados.cs">
       <DependentUpon>datos_empleados.xsd</DependentUpon>
     </Compile>
@@ -111,6 +116,14 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>datos_empleados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\datos_laboratorios.cs">
+      <DependentUpon>datos_laboratorios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\datos_laboratorios.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>datos_laboratorios.xsd</DependentUpon>
     </Compile>
     <Compile Include="Datos\datos_medicamentos.cs">
       <DependentUpon>datos_medicamentos.xsd</DependentUpon>
@@ -120,10 +133,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>datos_medicamentos.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Datos\datos_perros.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>datos_perros.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Datos\datos_razas.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>datos_razas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\datos_sintomas.cs">
+      <DependentUpon>datos_sintomas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\datos_sintomas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>datos_sintomas.xsd</DependentUpon>
     </Compile>
     <Compile Include="Datos\datos_vacunas.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -166,12 +192,6 @@
     <Compile Include="Formularios\Frm_Informes.designer.cs">
       <DependentUpon>Frm_Informes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Frm_Informe_Empleados.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Frm_Informe_Empleados.designer.cs">
-      <DependentUpon>Frm_Informe_Empleados.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\Frm_Modificar_Empleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,17 +210,41 @@
     <Compile Include="Formularios\Frm_Reporte_Empleados.designer.cs">
       <DependentUpon>Frm_Reporte_Empleados.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Frm_Reporte_Laboratorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Reporte_Laboratorios.Designer.cs">
+      <DependentUpon>Frm_Reporte_Laboratorios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Frm_Reporte_Medicamentos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Frm_Reporte_Medicamentos.designer.cs">
       <DependentUpon>Frm_Reporte_Medicamentos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Frm_Reporte_Dueños.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Reporte_Dueños.Designer.cs">
+      <DependentUpon>Frm_Reporte_Dueños.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Reporte_Perros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Reporte_Perros.Designer.cs">
+      <DependentUpon>Frm_Reporte_Perros.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Frm_Reporte_Razas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Frm_Reporte_Razas.designer.cs">
       <DependentUpon>Frm_Reporte_Razas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Reporte_Sintomas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Reporte_Sintomas.Designer.cs">
+      <DependentUpon>Frm_Reporte_Sintomas.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Frm_Reporte_Vacunas.cs">
       <SubType>Form</SubType>
@@ -405,9 +449,6 @@
     <EmbeddedResource Include="Formularios\Frm_Informes.resx">
       <DependentUpon>Frm_Informes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Frm_Informe_Empleados.resx">
-      <DependentUpon>Frm_Informe_Empleados.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_Laboratorios.resx">
       <DependentUpon>Frm_Laboratorios.cs</DependentUpon>
     </EmbeddedResource>
@@ -426,11 +467,23 @@
     <EmbeddedResource Include="Formularios\Frm_Reporte_Empleados.resx">
       <DependentUpon>Frm_Reporte_Empleados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Reporte_Laboratorios.resx">
+      <DependentUpon>Frm_Reporte_Laboratorios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_Reporte_Medicamentos.resx">
       <DependentUpon>Frm_Reporte_Medicamentos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Reporte_Dueños.resx">
+      <DependentUpon>Frm_Reporte_Dueños.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Reporte_Perros.resx">
+      <DependentUpon>Frm_Reporte_Perros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_Reporte_Razas.resx">
       <DependentUpon>Frm_Reporte_Razas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Reporte_Sintomas.resx">
+      <DependentUpon>Frm_Reporte_Sintomas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_Reporte_Vacunas.resx">
       <DependentUpon>Frm_Reporte_Vacunas.cs</DependentUpon>
@@ -441,6 +494,10 @@
     <EmbeddedResource Include="Formularios\Frm_Vacunas.resx">
       <DependentUpon>Frm_Vacunas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Informes\informe_dueños.rdlc" />
+    <EmbeddedResource Include="Informes\informe_laboratorios.rdlc" />
+    <EmbeddedResource Include="Informes\informe_perros.rdlc" />
+    <EmbeddedResource Include="Informes\informe_sintomas.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -451,6 +508,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Datos\datos_dueños.xsc">
+      <DependentUpon>datos_dueños.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\datos_dueños.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>datos_dueños.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datos\datos_dueños.xss">
+      <DependentUpon>datos_dueños.xsd</DependentUpon>
+    </None>
     <None Include="Datos\datos_empleados.xsc">
       <DependentUpon>datos_empleados.xsd</DependentUpon>
     </None>
@@ -461,6 +529,17 @@
     </None>
     <None Include="Datos\datos_empleados.xss">
       <DependentUpon>datos_empleados.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\datos_laboratorios.xsc">
+      <DependentUpon>datos_laboratorios.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\datos_laboratorios.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>datos_laboratorios.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datos\datos_laboratorios.xss">
+      <DependentUpon>datos_laboratorios.xsd</DependentUpon>
     </None>
     <None Include="Datos\datos_medicamentos.xsc">
       <DependentUpon>datos_medicamentos.xsd</DependentUpon>
@@ -473,6 +552,17 @@
     <None Include="Datos\datos_medicamentos.xss">
       <DependentUpon>datos_medicamentos.xsd</DependentUpon>
     </None>
+    <None Include="Datos\datos_perros.xsc">
+      <DependentUpon>datos_perros.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\datos_perros.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>datos_perros.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datos\datos_perros.xss">
+      <DependentUpon>datos_perros.xsd</DependentUpon>
+    </None>
     <None Include="Datos\datos_razas.xsc">
       <DependentUpon>datos_razas.xsd</DependentUpon>
     </None>
@@ -483,6 +573,17 @@
     </None>
     <None Include="Datos\datos_razas.xss">
       <DependentUpon>datos_razas.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\datos_sintomas.xsc">
+      <DependentUpon>datos_sintomas.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\datos_sintomas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>datos_sintomas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datos\datos_sintomas.xss">
+      <DependentUpon>datos_sintomas.xsd</DependentUpon>
     </None>
     <None Include="Datos\datos_vacunas.xsc">
       <DependentUpon>datos_vacunas.xsd</DependentUpon>

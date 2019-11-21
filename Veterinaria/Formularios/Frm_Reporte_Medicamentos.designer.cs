@@ -30,42 +30,35 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.datosmedicamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.datos_medicamentos = new Veterinaria.Datos.datos_medicamentos();
+            this.datosmedicamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.medicamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.datosmedicamentosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datos_medicamentos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medicamentosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datosmedicamentosBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // datosmedicamentosBindingSource
-            // 
-            this.datosmedicamentosBindingSource.DataSource = this.datos_medicamentos;
-            this.datosmedicamentosBindingSource.Position = 0;
             // 
             // datos_medicamentos
             // 
             this.datos_medicamentos.DataSetName = "datos_medicamentos";
             this.datos_medicamentos.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // datosmedicamentosBindingSource
+            // 
+            this.datosmedicamentosBindingSource.DataSource = this.datos_medicamentos;
+            this.datosmedicamentosBindingSource.Position = 0;
+            // 
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.medicamentosBindingSource;
+            reportDataSource1.Value = this.datosmedicamentosBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Veterinaria.Informes.informe_empleados.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Veterinaria.Informes.informe_medicamentos.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Size = new System.Drawing.Size(800, 450);
             this.reportViewer1.TabIndex = 0;
-            // 
-            // medicamentosBindingSource
-            // 
-            this.medicamentosBindingSource.DataMember = "medicamentos";
-            this.medicamentosBindingSource.DataSource = this.datos_medicamentos;
             // 
             // Frm_Reporte_Medicamentos
             // 
@@ -74,11 +67,10 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.reportViewer1);
             this.Name = "Frm_Reporte_Medicamentos";
-            this.Text = "Frm_Reporte_Medicamentos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Frm_Reporte_Medicamentos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.datosmedicamentosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datos_medicamentos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medicamentosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datosmedicamentosBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -88,6 +80,5 @@
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private Datos.datos_medicamentos datos_medicamentos;
         private System.Windows.Forms.BindingSource datosmedicamentosBindingSource;
-        private System.Windows.Forms.BindingSource medicamentosBindingSource;
     }
 }

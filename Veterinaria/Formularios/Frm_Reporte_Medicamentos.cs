@@ -22,9 +22,8 @@ namespace Veterinaria.Formularios
             Conexion_BD _BD = new Conexion_BD() { cadena_conexion = "Initial Catalog=BD_VETERINARIA" };
             DataTable tabla = new DataTable();
             string sql;
-            sql = @"SELECT id_medicamento, nombre_med, id_laboratorio as laboratorio
-                   FROM medicamentos M INNER JOIN laboratorios L 
-                   ON M.id_laboratorio=L.id_laboratorio";
+            sql = @"SELECT id_medicamento, nombre_med, m.id_laboratorio 
+                   FROM medicamentos m INNER JOIN laboratorios l ON m.id_laboratorio=l.id_laboratorio";
             tabla = _BD.ejecutar_consulta(sql);
             //Se asigna al BindingSource el conjunto de datos
             this.datosmedicamentosBindingSource.DataSource = tabla;

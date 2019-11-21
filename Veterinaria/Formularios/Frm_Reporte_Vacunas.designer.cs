@@ -63,7 +63,6 @@
             this.Controls.Add(this.reportViewer1);
             this.Name = "Frm_Reporte_Vacunas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Frm_Informe_Vacunas";
             this.Load += new System.EventHandler(this.Frm_Informe_Vacunas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.vacunasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datos_vacunas)).EndInit();

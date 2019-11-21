@@ -6,19 +6,19 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>3.80175cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>3.80175cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>3.80175cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>3.80175cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>3.80175cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -34,7 +34,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>apellido</Value>
+                              <Value>          Apellido</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -64,7 +64,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>nombre</Value>
+                              <Value>           Nombre</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -94,7 +94,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>nro doc</Value>
+                              <Value>      N° Documento</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -124,7 +124,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>fecha ingreso</Value>
+                              <Value>     Fecha de Ingreso</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -154,7 +154,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>id sucursal</Value>
+                              <Value>           Sucursal</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -354,10 +354,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>0.38806cm</Top>
-        <Left>4.38891cm</Left>
+        <Top>0.07055cm</Top>
+        <Left>0.7112cm</Left>
         <Height>1.2cm</Height>
-        <Width>12.5cm</Width>
+        <Width>19.00875cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -395,9 +395,8 @@
           </Paragraphs>
           <rd:DefaultName>Textbox7</rd:DefaultName>
           <Top>0.03528cm</Top>
-          <Left>1.87854cm</Left>
           <Height>2.46944cm</Height>
-          <Width>18.47703cm</Width>
+          <Width>20.35557cm</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -420,6 +419,37 @@
       <Height>2.54cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox2">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Globals!OverallTotalPages</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox2</rd:DefaultName>
+          <Top>1.94cm</Top>
+          <Left>17.85557cm</Left>
+          <Height>0.6cm</Height>
+          <Width>2.5cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
       <Style>
         <Border>
           <Style>None</Style>
