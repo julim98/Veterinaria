@@ -33,27 +33,5 @@ namespace Veterinaria.Properties {
                 return ((string)(this["ConnectionString"]));
             }
         }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Provider=SQLNCLI11;Data Source=DESKTOP-KTF4A04\\MSSQLSERVER02;Integrated Security=" +
-            "SSPI;Initial Catalog=_BD_VETERINARIA_ULTIMA")]
-        public string ConnectionString1 {
-            get {
-                return ((string)(this["ConnectionString1"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Provider=SQLNCLI11;Data Source=DESKTOP-KTF4A04\\MSSQLSERVER02;Integrated Security=" +
-            "SSPI;Initial Catalog=BD_VETERINARIA")]
-        public string ConnectionString2 {
-            get {
-                return ((string)(this["ConnectionString2"]));
-            }
-        }
     }
 }

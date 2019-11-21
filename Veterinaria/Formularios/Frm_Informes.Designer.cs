@@ -32,7 +32,6 @@
             this.btn_diagnosticos = new System.Windows.Forms.Button();
             this.btn_vacunas = new System.Windows.Forms.Button();
             this.btn_razas = new System.Windows.Forms.Button();
-            this.btn_medicamentos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Btn_Empleados
@@ -92,22 +91,6 @@
             this.btn_razas.TabIndex = 4;
             this.btn_razas.Text = "Razas";
             this.btn_razas.UseVisualStyleBackColor = false;
-            this.btn_razas.Click += new System.EventHandler(this.btn_razas_Click);
-            // 
-            // btn_medicamentos
-            // 
-            this.btn_medicamentos.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_medicamentos.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_medicamentos.FlatAppearance.BorderSize = 2;
-            this.btn_medicamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_medicamentos.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_medicamentos.Location = new System.Drawing.Point(12, 215);
-            this.btn_medicamentos.Name = "btn_medicamentos";
-            this.btn_medicamentos.Size = new System.Drawing.Size(360, 80);
-            this.btn_medicamentos.TabIndex = 5;
-            this.btn_medicamentos.Text = "Medicamentos";
-            this.btn_medicamentos.UseVisualStyleBackColor = false;
-            this.btn_medicamentos.Click += new System.EventHandler(this.btn_medicamentos_Click);
             // 
             // Frm_Informes
             // 
@@ -115,7 +98,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btn_medicamentos);
             this.Controls.Add(this.btn_razas);
             this.Controls.Add(this.btn_vacunas);
             this.Controls.Add(this.btn_diagnosticos);
@@ -133,6 +115,5 @@
         private System.Windows.Forms.Button btn_diagnosticos;
         private System.Windows.Forms.Button btn_vacunas;
         private System.Windows.Forms.Button btn_razas;
-        private System.Windows.Forms.Button btn_medicamentos;
     }
 }

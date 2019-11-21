@@ -19,21 +19,25 @@ namespace Veterinaria.Negocios
         }
         public void cargar_sintomas_consulta(string historia_clinica, string id_sucursal, string id_consulta, string id_sintoma)
         {
-            string comando = "insert into sintoma_consulta (nro_historia_clinica, id_sucursal, id_consulta, id_sintoma) values(" + historia_clinica
+            string comando = "insert into sintomas_consulta (nro_historia_clinica, id_sucursal, id_consulta, id_sintoma) values(" + historia_clinica
                + ", " + id_sucursal + ", " + id_consulta + ", " + id_sintoma  + ")";
             _BD.insertar(comando);
         }
 
         public void cargar_diagnosticos_consulta(string historia_clinica, string id_sucursal, string id_consulta, string id_diagnostico)
         {
-            string comando = "insert into diagnostico_consulta (nro_historia_clinica, id_sucursal, id_consulta, id_sintoma) values(" + historia_clinica
+            string comando = "insert into diagnostico_consulta (nro_historia_clinica, id_sucursal, id_consulta, id_diagnostico) values(" + historia_clinica
                + ", " + id_sucursal + ", " + id_consulta + ", " + id_diagnostico + ")";
             _BD.insertar(comando);
         }
 
         public string obtener_id_consulta()
         {
-            return _BD.ejecutar_consulta("select MAX(id_consulta) from consultas").Rows[0]["id_consulta"].ToString();
+            string a = _BD.ejecutar_consulta("select MAX(id_consulta) from consultas").Rows[0][0].ToString();
+            if (a != null)
+                return a;
+            else
+                return "0";
         }
 
         public void eliminar()
@@ -53,5 +57,10 @@ namespace Veterinaria.Negocios
             return _BD.ejecutar_consulta(comando);
         }
 
+        public DataTable obtener_consultas()
+        {
+            string comando = "select S.nombre as sucursal, E.apellido as empleado, C.* from consultas C join empleados E on C.tipo_doc_empleado = E.tipo_doc AND C.nro_doc_empleado = E.nro_doc join sucursales S on C.id_sucursal = S.id_sucursal";
+            return _BD.ejecutar_consulta(comando);
+        }
     }
 }

@@ -206,7 +206,7 @@
             <DataSetName>DataSet1</DataSetName>
             <Top>0.03528cm</Top>
             <Height>1.2cm</Height>
-            <Width>8.1441cm</Width>
+            <Width>8.14411cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -532,13 +532,14 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>SUCURSALES (0-&gt;Central; 2-&gt;Gral Paz; 4-&gt;Yrigoyen)</Caption>
+                <Caption>Título del gráfico</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>9pt</FontSize>
                   <FontWeight>Normal</FontWeight>
                   <TextAlign>Left</TextAlign>
                   <VerticalAlign>Top</VerticalAlign>
+                  <Color>#a6a6a6</Color>
                 </Style>
                 <Position>TopLeft</Position>
               </ChartTitle>
