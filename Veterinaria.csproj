@@ -76,27 +76,31 @@
     <Compile Include="Clases\Combo.cs" />
     <Compile Include="Clases\Conexion_BD.cs" />
     <Compile Include="Clases\tratamientos_especiales.cs" />
-    <Compile Include="Datoss\Datos_Empleados.Designer.cs">
+    <Compile Include="Datos\datos_empleados.cs">
+      <DependentUpon>datos_empleados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\datos_empleados.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Datos_Empleados.xsd</DependentUpon>
+      <DependentUpon>datos_empleados.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Datoss\Datos_Vacunas.Designer.cs">
+    <Compile Include="Datos\datos_medicamentos.cs">
+      <DependentUpon>datos_medicamentos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\datos_medicamentos.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Datos_Vacunas.xsd</DependentUpon>
+      <DependentUpon>datos_medicamentos.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Frm_ABM_Consulta_Diagnostico.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Datos\datos_razas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>datos_razas.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Frm_ABM_Consulta_Diagnostico.Designer.cs">
-      <DependentUpon>Frm_ABM_Consulta_Diagnostico.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Frm_ABM_Consulta_Sintoma.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Frm_ABM_Consulta_Sintoma.Designer.cs">
-      <DependentUpon>Frm_ABM_Consulta_Sintoma.cs</DependentUpon>
+    <Compile Include="Datos\datos_vacunas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>datos_vacunas.xsd</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Frm_ABM_Sintomas.cs">
       <SubType>Form</SubType>
@@ -110,12 +114,6 @@
     <Compile Include="Formularios\Frm_ABM_Stock.Designer.cs">
       <DependentUpon>Frm_ABM_Stock.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Frm_ABM_Vacunas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Frm_ABM_Vacunas.designer.cs">
-      <DependentUpon>Frm_ABM_Vacunas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\Frm_Informes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +125,30 @@
     </Compile>
     <Compile Include="Formularios\Frm_Informe_Empleados.Designer.cs">
       <DependentUpon>Frm_Informe_Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Reporte_Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Reporte_Empleados.Designer.cs">
+      <DependentUpon>Frm_Reporte_Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Reporte_Medicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Reporte_Medicamentos.Designer.cs">
+      <DependentUpon>Frm_Reporte_Medicamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Reporte_Razas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Reporte_Razas.Designer.cs">
+      <DependentUpon>Frm_Reporte_Razas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Reporte_Vacunas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Reporte_Vacunas.Designer.cs">
+      <DependentUpon>Frm_Reporte_Vacunas.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Frm_Modificar_Empleado.cs">
       <SubType>Form</SubType>
@@ -146,13 +168,6 @@
     <Compile Include="Formularios\Frm_Sintomas.Designer.cs">
       <DependentUpon>Frm_Sintomas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Frm_Vacunas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Frm_Vacunas.Designer.cs">
-      <DependentUpon>Frm_Vacunas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Negocios\NG_Consultas.cs" />
     <Compile Include="Negocios\NG_Diagnosticos.cs" />
     <Compile Include="Negocios\NG_Laboratorios.cs" />
     <Compile Include="Negocios\NG_Medicamentos.cs" />
@@ -270,18 +285,11 @@
       <DependentUpon>Frm_Perros.cs</DependentUpon>
     </Compile>
     <Compile Include="Negocios\NG_Transaccion.cs" />
-    <Compile Include="Negocios\NG_Vacunas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="Formularios\Frm_ABM_Consultas.resx">
       <DependentUpon>Frm_ABM_Consultas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Frm_ABM_Consulta_Diagnostico.resx">
-      <DependentUpon>Frm_ABM_Consulta_Diagnostico.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Frm_ABM_Consulta_Sintoma.resx">
-      <DependentUpon>Frm_ABM_Consulta_Sintoma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_ABM_Diagnosticos.resx">
       <DependentUpon>Frm_ABM_Diagnosticos.cs</DependentUpon>
@@ -313,9 +321,6 @@
     <EmbeddedResource Include="Formularios\Frm_ABM_Sucursales.resx">
       <DependentUpon>Frm_ABM_Sucursales.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Frm_ABM_Vacunas.resx">
-      <DependentUpon>Frm_ABM_Vacunas.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_Configuracion.resx">
       <DependentUpon>Frm_Configuracion.cs</DependentUpon>
     </EmbeddedResource>
@@ -340,6 +345,18 @@
     <EmbeddedResource Include="Formularios\Frm_Informe_Empleados.resx">
       <DependentUpon>Frm_Informe_Empleados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Reporte_Empleados.resx">
+      <DependentUpon>Frm_Reporte_Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Reporte_Medicamentos.resx">
+      <DependentUpon>Frm_Reporte_Medicamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Reporte_Razas.resx">
+      <DependentUpon>Frm_Reporte_Razas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Reporte_Vacunas.resx">
+      <DependentUpon>Frm_Reporte_Vacunas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_Laboratorios.resx">
       <DependentUpon>Frm_Laboratorios.cs</DependentUpon>
     </EmbeddedResource>
@@ -358,10 +375,10 @@
     <EmbeddedResource Include="Formularios\Frm_Sintomas.resx">
       <DependentUpon>Frm_Sintomas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Frm_Vacunas.resx">
-      <DependentUpon>Frm_Vacunas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Informess\informe_empleados.rdlc" />
+    <EmbeddedResource Include="Informes\informe_empleados.rdlc" />
+    <EmbeddedResource Include="Informes\informe_medicamentos.rdlc" />
+    <EmbeddedResource Include="Informes\informe_razas.rdlc" />
+    <EmbeddedResource Include="Informes\informe_vacunas.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -372,27 +389,49 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="Datoss\Datos_Empleados.xsc">
-      <DependentUpon>Datos_Empleados.xsd</DependentUpon>
+    <None Include="Datos\datos_empleados.xsc">
+      <DependentUpon>datos_empleados.xsd</DependentUpon>
     </None>
-    <None Include="Datoss\Datos_Empleados.xsd">
+    <None Include="Datos\datos_empleados.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Datos_Empleados.Designer.cs</LastGenOutput>
+      <LastGenOutput>datos_empleados.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Datoss\Datos_Empleados.xss">
-      <DependentUpon>Datos_Empleados.xsd</DependentUpon>
+    <None Include="Datos\datos_empleados.xss">
+      <DependentUpon>datos_empleados.xsd</DependentUpon>
     </None>
-    <None Include="Datoss\Datos_Vacunas.xsc">
-      <DependentUpon>Datos_Vacunas.xsd</DependentUpon>
+    <None Include="Datos\datos_medicamentos.xsc">
+      <DependentUpon>datos_medicamentos.xsd</DependentUpon>
     </None>
-    <None Include="Datoss\Datos_Vacunas.xsd">
+    <None Include="Datos\datos_medicamentos.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Datos_Vacunas.Designer.cs</LastGenOutput>
+      <LastGenOutput>datos_medicamentos.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Datoss\Datos_Vacunas.xss">
-      <DependentUpon>Datos_Vacunas.xsd</DependentUpon>
+    <None Include="Datos\datos_medicamentos.xss">
+      <DependentUpon>datos_medicamentos.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\datos_razas.xsc">
+      <DependentUpon>datos_razas.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\datos_razas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>datos_razas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datos\datos_razas.xss">
+      <DependentUpon>datos_razas.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\datos_vacunas.xsc">
+      <DependentUpon>datos_vacunas.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\datos_vacunas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>datos_vacunas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datos\datos_vacunas.xss">
+      <DependentUpon>datos_vacunas.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -415,7 +454,6 @@
     <None Include="Resources\sintomas.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ReportViewerWebForm.aspx" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

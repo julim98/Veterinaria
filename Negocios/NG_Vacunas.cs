@@ -4,56 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Veterinaria.Clases;
-using System.Data;
-using System.Windows.Forms;
 namespace Veterinaria.Negocios
 {
     class NG_Vacunas
     {
         Conexion_BD _BD = new Conexion_BD();
 
-        public void registrar(string descripcion)
+        public void registrar_vacuna (string descripcion)
         {
-            string comando = "insert into vacunas (descripcion) " +
-                "values ('" + descripcion +
-                "')";
-            if (_BD.insertar(comando) == Conexion_BD.estado_BE.correcto)
-            {
-                MessageBox.Show("Se cargó correctamente");
-            }
-        }
-
-        public void modificar(string pk, string descripcion)
-        {
-            string comando = "update vacunas set descripcion = '" + descripcion +
-                "' where id_vacuna = " + pk;
-
-            if (_BD.modificar(comando) == Conexion_BD.estado_BE.correcto)
-                MessageBox.Show("Se modificó correctamente");
-        }
-
-        public void borrar(string pk)
-        {
-            string comando = "delete from vacunas where id_vacuna = " + pk;
-
-            if (_BD.borrar(comando) == Conexion_BD.estado_BE.correcto)
-                MessageBox.Show("Se borró correctamente");
-        }
-
-        public DataTable recuperar_vacuna(string pk)
-        {
-            string comando = "select * from vacunas where id_vacuna = " + pk;
-            return _BD.ejecutar_consulta(comando);
-        }
-
-        public DataTable buscar_vacunas(string nombre)
-        {
-            string comando = "select * from vacunas";
-
-            if (nombre != "")
-                comando += " where descripcion like '%" + nombre + "%'";
-
-            return _BD.ejecutar_consulta(comando);
+            string comando = "insert into vacunas () values";
         }
     }
 }
